@@ -173,9 +173,19 @@ Or run following on commend line:
 
 ## Training the Model
 - Python codes that used to train the Reinfocement Learning model
-   - gather the tracing data (traces.py)
-   - parse the data (parseoutput.py)
-   - Q-learing reinforcement learning model (qlearn.py)
+   - trace analyze (parse tracing data)
+  - syscall analyze (finds all syscalls and events)
+      - Event object
+      - Syscall object
+  - syscall aggregate ( find all syscalls durations, calculate min, max and average durations)
+  - syscall comparator
+  - syscall counter
+  - RL model
+     - State object
+     - Action object
+     - Agent oject
+     - Q Table oject
+     - RL Model for training
  
 
 ## References
