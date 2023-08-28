@@ -48,14 +48,14 @@ class RLModel:
             # Let the agent choose an action
             self.agent = Agent(syscall.events)
             action = self.agent.choose_action(state)
+            # Observe reward
+            reward = self.get_reward(state)
             if state.duration_type == "short":
                 self.favorable_actions_for_short_syscalls[syscall.event_type].append(action)
                 self.short_syscall_durations[syscall.event_type].append(syscall.duration)
             elif state.duration_type == "long":
                 self.favorable_actions_for_long_syscalls[syscall.event_type].append(action)
                 self.long_syscall_durations[syscall.event_type].append(syscall.duration)
-            # Observe reward
-            reward = self.get_reward(state)
 
             # Define next_state based on next syscall type and duration
             next_syscall = self.syscalls[i + 1]
@@ -67,7 +67,7 @@ class RLModel:
 
     def save_top_actions(self, filename):
         with open(filename, 'w') as f:
-            f.write("All favorable actions for each event type:\n")
+            f.write("All event types that most likely happen for each syscall type:\n")
 
             all_event_types = set(self.favorable_actions_for_short_syscalls.keys()) | set(
                 self.favorable_actions_for_long_syscalls.keys())
@@ -82,24 +82,24 @@ class RLModel:
                     sorted_actions = action_counts.most_common()  # Sort by count
                     avg_short_duration = sum(self.short_syscall_durations[event_type]) / len(
                         self.short_syscall_durations[event_type]) if self.short_syscall_durations[event_type] else 0
-                    f.write(f"  Average duration: {round(avg_short_duration)}\n")
-
+                    f.write(f"      Average duration: {round(avg_short_duration)}\n")
+                    f.write(f"      List of event types that most likely happen (sorted by model rewards):\n")
                     for action, count in sorted_actions:
-                        f.write(f"    Action: {action}, Count: {count}\n")
+                        f.write(f"         {action}\n")
                 else:
-                    f.write("  No short syscalls for this event type.\n")
+                    f.write("      No short syscalls for this event type.\n")
 
                 if event_type in self.favorable_actions_for_long_syscalls:
-                    f.write(f"Event Type: {event_type}\n")
                     f.write("  For long syscalls:\n")
-                    long_actions = self.favorable_actions_for_long_syscalls[event_type]
+                    long_actions = self.favorable_actions_for_short_syscalls[event_type]
                     action_counts = Counter(long_actions)
                     sorted_actions = action_counts.most_common()  # Sort by count
                     avg_long_duration = sum(self.long_syscall_durations[event_type]) / len(
                         self.long_syscall_durations[event_type]) if self.long_syscall_durations[event_type] else 0
-                    f.write(f"  Average duration: {round(avg_long_duration)}\n")
+                    f.write(f"      Average duration: {round(avg_long_duration)}\n")
+                    f.write(f"      List of event types that most likely happen (sorted by model rewards):\n")
 
                     for action, count in sorted_actions:
-                        f.write(f"    Action: {action}, Count: {count}\n")
+                        f.write(f"         {action}\n")
                 else:
-                    f.write("  No long syscalls for this event type.\n")
+                    f.write("      No long syscalls for this event type.\n")

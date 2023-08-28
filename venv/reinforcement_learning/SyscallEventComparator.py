@@ -36,7 +36,7 @@ class SyscallEventComparator:
                 f.write(f"For syscall type {event_type}:\n")
                 f.write(f"  Events unique to long syscalls: \n")
                 for event, count in sorted_long:
-                    f.write(f"    {event}: {count}\n")
+                    f.write(f"    {event}, Appearance:{count}\n")
                 f.write(f"  Events unique to short syscalls: \n")
                 for event, count in sorted_short:
-                    f.write(f"    {event}: {count}\n")
+                    f.write(f"    {event}, Appearance:{count}\n")

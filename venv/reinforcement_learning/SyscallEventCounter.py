@@ -39,7 +39,7 @@ class SyscallEventCounter:
                 f.write(f"{event_type} happens: {frequency} times\n")
                 f.write(f"  Events in long syscalls: \n")
                 for event, count in sorted_long:
-                    f.write(f"    {event}: {count}\n")
+                    f.write(f"    {event}, Count: {count}\n")
                 f.write(f"  Events in short syscalls: \n")
                 for event, count in sorted_short:
-                    f.write(f"    {event}: {count}\n")
+                    f.write(f"    {event}, Count {count}\n")

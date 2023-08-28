@@ -1,6 +1,6 @@
 import random
 from QTable import QTable
-
+import json
 
 class Agent:
     def __init__(self, possible_actions):
@@ -11,3 +11,5 @@ class Agent:
 
     def learn(self, state, action, reward, next_state):
         self.q_table.update(state, action, reward, next_state)
+
+
