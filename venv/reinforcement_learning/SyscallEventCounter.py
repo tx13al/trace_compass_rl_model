@@ -1,5 +1,6 @@
 from collections import defaultdict, Counter
 from itertools import chain
+from tqdm import tqdm
 
 
 class SyscallEventCounter:
@@ -21,7 +22,7 @@ class SyscallEventCounter:
     def save_counting_events(self, filename):
         with open(filename, 'w') as f:
             all_event_types = set(self.events_in_short_syscalls.keys()) | set(self.events_in_long_syscalls.keys())
-            for event_type in all_event_types:
+            for event_type in tqdm(all_event_types, desc="Saving events", bar_format='{l_bar}\033[90m{bar}\033[0m{r_bar}'):
 
                 flat_long_events = list(chain.from_iterable(self.events_in_long_syscalls[event_type]))
                 flat_short_events = list(chain.from_iterable(self.events_in_short_syscalls.get(event_type, [])))

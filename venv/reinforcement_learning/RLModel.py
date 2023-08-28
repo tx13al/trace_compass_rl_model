@@ -36,7 +36,7 @@ class RLModel:
     def run(self):
         # Loop through the syscalls
         # Stop at second last to avoid IndexError for next_state
-        for i in tqdm(range(len(self.syscalls) - 1)):
+        for i in tqdm(range(len(self.syscalls, ) - 1), desc="Training model", bar_format='{l_bar}\033[90m{bar}\033[0m{r_bar}'):
 
             # Current syscall
             syscall = self.syscalls[i]

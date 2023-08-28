@@ -1,6 +1,6 @@
 import csv
 from collections import defaultdict
-
+from tqdm import tqdm
 
 class SyscallAggregator:
     def __init__(self, syscalls):
@@ -9,7 +9,8 @@ class SyscallAggregator:
         self.aggregate_syscalls()
 
     def aggregate_syscalls(self):
-        for syscall in self.syscalls:
+        for syscall in tqdm(self.syscalls, desc="Aggregating syscalls",
+                            bar_format='{l_bar}\033[90m{bar}\033[0m{r_bar}'):
             self.syscall_groups[syscall.event_type].append(syscall)
 
     def show_aggregated_data(self, filename):
