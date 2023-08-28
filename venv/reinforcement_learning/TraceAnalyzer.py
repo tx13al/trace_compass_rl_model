@@ -1,32 +1,45 @@
+import re
+import pandas as pd
+from Event import Event
+from tqdm import tqdm
+
+
 class TraceAnalyzer:
     def __init__(self, file_path):
         self.file_path = file_path
-        self.pattern = r'\[(.*?)\] \((.*?)\)(.*?) (.*?) (.*?): \{(.*)\}'
-        self.all_syscalls = all_syscalls
-        self.trace_data = self.read_trace_file()
-        self.matched_syscalls_df = None
+        self.pattern = r'\[(.*?)\] \((.*?)\)(.*?) (.*?) (.*?): \{(.*)},\ {(.*)\}'
 
     def read_trace_file(self):
-        # Lists to hold the extracted data
-        timestamps, time_diffs, computer_names, event_names, other_info = [], [], [], [], []
+
+        # Variables to hold the last tid and prio
+        last_tid, last_prio = None, None
+        events = []
+        total_lines = sum(1 for _ in open(self.file_path))
 
         # Reading the file and extracting the details
         with open(self.file_path, 'r') as file:
-            for line in file:
+            for line in tqdm(file, total=total_lines, desc="Reading file", bar_format='{l_bar}\033[90m{bar}\033[0m{r_bar}'):
                 match = re.match(self.pattern, line)
                 if match:
-                    timestamps.append(match.group(1))
-                    time_diffs.append(match.group(2))
-                    computer_names.append(match.group(4).strip())
-                    event_names.append(match.group(5))
-                    other_info.append(match.group(6))
+                    timestamp = match.group(1)
+                    event_type = match.group(5)
+                    cpu_id = match.group(6).replace("cpu_id = ", "")
+                    content = match.group(7)
 
-        # Creating a DataFrame
-        trace_data = pd.DataFrame({
-            'Timestamp': timestamps,
-            'Time Diff': time_diffs,
-            'Event Name': event_names,
-        })
+                    # Extracting tid and prio from content if available
+                    tid = re.search(r'tid\s*=\s*(\d+)', content)
+                    prio = re.search(r'prio\s*=\s*(\d+)', content)
 
-        return trace_data
+                    tid = tid.group(1) if tid else last_tid
+                    prio = prio.group(1) if prio else last_prio
 
+                    # Update last_tid and last_prio
+                    last_tid, last_prio = tid, prio
+
+                    event = Event(timestamp, event_type, cpu_id, tid, prio, content)
+                    events.append(event)
+        return events
+
+    def print_events(self):
+        for event in self.read_trace_file():
+            print(event)

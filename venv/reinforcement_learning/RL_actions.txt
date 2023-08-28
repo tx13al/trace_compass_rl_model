@@ -1,0 +1,3410 @@
+All favorable actions for each event type:
+Event Type: newuname
+  For short syscalls:
+  Average duration: 1943
+    Action: None, Count: 6
+    Action: kmem_cache_free, Count: 2
+    Action: x86_exceptions_page_fault_kernel, Count: 1
+    Action: kmem_mm_page_alloc, Count: 1
+  No long syscalls for this event type.
+Event Type: nanosleep
+  No short syscalls for this event type.
+Event Type: nanosleep
+  For long syscalls:
+  Average duration: 168012
+    Action: timer_hrtimer_init, Count: 753
+    Action: x86_irq_vectors_local_timer_entry, Count: 60
+    Action: timer_hrtimer_expire_exit, Count: 53
+    Action: timer_hrtimer_start, Count: 53
+    Action: timer_hrtimer_cancel, Count: 50
+    Action: sched_waking, Count: 49
+    Action: x86_irq_vectors_local_timer_exit, Count: 49
+    Action: power_cpu_idle, Count: 49
+    Action: sched_wakeup, Count: 46
+    Action: timer_hrtimer_expire_entry, Count: 45
+    Action: sched_stat_runtime, Count: 43
+    Action: rcu_utilization, Count: 38
+    Action: sched_switch, Count: 31
+    Action: kmem_cache_free, Count: 16
+    Action: irq_handler_entry, Count: 14
+    Action: irq_softirq_raise, Count: 12
+    Action: block_rq_complete, Count: 10
+    Action: irq_handler_exit, Count: 8
+    Action: irq_softirq_entry, Count: 8
+    Action: irq_softirq_exit, Count: 6
+    Action: scsi_dispatch_cmd_done, Count: 6
+    Action: scsi_dispatch_cmd_start, Count: 6
+    Action: timer_init, Count: 6
+    Action: kmem_cache_alloc, Count: 5
+    Action: x86_irq_vectors_reschedule_exit, Count: 5
+    Action: block_unplug, Count: 4
+    Action: x86_irq_vectors_call_function_single_exit, Count: 4
+    Action: workqueue_queue_work, Count: 3
+    Action: x86_irq_vectors_call_function_single_entry, Count: 3
+    Action: block_bio_remap, Count: 3
+    Action: block_bio_queue, Count: 3
+    Action: block_rq_issue, Count: 3
+    Action: workqueue_execute_end, Count: 3
+    Action: block_getrq, Count: 3
+    Action: kmem_mm_page_free_batched, Count: 3
+    Action: kmem_mm_page_pcpu_drain, Count: 3
+    Action: kmem_mm_page_free, Count: 2
+    Action: block_rq_insert, Count: 2
+    Action: timer_cancel, Count: 2
+    Action: kmem_mm_page_alloc, Count: 2
+    Action: block_bio_backmerge, Count: 2
+    Action: workqueue_activate_work, Count: 2
+    Action: block_rq_requeue, Count: 1
+    Action: x86_exceptions_page_fault_user, Count: 1
+    Action: writeback_mark_inode_dirty, Count: 1
+    Action: skb_copy_datagram_iovec, Count: 1
+    Action: jbd2_commit_logging, Count: 1
+    Action: block_plug, Count: 1
+    Action: jbd2_commit_locking, Count: 1
+    Action: workqueue_execute_start, Count: 1
+    Action: mm_vmscan_lru_shrink_inactive, Count: 1
+    Action: kmem_kfree, Count: 1
+Event Type: shutdown
+  For short syscalls:
+  Average duration: 1956
+    Action: None, Count: 2
+    Action: kmem_cache_free, Count: 1
+    Action: kmem_mm_page_alloc, Count: 1
+  No long syscalls for this event type.
+Event Type: geteuid
+  For short syscalls:
+  Average duration: 699
+    Action: None, Count: 33
+    Action: kmem_kmalloc, Count: 5
+    Action: kmem_cache_alloc, Count: 3
+    Action: kmem_kfree, Count: 3
+    Action: kmem_mm_page_alloc, Count: 2
+    Action: rcu_utilization, Count: 1
+    Action: block_touch_buffer, Count: 1
+    Action: kmem_cache_free, Count: 1
+  No long syscalls for this event type.
+Event Type: flock
+  For short syscalls:
+  Average duration: 4899
+    Action: kmem_cache_free, Count: 1
+Event Type: flock
+  For long syscalls:
+  Average duration: 10166
+    Action: kmem_cache_alloc, Count: 2
+Event Type: execve
+  No short syscalls for this event type.
+Event Type: execve
+  For long syscalls:
+  Average duration: 411513
+    Action: kmem_cache_alloc, Count: 2
+    Action: block_rq_issue, Count: 1
+    Action: x86_irq_vectors_call_function_single_entry, Count: 1
+    Action: syscall_exit_recvmsg, Count: 1
+Event Type: pread64
+  For short syscalls:
+  Average duration: 653
+    Action: None, Count: 98
+    Action: writeback_dirty_inode_start, Count: 1
+Event Type: pread64
+  For long syscalls:
+  Average duration: 58227
+    Action: block_touch_buffer, Count: 1
+Event Type: setitimer
+  For short syscalls:
+  Average duration: 1966
+    Action: timer_hrtimer_cancel, Count: 71
+    Action: timer_hrtimer_start, Count: 48
+    Action: timer_itimer_state, Count: 36
+    Action: kmem_cache_free, Count: 2
+    Action: kmem_kfree, Count: 2
+    Action: kmem_cache_alloc, Count: 2
+    Action: skb_consume, Count: 2
+    Action: block_plug, Count: 1
+    Action: kmem_mm_page_alloc, Count: 1
+    Action: x86_exceptions_page_fault_user, Count: 1
+    Action: writeback_mark_inode_dirty, Count: 1
+    Action: block_rq_insert, Count: 1
+    Action: x86_irq_vectors_reschedule_exit, Count: 1
+    Action: sched_switch, Count: 1
+Event Type: setitimer
+  For long syscalls:
+  Average duration: 8434
+    Action: timer_hrtimer_start, Count: 12
+    Action: timer_itimer_state, Count: 5
+    Action: irq_softirq_entry, Count: 1
+Event Type: chmod
+  No short syscalls for this event type.
+Event Type: chmod
+  For long syscalls:
+  Average duration: 18379
+    Action: kmem_cache_alloc, Count: 1
+Event Type: fsync
+  For short syscalls:
+  Average duration: 1358
+    Action: None, Count: 1
+Event Type: fsync
+  For long syscalls:
+  Average duration: 1955231
+    Action: sched_waking, Count: 4
+    Action: kmem_cache_alloc, Count: 2
+    Action: x86_irq_vectors_local_timer_exit, Count: 1
+    Action: irq_softirq_entry, Count: 1
+    Action: kmem_cache_free, Count: 1
+    Action: jbd2_commit_flushing, Count: 1
+    Action: irq_softirq_raise, Count: 1
+    Action: block_bio_remap, Count: 1
+Event Type: unlinkat
+  For short syscalls:
+  Average duration: 2214
+    Action: kmem_cache_free, Count: 7
+    Action: kmem_kfree, Count: 7
+    Action: kmem_kmalloc, Count: 7
+    Action: kmem_cache_alloc, Count: 2
+Event Type: unlinkat
+  For long syscalls:
+  Average duration: 15128
+    Action: kmem_cache_alloc, Count: 3
+    Action: kmem_kfree, Count: 2
+    Action: sched_wakeup, Count: 1
+    Action: x86_irq_vectors_local_timer_entry, Count: 1
+Event Type: quotactl
+  For short syscalls:
+  Average duration: 2622
+    Action: kmem_cache_free, Count: 1
+    Action: kmem_kfree, Count: 1
+  No long syscalls for this event type.
+Event Type: epoll_wait
+  For short syscalls:
+  Average duration: 1094
+    Action: None, Count: 342
+    Action: kmem_cache_free, Count: 26
+    Action: kmem_cache_alloc, Count: 19
+    Action: kmem_kfree, Count: 13
+    Action: x86_exceptions_page_fault_user, Count: 11
+    Action: kmem_mm_page_alloc, Count: 5
+    Action: syscall_exit_newfstat, Count: 5
+    Action: syscall_exit_close, Count: 5
+    Action: sched_switch, Count: 3
+    Action: rcu_utilization, Count: 3
+    Action: syscall_exit_sendmsg, Count: 3
+    Action: sched_stat_runtime, Count: 3
+    Action: syscall_exit_getrandom, Count: 3
+    Action: syscall_exit_openat, Count: 3
+    Action: timer_init, Count: 3
+    Action: kmem_kmalloc, Count: 3
+    Action: kmem_cache_alloc_node, Count: 2
+    Action: kmem_mm_page_pcpu_drain, Count: 2
+    Action: syscall_exit_nanosleep, Count: 2
+    Action: x86_irq_vectors_reschedule_exit, Count: 2
+    Action: syscall_exit_newstat, Count: 2
+    Action: scsi_dispatch_cmd_done, Count: 2
+    Action: kmem_kmalloc_node, Count: 1
+    Action: timer_hrtimer_cancel, Count: 1
+    Action: kmem_mm_page_free_batched, Count: 1
+    Action: skb_copy_datagram_iovec, Count: 1
+    Action: block_rq_insert, Count: 1
+    Action: workqueue_activate_work, Count: 1
+    Action: syscall_exit_access, Count: 1
+    Action: block_bio_queue, Count: 1
+    Action: block_bio_remap, Count: 1
+    Action: scsi_dispatch_cmd_start, Count: 1
+    Action: kmem_mm_page_free, Count: 1
+    Action: block_touch_buffer, Count: 1
+    Action: block_rq_complete, Count: 1
+    Action: irq_handler_entry, Count: 1
+    Action: sched_process_exec, Count: 1
+    Action: syscall_exit_execve, Count: 1
+    Action: syscall_exit_getppid, Count: 1
+    Action: writeback_dirty_inode, Count: 1
+    Action: syscall_exit_read, Count: 1
+Event Type: epoll_wait
+  For long syscalls:
+  Average duration: 33818
+    Action: rcu_utilization, Count: 40
+    Action: None, Count: 10
+    Action: sched_switch, Count: 8
+    Action: sched_stat_runtime, Count: 6
+    Action: x86_irq_vectors_reschedule_entry, Count: 4
+    Action: syscall_exit_sendmsg, Count: 2
+    Action: x86_irq_vectors_reschedule_exit, Count: 2
+    Action: power_cpu_idle, Count: 2
+    Action: sched_wakeup, Count: 2
+    Action: irq_handler_exit, Count: 2
+    Action: kmem_kmalloc, Count: 1
+    Action: workqueue_activate_work, Count: 1
+    Action: block_bio_queue, Count: 1
+    Action: writeback_dirty_inode, Count: 1
+    Action: scsi_dispatch_cmd_start, Count: 1
+    Action: sched_waking, Count: 1
+Event Type: statfs
+  For short syscalls:
+  Average duration: 1737
+    Action: kmem_cache_alloc, Count: 10
+    Action: kmem_cache_free, Count: 3
+    Action: kmem_kfree, Count: 1
+    Action: kmem_kmalloc, Count: 1
+Event Type: statfs
+  For long syscalls:
+  Average duration: 12978
+    Action: kmem_cache_alloc, Count: 8
+    Action: kmem_cache_free, Count: 3
+    Action: kmem_kfree, Count: 2
+    Action: sched_stat_runtime, Count: 2
+    Action: x86_exceptions_page_fault_kernel, Count: 2
+Event Type: getsockname
+  For short syscalls:
+  Average duration: 1301
+    Action: None, Count: 7
+    Action: kmem_cache_free, Count: 1
+    Action: kmem_cache_alloc, Count: 1
+  No long syscalls for this event type.
+Event Type: link
+  No short syscalls for this event type.
+Event Type: link
+  For long syscalls:
+  Average duration: 10432
+    Action: kmem_cache_alloc, Count: 6
+    Action: block_touch_buffer, Count: 2
+    Action: kmem_kfree, Count: 1
+Event Type: sigaltstack
+  For short syscalls:
+  Average duration: 835
+    Action: None, Count: 19
+    Action: kmem_cache_alloc, Count: 1
+    Action: syscall_exit_munmap, Count: 1
+Event Type: sigaltstack
+  For long syscalls:
+  Average duration: 20170
+    Action: None, Count: 1
+    Action: block_rq_issue, Count: 1
+    Action: syscall_exit_clone, Count: 1
+Event Type: epoll_pwait
+  For short syscalls:
+  Average duration: 1794
+    Action: None, Count: 76
+    Action: sched_stat_runtime, Count: 2
+    Action: kmem_cache_alloc, Count: 2
+    Action: power_cpu_idle, Count: 2
+    Action: kmem_mm_page_pcpu_drain, Count: 2
+    Action: kmem_mm_page_alloc, Count: 1
+    Action: block_dirty_buffer, Count: 1
+    Action: kmem_cache_free, Count: 1
+    Action: timer_hrtimer_init, Count: 1
+    Action: skb_copy_datagram_iovec, Count: 1
+    Action: rcu_utilization, Count: 1
+    Action: kmem_cache_alloc_node, Count: 1
+    Action: sched_switch, Count: 1
+Event Type: epoll_pwait
+  For long syscalls:
+  Average duration: 6911
+    Action: None, Count: 3
+Event Type: accept4
+  No short syscalls for this event type.
+Event Type: accept4
+  For long syscalls:
+  Average duration: 13151
+    Action: kmem_cache_alloc, Count: 3
+    Action: kmem_cache_free, Count: 1
+    Action: x86_exceptions_page_fault_user, Count: 1
+Event Type: signalfd4
+  No short syscalls for this event type.
+Event Type: signalfd4
+  For long syscalls:
+  Average duration: 8684
+    Action: kmem_kmalloc, Count: 2
+Event Type: timerfd_settime
+  For short syscalls:
+  Average duration: 2589
+    Action: timer_hrtimer_init, Count: 5
+    Action: timer_hrtimer_cancel, Count: 2
+    Action: timer_hrtimer_start, Count: 1
+    Action: sched_switch, Count: 1
+Event Type: timerfd_settime
+  For long syscalls:
+  Average duration: 12510
+    Action: timer_hrtimer_cancel, Count: 8
+    Action: timer_hrtimer_start, Count: 5
+    Action: timer_hrtimer_init, Count: 3
+    Action: block_bio_queue, Count: 1
+    Action: kmem_cache_free, Count: 1
+Event Type: readlinkat
+  For short syscalls:
+  Average duration: 2986
+    Action: kmem_cache_alloc, Count: 1092
+    Action: kmem_cache_free, Count: 229
+    Action: kmem_kmalloc, Count: 143
+    Action: kmem_kfree, Count: 129
+    Action: writeback_mark_inode_dirty, Count: 41
+    Action: writeback_dirty_inode_start, Count: 29
+    Action: writeback_dirty_inode, Count: 22
+    Action: kmem_mm_page_alloc, Count: 8
+    Action: kmem_mm_page_free, Count: 7
+    Action: block_touch_buffer, Count: 4
+    Action: kmem_mm_page_free_batched, Count: 3
+    Action: kmem_mm_page_pcpu_drain, Count: 3
+    Action: rcu_utilization, Count: 3
+    Action: sched_stat_runtime, Count: 3
+    Action: kmem_mm_page_alloc_zone_locked, Count: 3
+    Action: sched_switch, Count: 2
+    Action: block_bio_queue, Count: 2
+    Action: block_rq_issue, Count: 2
+    Action: kmem_kmalloc_node, Count: 2
+    Action: skb_copy_datagram_iovec, Count: 2
+    Action: scsi_dispatch_cmd_start, Count: 2
+    Action: block_dirty_buffer, Count: 2
+    Action: writeback_dirty_page, Count: 2
+    Action: mm_vmscan_lru_isolate, Count: 1
+    Action: block_rq_insert, Count: 1
+    Action: workqueue_execute_start, Count: 1
+    Action: workqueue_queue_work, Count: 1
+    Action: block_bio_remap, Count: 1
+    Action: sched_wakeup, Count: 1
+    Action: jbd2_commit_flushing, Count: 1
+    Action: irq_handler_exit, Count: 1
+    Action: irq_softirq_raise, Count: 1
+    Action: syscall_exit_read, Count: 1
+    Action: x86_exceptions_page_fault_user, Count: 1
+    Action: syscall_exit_poll, Count: 1
+    Action: syscall_exit_getrandom, Count: 1
+    Action: timer_hrtimer_init, Count: 1
+Event Type: readlinkat
+  For long syscalls:
+  Average duration: 10030
+    Action: kmem_cache_alloc, Count: 254
+    Action: kmem_cache_free, Count: 45
+    Action: kmem_kmalloc, Count: 42
+    Action: kmem_kfree, Count: 38
+    Action: writeback_mark_inode_dirty, Count: 13
+    Action: writeback_dirty_inode_start, Count: 11
+    Action: writeback_dirty_inode, Count: 11
+    Action: block_dirty_buffer, Count: 6
+    Action: kmem_mm_page_alloc, Count: 6
+    Action: block_touch_buffer, Count: 5
+    Action: kmem_mm_page_pcpu_drain, Count: 1
+    Action: sched_wakeup, Count: 1
+    Action: block_rq_issue, Count: 1
+    Action: power_cpu_idle, Count: 1
+    Action: sched_stat_runtime, Count: 1
+    Action: block_rq_complete, Count: 1
+    Action: block_bio_remap, Count: 1
+    Action: sched_switch, Count: 1
+    Action: writeback_dirty_page, Count: 1
+    Action: rcu_utilization, Count: 1
+    Action: kmem_mm_page_free, Count: 1
+    Action: irq_handler_entry, Count: 1
+    Action: x86_irq_vectors_local_timer_entry, Count: 1
+    Action: x86_irq_vectors_local_timer_exit, Count: 1
+    Action: kmem_mm_page_alloc_zone_locked, Count: 1
+    Action: x86_irq_vectors_reschedule_entry, Count: 1
+Event Type: inotify_rm_watch
+  For short syscalls:
+  Average duration: 3326
+    Action: kmem_kmalloc, Count: 1
+    Action: kmem_kfree, Count: 1
+Event Type: inotify_rm_watch
+  For long syscalls:
+  Average duration: 17764
+    Action: kmem_kmalloc, Count: 2
+    Action: workqueue_queue_work, Count: 1
+    Action: kmem_kfree, Count: 1
+    Action: x86_irq_vectors_local_timer_entry, Count: 1
+Event Type: futex
+  For short syscalls:
+  Average duration: 2374
+    Action: sched_waking, Count: 602
+    Action: None, Count: 404
+    Action: rcu_utilization, Count: 184
+    Action: sched_stat_runtime, Count: 173
+    Action: sched_wakeup, Count: 154
+    Action: sched_switch, Count: 63
+    Action: timer_hrtimer_init, Count: 50
+    Action: kmem_cache_free, Count: 25
+    Action: kmem_kmalloc, Count: 19
+    Action: kmem_kfree, Count: 18
+    Action: timer_hrtimer_cancel, Count: 17
+    Action: timer_hrtimer_start, Count: 17
+    Action: kmem_cache_alloc, Count: 16
+    Action: kmem_mm_page_alloc, Count: 6
+    Action: writeback_mark_inode_dirty, Count: 6
+    Action: x86_exceptions_page_fault_user, Count: 5
+    Action: syscall_exit_sched_yield, Count: 3
+    Action: block_touch_buffer, Count: 3
+    Action: kmem_mm_page_pcpu_drain, Count: 3
+    Action: irq_softirq_exit, Count: 3
+    Action: kmem_cache_alloc_node, Count: 2
+    Action: kmem_mm_page_free_batched, Count: 2
+    Action: block_dirty_buffer, Count: 2
+    Action: block_bio_remap, Count: 2
+    Action: kmem_mm_page_free, Count: 2
+    Action: writeback_dirty_page, Count: 2
+    Action: writeback_dirty_inode, Count: 2
+    Action: block_bio_queue, Count: 2
+    Action: x86_irq_vectors_reschedule_entry, Count: 2
+    Action: x86_irq_vectors_reschedule_exit, Count: 2
+    Action: power_cpu_idle, Count: 2
+    Action: kmem_kmalloc_node, Count: 2
+    Action: syscall_exit_lseek, Count: 1
+    Action: skb_consume, Count: 1
+    Action: kmem_mm_page_alloc_zone_locked, Count: 1
+    Action: x86_exceptions_page_fault_kernel, Count: 1
+    Action: syscall_exit_newfstatat, Count: 1
+    Action: scsi_dispatch_cmd_start, Count: 1
+    Action: irq_softirq_raise, Count: 1
+    Action: block_rq_insert, Count: 1
+    Action: timer_init, Count: 1
+    Action: x86_irq_vectors_local_timer_exit, Count: 1
+    Action: writeback_dirty_inode_start, Count: 1
+    Action: syscall_exit_madvise, Count: 1
+    Action: jbd2_end_commit, Count: 1
+    Action: timer_cancel, Count: 1
+    Action: jbd2_commit_logging, Count: 1
+    Action: timer_hrtimer_expire_entry, Count: 1
+    Action: mm_vmscan_lru_shrink_inactive, Count: 1
+    Action: syscall_exit_openat, Count: 1
+    Action: syscall_exit_epoll_wait, Count: 1
+    Action: syscall_exit_clone, Count: 1
+Event Type: futex
+  For long syscalls:
+  Average duration: 77346
+    Action: sched_waking, Count: 591
+    Action: timer_hrtimer_init, Count: 218
+    Action: rcu_utilization, Count: 155
+    Action: sched_stat_runtime, Count: 91
+    Action: sched_switch, Count: 53
+    Action: timer_hrtimer_start, Count: 47
+    Action: sched_wakeup, Count: 39
+    Action: timer_hrtimer_cancel, Count: 22
+    Action: power_cpu_idle, Count: 16
+    Action: x86_irq_vectors_reschedule_entry, Count: 12
+    Action: x86_irq_vectors_reschedule_exit, Count: 10
+    Action: kmem_cache_alloc, Count: 9
+    Action: None, Count: 8
+    Action: timer_hrtimer_expire_exit, Count: 8
+    Action: kmem_cache_free, Count: 7
+    Action: kmem_kmalloc, Count: 6
+    Action: x86_irq_vectors_local_timer_entry, Count: 6
+    Action: irq_softirq_entry, Count: 6
+    Action: x86_irq_vectors_local_timer_exit, Count: 6
+    Action: irq_handler_entry, Count: 5
+    Action: timer_hrtimer_expire_entry, Count: 5
+    Action: kmem_mm_page_alloc, Count: 4
+    Action: irq_handler_exit, Count: 4
+    Action: block_bio_remap, Count: 4
+    Action: writeback_dirty_inode, Count: 3
+    Action: irq_softirq_raise, Count: 3
+    Action: sched_migrate_task, Count: 3
+    Action: block_bio_queue, Count: 3
+    Action: scsi_dispatch_cmd_done, Count: 3
+    Action: scsi_dispatch_cmd_start, Count: 3
+    Action: kmem_kfree, Count: 2
+    Action: writeback_dirty_inode_start, Count: 2
+    Action: block_rq_issue, Count: 2
+    Action: workqueue_activate_work, Count: 2
+    Action: block_dirty_buffer, Count: 2
+    Action: block_unplug, Count: 2
+    Action: writeback_mark_inode_dirty, Count: 2
+    Action: x86_exceptions_page_fault_user, Count: 2
+    Action: kmem_mm_page_free, Count: 2
+    Action: workqueue_queue_work, Count: 2
+    Action: writeback_dirty_page, Count: 1
+    Action: irq_softirq_exit, Count: 1
+    Action: timer_init, Count: 1
+    Action: syscall_exit_sched_yield, Count: 1
+    Action: block_bio_backmerge, Count: 1
+    Action: syscall_exit_nanosleep, Count: 1
+    Action: timer_expire_exit, Count: 1
+    Action: kmem_mm_page_pcpu_drain, Count: 1
+    Action: workqueue_execute_start, Count: 1
+    Action: kmem_cache_alloc_node, Count: 1
+    Action: syscall_exit_rt_sigaction, Count: 1
+    Action: block_rq_complete, Count: 1
+    Action: syscall_exit_access, Count: 1
+    Action: syscall_exit_read, Count: 1
+Event Type: symlink
+  For short syscalls:
+  Average duration: 3048
+    Action: kmem_cache_alloc, Count: 10
+    Action: kmem_kmalloc, Count: 2
+Event Type: symlink
+  For long syscalls:
+  Average duration: 15466
+    Action: kmem_cache_alloc, Count: 2
+    Action: kmem_cache_free, Count: 2
+    Action: sched_switch, Count: 1
+Event Type: ftruncate
+  No short syscalls for this event type.
+Event Type: ftruncate
+  For long syscalls:
+  Average duration: 23112
+    Action: kmem_kmalloc, Count: 3
+    Action: x86_exceptions_page_fault_user, Count: 1
+    Action: kmem_cache_alloc, Count: 1
+Event Type: write
+  For short syscalls:
+  Average duration: 1636
+    Action: None, Count: 766
+    Action: kmem_kmalloc, Count: 527
+    Action: kmem_kfree, Count: 206
+    Action: kmem_cache_alloc, Count: 31
+    Action: kmem_cache_free, Count: 30
+    Action: kmem_mm_page_alloc, Count: 21
+    Action: sched_switch, Count: 9
+    Action: sched_stat_runtime, Count: 8
+    Action: rcu_utilization, Count: 7
+    Action: writeback_dirty_inode, Count: 7
+    Action: syscall_exit_openat, Count: 6
+    Action: sched_waking, Count: 6
+    Action: x86_exceptions_page_fault_user, Count: 6
+    Action: kmem_mm_page_free, Count: 6
+    Action: sched_wakeup, Count: 5
+    Action: writeback_mark_inode_dirty, Count: 5
+    Action: block_touch_buffer, Count: 5
+    Action: kmem_mm_page_pcpu_drain, Count: 5
+    Action: power_cpu_idle, Count: 5
+    Action: irq_handler_entry, Count: 4
+    Action: syscall_exit_newstat, Count: 4
+    Action: kmem_cache_alloc_node, Count: 4
+    Action: kmem_mm_page_alloc_zone_locked, Count: 3
+    Action: writeback_dirty_inode_start, Count: 3
+    Action: block_bio_queue, Count: 3
+    Action: kmem_kmalloc_node, Count: 3
+    Action: syscall_exit_newfstat, Count: 2
+    Action: timer_init, Count: 2
+    Action: block_plug, Count: 2
+    Action: block_rq_complete, Count: 2
+    Action: irq_softirq_entry, Count: 2
+    Action: writeback_dirty_page, Count: 2
+    Action: block_getrq, Count: 2
+    Action: syscall_exit_read, Count: 2
+    Action: irq_softirq_exit, Count: 2
+    Action: timer_expire_exit, Count: 2
+    Action: x86_irq_vectors_local_timer_entry, Count: 2
+    Action: irq_handler_exit, Count: 1
+    Action: syscall_exit_recvmsg, Count: 1
+    Action: kmem_mm_page_free_batched, Count: 1
+    Action: syscall_exit_poll, Count: 1
+    Action: block_rq_insert, Count: 1
+    Action: block_rq_issue, Count: 1
+    Action: syscall_exit_sched_yield, Count: 1
+    Action: block_bio_backmerge, Count: 1
+    Action: irq_softirq_raise, Count: 1
+    Action: timer_hrtimer_cancel, Count: 1
+    Action: syscall_exit_munmap, Count: 1
+    Action: syscall_exit_nanosleep, Count: 1
+    Action: x86_irq_vectors_local_timer_exit, Count: 1
+    Action: timer_hrtimer_expire_entry, Count: 1
+    Action: block_dirty_buffer, Count: 1
+    Action: syscall_exit_madvise, Count: 1
+    Action: timer_hrtimer_expire_exit, Count: 1
+    Action: block_bio_remap, Count: 1
+    Action: syscall_exit_futex, Count: 1
+    Action: syscall_exit_close, Count: 1
+    Action: syscall_exit_getdents, Count: 1
+    Action: syscall_exit_readlinkat, Count: 1
+Event Type: write
+  For long syscalls:
+  Average duration: 26056
+    Action: kmem_kmalloc, Count: 317
+    Action: kmem_kfree, Count: 79
+    Action: kmem_mm_page_alloc, Count: 74
+    Action: sched_waking, Count: 63
+    Action: kmem_cache_alloc, Count: 46
+    Action: kmem_cache_free, Count: 45
+    Action: kmem_cache_alloc_node, Count: 43
+    Action: None, Count: 36
+    Action: writeback_mark_inode_dirty, Count: 35
+    Action: kmem_kmalloc_node, Count: 30
+    Action: writeback_dirty_inode, Count: 24
+    Action: writeback_dirty_inode_start, Count: 22
+    Action: skb_consume, Count: 19
+    Action: block_dirty_buffer, Count: 17
+    Action: block_touch_buffer, Count: 16
+    Action: writeback_dirty_page, Count: 12
+    Action: sched_stat_runtime, Count: 10
+    Action: sched_wakeup, Count: 9
+    Action: lttng_statedump_file_descriptor, Count: 9
+    Action: x86_exceptions_page_fault_user, Count: 7
+    Action: lttng_statedump_process_state, Count: 4
+    Action: kmem_mm_page_free, Count: 4
+    Action: block_bio_queue, Count: 4
+    Action: irq_softirq_exit, Count: 3
+    Action: x86_irq_vectors_local_timer_entry, Count: 3
+    Action: x86_irq_vectors_local_timer_exit, Count: 2
+    Action: kmem_mm_page_alloc_zone_locked, Count: 2
+    Action: lttng_statedump_process_pid_ns, Count: 1
+    Action: irq_handler_entry, Count: 1
+    Action: block_bio_backmerge, Count: 1
+    Action: block_getrq, Count: 1
+    Action: kmem_mm_page_free_batched, Count: 1
+    Action: sched_switch, Count: 1
+    Action: workqueue_execute_start, Count: 1
+    Action: workqueue_activate_work, Count: 1
+    Action: power_cpu_idle, Count: 1
+    Action: scsi_dispatch_cmd_start, Count: 1
+    Action: x86_irq_vectors_reschedule_entry, Count: 1
+    Action: x86_irq_vectors_call_function_single_exit, Count: 1
+    Action: syscall_exit_epoll_wait, Count: 1
+    Action: sched_migrate_task, Count: 1
+    Action: writeback_global_dirty_state, Count: 1
+    Action: net_dev_queue, Count: 1
+    Action: rcu_utilization, Count: 1
+    Action: x86_exceptions_page_fault_kernel, Count: 1
+    Action: timer_init, Count: 1
+Event Type: epoll_ctl
+  For short syscalls:
+  Average duration: 832
+    Action: None, Count: 1464
+    Action: kmem_cache_alloc, Count: 172
+    Action: kmem_cache_free, Count: 26
+    Action: kmem_mm_page_free, Count: 6
+    Action: sched_stat_runtime, Count: 5
+    Action: sched_switch, Count: 5
+    Action: kmem_kfree, Count: 5
+    Action: rcu_utilization, Count: 4
+    Action: sched_wakeup, Count: 3
+    Action: block_bio_remap, Count: 3
+    Action: power_cpu_idle, Count: 3
+    Action: x86_exceptions_page_fault_kernel, Count: 2
+    Action: kmem_mm_page_alloc, Count: 2
+    Action: sched_waking, Count: 2
+    Action: syscall_exit_poll, Count: 2
+    Action: syscall_exit_newfstat, Count: 1
+    Action: kmem_kmalloc, Count: 1
+    Action: block_getrq, Count: 1
+    Action: irq_softirq_entry, Count: 1
+    Action: block_rq_complete, Count: 1
+    Action: workqueue_execute_end, Count: 1
+    Action: block_bio_queue, Count: 1
+    Action: block_touch_buffer, Count: 1
+    Action: timer_hrtimer_start, Count: 1
+    Action: timer_hrtimer_cancel, Count: 1
+    Action: timer_cancel, Count: 1
+    Action: kmem_kmalloc_node, Count: 1
+    Action: skb_copy_datagram_iovec, Count: 1
+    Action: syscall_exit_recvmsg, Count: 1
+    Action: timer_hrtimer_expire_exit, Count: 1
+    Action: kmem_mm_page_free_batched, Count: 1
+Event Type: epoll_ctl
+  For long syscalls:
+  Average duration: 13580
+    Action: kmem_cache_alloc, Count: 39
+    Action: None, Count: 9
+    Action: kmem_cache_free, Count: 5
+    Action: sched_waking, Count: 4
+    Action: kmem_mm_page_alloc, Count: 1
+    Action: rcu_utilization, Count: 1
+    Action: sched_stat_runtime, Count: 1
+    Action: x86_irq_vectors_call_function_single_entry, Count: 1
+    Action: sched_wakeup, Count: 1
+Event Type: mprotect
+  For short syscalls:
+  Average duration: 3425
+    Action: kmem_cache_alloc, Count: 415
+    Action: kmem_cache_free, Count: 86
+    Action: kmem_kfree, Count: 54
+    Action: kmem_kmalloc, Count: 51
+    Action: x86_exceptions_page_fault_user, Count: 24
+    Action: kmem_mm_page_alloc, Count: 21
+    Action: None, Count: 9
+    Action: kmem_mm_page_free, Count: 5
+    Action: syscall_exit_close, Count: 3
+    Action: syscall_exit_mmap, Count: 3
+    Action: block_touch_buffer, Count: 3
+    Action: block_rq_insert, Count: 2
+    Action: writeback_dirty_inode_start, Count: 2
+    Action: block_unplug, Count: 2
+    Action: rcu_utilization, Count: 1
+    Action: kmem_mm_page_free_batched, Count: 1
+    Action: block_bio_remap, Count: 1
+    Action: writeback_dirty_inode, Count: 1
+    Action: block_bio_queue, Count: 1
+    Action: kmem_mm_page_alloc_zone_locked, Count: 1
+    Action: skb_consume, Count: 1
+    Action: block_getrq, Count: 1
+    Action: sched_waking, Count: 1
+    Action: syscall_exit_munmap, Count: 1
+    Action: kmem_kmalloc_node, Count: 1
+    Action: power_cpu_idle, Count: 1
+    Action: irq_softirq_exit, Count: 1
+    Action: irq_softirq_raise, Count: 1
+Event Type: mprotect
+  For long syscalls:
+  Average duration: 8544
+    Action: kmem_cache_alloc, Count: 269
+    Action: kmem_mm_page_alloc, Count: 15
+    Action: kmem_cache_free, Count: 14
+    Action: kmem_kfree, Count: 10
+    Action: x86_exceptions_page_fault_user, Count: 5
+    Action: kmem_kmalloc, Count: 4
+    Action: sched_wakeup, Count: 2
+    Action: block_getrq, Count: 2
+    Action: writeback_dirty_inode, Count: 2
+    Action: kmem_mm_page_alloc_zone_locked, Count: 2
+    Action: scsi_dispatch_cmd_done, Count: 2
+    Action: sched_stat_runtime, Count: 2
+    Action: x86_irq_vectors_local_timer_entry, Count: 2
+    Action: irq_softirq_raise, Count: 2
+    Action: kmem_cache_alloc_node, Count: 1
+    Action: writeback_mark_inode_dirty, Count: 1
+    Action: syscall_exit_mmap, Count: 1
+    Action: kmem_mm_page_pcpu_drain, Count: 1
+    Action: block_unplug, Count: 1
+    Action: block_touch_buffer, Count: 1
+    Action: block_rq_issue, Count: 1
+    Action: irq_softirq_exit, Count: 1
+    Action: timer_init, Count: 1
+    Action: kmem_kmalloc_node, Count: 1
+    Action: block_plug, Count: 1
+    Action: workqueue_execute_end, Count: 1
+    Action: sched_switch, Count: 1
+    Action: irq_handler_entry, Count: 1
+    Action: None, Count: 1
+    Action: rcu_utilization, Count: 1
+    Action: kmem_mm_page_free_batched, Count: 1
+    Action: irq_softirq_entry, Count: 1
+    Action: kmem_mm_page_free, Count: 1
+Event Type: ppoll
+  For short syscalls:
+  Average duration: 1882
+    Action: None, Count: 10
+    Action: syscall_exit_sendmsg, Count: 6
+    Action: kmem_kfree, Count: 4
+    Action: kmem_kmalloc_node, Count: 3
+    Action: kmem_cache_alloc_node, Count: 3
+    Action: sched_stat_runtime, Count: 2
+  No long syscalls for this event type.
+Event Type: waitid
+  For short syscalls:
+  Average duration: 3061
+    Action: sched_process_wait, Count: 7
+    Action: kmem_cache_free, Count: 2
+Event Type: waitid
+  For long syscalls:
+  Average duration: 9774
+    Action: sched_process_wait, Count: 3
+    Action: kmem_cache_free, Count: 1
+Event Type: setsockopt
+  For short syscalls:
+  Average duration: 1482
+    Action: None, Count: 21
+    Action: kmem_cache_alloc, Count: 2
+    Action: scsi_dispatch_cmd_start, Count: 1
+    Action: timer_init, Count: 1
+    Action: syscall_exit_newfstat, Count: 1
+    Action: kmem_cache_free, Count: 1
+    Action: kmem_kmalloc, Count: 1
+  No long syscalls for this event type.
+Event Type: prctl
+  For short syscalls:
+  Average duration: 1381
+    Action: None, Count: 39
+    Action: kmem_kmalloc, Count: 7
+    Action: kmem_cache_alloc, Count: 7
+    Action: kmem_kfree, Count: 5
+    Action: kmem_mm_page_alloc, Count: 3
+    Action: x86_exceptions_page_fault_user, Count: 2
+    Action: scsi_dispatch_cmd_start, Count: 1
+Event Type: prctl
+  For long syscalls:
+  Average duration: 135047
+    Action: irq_handler_exit, Count: 1
+    Action: block_rq_complete, Count: 1
+Event Type: gettid
+  For short syscalls:
+  Average duration: 720
+    Action: None, Count: 37
+    Action: block_rq_complete, Count: 1
+    Action: syscall_exit_epoll_wait, Count: 1
+    Action: sched_waking, Count: 1
+    Action: x86_exceptions_page_fault_user, Count: 1
+Event Type: gettid
+  For long syscalls:
+  Average duration: 8035
+    Action: None, Count: 3
+Event Type: sysinfo
+  No short syscalls for this event type.
+Event Type: sysinfo
+  For long syscalls:
+  Average duration: 6100
+    Action: None, Count: 2
+Event Type: close
+  For short syscalls:
+  Average duration: 356
+    Action: None, Count: 23581
+    Action: kmem_cache_alloc, Count: 257
+    Action: kmem_cache_free, Count: 233
+    Action: kmem_mm_page_alloc, Count: 117
+    Action: kmem_mm_page_free, Count: 89
+    Action: kmem_kfree, Count: 81
+    Action: x86_exceptions_page_fault_user, Count: 58
+    Action: kmem_kmalloc, Count: 52
+    Action: writeback_mark_inode_dirty, Count: 39
+    Action: kmem_mm_page_free_batched, Count: 36
+    Action: rcu_utilization, Count: 35
+    Action: syscall_exit_openat, Count: 30
+    Action: kmem_mm_page_alloc_zone_locked, Count: 29
+    Action: kmem_mm_page_pcpu_drain, Count: 27
+    Action: syscall_exit_newfstat, Count: 25
+    Action: sched_switch, Count: 23
+    Action: block_touch_buffer, Count: 23
+    Action: writeback_dirty_inode, Count: 23
+    Action: syscall_exit_recvmsg, Count: 21
+    Action: block_dirty_buffer, Count: 18
+    Action: sched_waking, Count: 18
+    Action: writeback_dirty_page, Count: 17
+    Action: skb_consume, Count: 15
+    Action: syscall_exit_read, Count: 14
+    Action: scsi_dispatch_cmd_start, Count: 13
+    Action: sched_stat_runtime, Count: 13
+    Action: skb_copy_datagram_iovec, Count: 12
+    Action: block_bio_queue, Count: 10
+    Action: block_plug, Count: 10
+    Action: block_unplug, Count: 10
+    Action: writeback_dirty_inode_start, Count: 10
+    Action: power_cpu_idle, Count: 9
+    Action: syscall_exit_epoll_wait, Count: 9
+    Action: kmem_cache_alloc_node, Count: 8
+    Action: sched_wakeup, Count: 8
+    Action: block_bio_remap, Count: 8
+    Action: block_rq_insert, Count: 8
+    Action: irq_handler_exit, Count: 8
+    Action: timer_init, Count: 7
+    Action: kmem_kmalloc_node, Count: 7
+    Action: syscall_exit_getrandom, Count: 7
+    Action: timer_hrtimer_init, Count: 7
+    Action: syscall_exit_mprotect, Count: 6
+    Action: mm_vmscan_shrink_slab_end, Count: 6
+    Action: scsi_dispatch_cmd_done, Count: 6
+    Action: workqueue_execute_start, Count: 6
+    Action: timer_hrtimer_start, Count: 6
+    Action: syscall_exit_futex, Count: 6
+    Action: irq_handler_entry, Count: 5
+    Action: syscall_exit_splice, Count: 5
+    Action: workqueue_queue_work, Count: 4
+    Action: syscall_exit_newstat, Count: 4
+    Action: irq_softirq_raise, Count: 4
+    Action: syscall_exit_poll, Count: 4
+    Action: block_rq_complete, Count: 4
+    Action: x86_irq_vectors_local_timer_exit, Count: 4
+    Action: syscall_exit_ioctl, Count: 3
+    Action: mm_vmscan_shrink_slab_start, Count: 3
+    Action: workqueue_execute_end, Count: 3
+    Action: syscall_exit_sendmsg, Count: 3
+    Action: irq_softirq_entry, Count: 3
+    Action: block_getrq, Count: 3
+    Action: irq_softirq_exit, Count: 3
+    Action: syscall_exit_readlinkat, Count: 3
+    Action: syscall_exit_sched_yield, Count: 3
+    Action: syscall_exit_nanosleep, Count: 3
+    Action: timer_hrtimer_expire_exit, Count: 3
+    Action: syscall_exit_mmap, Count: 3
+    Action: block_bio_backmerge, Count: 2
+    Action: mm_vmscan_lru_shrink_inactive, Count: 2
+    Action: x86_irq_vectors_call_function_single_entry, Count: 2
+    Action: timer_start, Count: 2
+    Action: syscall_exit_write, Count: 2
+    Action: timer_hrtimer_cancel, Count: 2
+    Action: syscall_exit_madvise, Count: 2
+    Action: syscall_exit_prctl, Count: 1
+    Action: syscall_exit_set_tid_address, Count: 1
+    Action: syscall_exit_access, Count: 1
+    Action: syscall_exit_kcmp, Count: 1
+    Action: syscall_exit_recvfrom, Count: 1
+    Action: workqueue_activate_work, Count: 1
+    Action: timer_expire_exit, Count: 1
+    Action: syscall_exit_sync_file_range, Count: 1
+    Action: x86_irq_vectors_local_timer_entry, Count: 1
+    Action: mm_vmscan_lru_isolate, Count: 1
+    Action: syscall_exit_getuid, Count: 1
+    Action: timer_cancel, Count: 1
+    Action: block_rq_issue, Count: 1
+    Action: timer_hrtimer_expire_entry, Count: 1
+    Action: x86_irq_vectors_reschedule_exit, Count: 1
+    Action: syscall_exit_lseek, Count: 1
+Event Type: close
+  For long syscalls:
+  Average duration: 13922
+    Action: None, Count: 85
+    Action: x86_irq_vectors_call_function_single_entry, Count: 1
+    Action: scsi_dispatch_cmd_done, Count: 1
+    Action: sched_stat_runtime, Count: 1
+    Action: timer_hrtimer_cancel, Count: 1
+    Action: kmem_cache_alloc, Count: 1
+    Action: x86_irq_vectors_reschedule_exit, Count: 1
+    Action: power_cpu_idle, Count: 1
+    Action: syscall_exit_futex, Count: 1
+    Action: x86_irq_vectors_local_timer_exit, Count: 1
+    Action: x86_exceptions_page_fault_user, Count: 1
+Event Type: getppid
+  For short syscalls:
+  Average duration: 772
+    Action: None, Count: 7
+    Action: kmem_kmalloc, Count: 4
+    Action: kmem_cache_alloc, Count: 2
+    Action: kmem_mm_page_alloc_zone_locked, Count: 1
+    Action: kmem_mm_page_alloc, Count: 1
+    Action: x86_exceptions_page_fault_user, Count: 1
+  No long syscalls for this event type.
+Event Type: bind
+  For short syscalls:
+  Average duration: 2355
+    Action: None, Count: 3
+    Action: kmem_cache_free, Count: 1
+    Action: kmem_cache_alloc, Count: 1
+    Action: kmem_kmalloc_node, Count: 1
+  No long syscalls for this event type.
+Event Type: fcntl
+  For short syscalls:
+  Average duration: 420
+    Action: None, Count: 1300
+    Action: kmem_cache_free, Count: 13
+    Action: kmem_cache_alloc, Count: 10
+    Action: kmem_mm_page_alloc, Count: 9
+    Action: kmem_mm_page_free, Count: 9
+    Action: kmem_kmalloc, Count: 7
+    Action: kmem_kfree, Count: 7
+    Action: block_dirty_buffer, Count: 2
+    Action: kmem_mm_page_free_batched, Count: 2
+    Action: writeback_dirty_inode_start, Count: 2
+    Action: syscall_exit_sync_file_range, Count: 2
+    Action: syscall_exit_write, Count: 2
+    Action: timer_hrtimer_init, Count: 1
+    Action: syscall_exit_epoll_wait, Count: 1
+    Action: writeback_mark_inode_dirty, Count: 1
+    Action: block_rq_issue, Count: 1
+    Action: block_getrq, Count: 1
+    Action: block_rq_insert, Count: 1
+    Action: writeback_dirty_inode, Count: 1
+    Action: block_touch_buffer, Count: 1
+    Action: kmem_mm_page_alloc_zone_locked, Count: 1
+    Action: x86_exceptions_page_fault_user, Count: 1
+    Action: kmem_kmalloc_node, Count: 1
+    Action: rcu_utilization, Count: 1
+    Action: sched_wakeup, Count: 1
+    Action: power_cpu_idle, Count: 1
+Event Type: fcntl
+  For long syscalls:
+  Average duration: 39423
+    Action: None, Count: 3
+    Action: kmem_kfree, Count: 1
+    Action: timer_hrtimer_expire_exit, Count: 1
+    Action: irq_handler_exit, Count: 1
+Event Type: connect
+  For short syscalls:
+  Average duration: 4521
+    Action: kmem_cache_alloc, Count: 2
+    Action: timer_init, Count: 1
+Event Type: connect
+  For long syscalls:
+  Average duration: 21686
+    Action: kmem_cache_alloc, Count: 8
+    Action: kmem_kmalloc, Count: 3
+    Action: irq_handler_entry, Count: 1
+    Action: skb_kfree, Count: 1
+    Action: kmem_kmalloc_node, Count: 1
+    Action: x86_exceptions_page_fault_user, Count: 1
+Event Type: utimensat
+  For short syscalls:
+  Average duration: 3225
+    Action: kmem_cache_alloc, Count: 1
+    Action: block_bio_backmerge, Count: 1
+    Action: kmem_cache_free, Count: 1
+Event Type: utimensat
+  For long syscalls:
+  Average duration: 12930
+    Action: kmem_cache_alloc, Count: 2
+    Action: block_touch_buffer, Count: 1
+Event Type: getpid
+  For short syscalls:
+  Average duration: 871
+    Action: None, Count: 61
+    Action: kmem_kfree, Count: 5
+    Action: kmem_mm_page_alloc, Count: 4
+    Action: kmem_kmalloc, Count: 3
+    Action: kmem_cache_alloc, Count: 1
+    Action: kmem_mm_page_alloc_zone_locked, Count: 1
+    Action: x86_exceptions_page_fault_user, Count: 1
+    Action: block_getrq, Count: 1
+    Action: irq_softirq_exit, Count: 1
+    Action: kmem_mm_page_free, Count: 1
+Event Type: getpid
+  For long syscalls:
+  Average duration: 37635
+    Action: rcu_utilization, Count: 1
+    Action: None, Count: 1
+Event Type: dup2
+  For short syscalls:
+  Average duration: 773
+    Action: None, Count: 31
+    Action: x86_exceptions_page_fault_user, Count: 2
+    Action: rcu_utilization, Count: 2
+    Action: kmem_kmalloc, Count: 1
+    Action: block_bio_remap, Count: 1
+    Action: syscall_exit_sendmsg, Count: 1
+    Action: kmem_kmalloc_node, Count: 1
+    Action: syscall_exit_futex, Count: 1
+    Action: sched_stat_runtime, Count: 1
+  No long syscalls for this event type.
+Event Type: getpriority
+  For short syscalls:
+  Average duration: 887
+    Action: None, Count: 2
+  No long syscalls for this event type.
+Event Type: setpriority
+  For short syscalls:
+  Average duration: 2286
+    Action: None, Count: 1
+  No long syscalls for this event type.
+Event Type: fchmod
+  For short syscalls:
+  Average duration: 1609
+    Action: None, Count: 3
+    Action: kmem_mm_page_free_batched, Count: 1
+Event Type: fchmod
+  For long syscalls:
+  Average duration: 13014
+    Action: writeback_mark_inode_dirty, Count: 1
+Event Type: inotify_init1
+  For short syscalls:
+  Average duration: 2827
+    Action: kmem_kmalloc, Count: 3
+Event Type: inotify_init1
+  For long syscalls:
+  Average duration: 5322
+    Action: kmem_kmalloc, Count: 1
+Event Type: splice
+  No short syscalls for this event type.
+Event Type: splice
+  For long syscalls:
+  Average duration: 105873
+    Action: kmem_mm_page_alloc, Count: 356
+    Action: kmem_kmalloc, Count: 190
+    Action: kmem_mm_page_free, Count: 19
+    Action: kmem_cache_alloc, Count: 17
+    Action: block_dirty_buffer, Count: 16
+    Action: kmem_cache_free, Count: 15
+    Action: writeback_dirty_inode, Count: 13
+    Action: block_touch_buffer, Count: 12
+    Action: writeback_mark_inode_dirty, Count: 12
+    Action: block_rq_complete, Count: 11
+    Action: kmem_kfree, Count: 11
+    Action: irq_softirq_raise, Count: 10
+    Action: writeback_dirty_page, Count: 9
+    Action: writeback_dirty_inode_start, Count: 9
+    Action: irq_softirq_entry, Count: 8
+    Action: irq_handler_entry, Count: 7
+    Action: irq_softirq_exit, Count: 6
+    Action: kmem_mm_page_alloc_zone_locked, Count: 5
+    Action: sched_stat_runtime, Count: 5
+    Action: rcu_utilization, Count: 5
+    Action: sched_switch, Count: 4
+    Action: scsi_dispatch_cmd_done, Count: 4
+    Action: kmem_mm_page_free_batched, Count: 3
+    Action: x86_exceptions_page_fault_user, Count: 3
+    Action: block_bio_queue, Count: 3
+    Action: x86_irq_vectors_call_function_single_entry, Count: 3
+    Action: syscall_exit_read, Count: 3
+    Action: sched_wakeup, Count: 3
+    Action: irq_handler_exit, Count: 2
+    Action: block_getrq, Count: 2
+    Action: timer_hrtimer_start, Count: 2
+    Action: timer_init, Count: 2
+    Action: block_bio_remap, Count: 2
+    Action: kmem_mm_page_pcpu_drain, Count: 1
+    Action: mm_vmscan_lru_shrink_inactive, Count: 1
+    Action: syscall_exit_recvfrom, Count: 1
+    Action: block_unplug, Count: 1
+    Action: x86_irq_vectors_call_function_single_exit, Count: 1
+    Action: timer_start, Count: 1
+    Action: power_cpu_idle, Count: 1
+    Action: writeback_global_dirty_state, Count: 1
+    Action: syscall_exit_access, Count: 1
+    Action: x86_irq_vectors_local_timer_exit, Count: 1
+    Action: x86_irq_vectors_local_timer_entry, Count: 1
+    Action: timer_hrtimer_expire_exit, Count: 1
+    Action: timer_hrtimer_expire_entry, Count: 1
+    Action: block_rq_issue, Count: 1
+    Action: timer_hrtimer_cancel, Count: 1
+    Action: workqueue_queue_work, Count: 1
+Event Type: epoll_create1
+  For short syscalls:
+  Average duration: 3121
+    Action: kmem_kmalloc, Count: 3
+Event Type: epoll_create1
+  For long syscalls:
+  Average duration: 5769
+    Action: kmem_cache_alloc, Count: 1
+    Action: kmem_kmalloc, Count: 1
+Event Type: openat
+  For short syscalls:
+  Average duration: 2574
+    Action: kmem_cache_alloc, Count: 14573
+    Action: kmem_cache_free, Count: 4877
+    Action: kmem_kfree, Count: 363
+    Action: kmem_kmalloc, Count: 354
+    Action: kmem_mm_page_alloc, Count: 137
+    Action: x86_exceptions_page_fault_user, Count: 71
+    Action: kmem_mm_page_free, Count: 53
+    Action: block_touch_buffer, Count: 50
+    Action: writeback_mark_inode_dirty, Count: 35
+    Action: kmem_mm_page_free_batched, Count: 32
+    Action: block_dirty_buffer, Count: 30
+    Action: writeback_dirty_inode, Count: 30
+    Action: sched_stat_runtime, Count: 28
+    Action: sched_switch, Count: 26
+    Action: writeback_dirty_inode_start, Count: 26
+    Action: kmem_mm_page_alloc_zone_locked, Count: 23
+    Action: writeback_dirty_page, Count: 23
+    Action: rcu_utilization, Count: 21
+    Action: None, Count: 20
+    Action: syscall_exit_read, Count: 17
+    Action: sched_waking, Count: 16
+    Action: skb_consume, Count: 16
+    Action: kmem_mm_page_pcpu_drain, Count: 15
+    Action: block_rq_issue, Count: 14
+    Action: block_bio_queue, Count: 13
+    Action: timer_init, Count: 13
+    Action: kmem_kmalloc_node, Count: 11
+    Action: block_rq_insert, Count: 11
+    Action: kmem_cache_alloc_node, Count: 11
+    Action: skb_copy_datagram_iovec, Count: 10
+    Action: syscall_exit_recvmsg, Count: 10
+    Action: sched_wakeup, Count: 9
+    Action: block_bio_remap, Count: 9
+    Action: scsi_dispatch_cmd_start, Count: 8
+    Action: syscall_exit_mprotect, Count: 7
+    Action: block_unplug, Count: 7
+    Action: power_cpu_idle, Count: 7
+    Action: timer_hrtimer_cancel, Count: 7
+    Action: syscall_exit_sendmsg, Count: 7
+    Action: syscall_exit_getrandom, Count: 7
+    Action: block_plug, Count: 6
+    Action: irq_handler_entry, Count: 6
+    Action: syscall_exit_write, Count: 6
+    Action: block_bio_backmerge, Count: 6
+    Action: syscall_exit_close, Count: 6
+    Action: scsi_dispatch_cmd_done, Count: 5
+    Action: mm_vmscan_lru_isolate, Count: 5
+    Action: timer_hrtimer_init, Count: 5
+    Action: syscall_exit_epoll_wait, Count: 4
+    Action: block_getrq, Count: 4
+    Action: syscall_exit_mmap, Count: 4
+    Action: syscall_exit_splice, Count: 4
+    Action: irq_softirq_exit, Count: 4
+    Action: syscall_exit_newfstat, Count: 4
+    Action: syscall_exit_access, Count: 3
+    Action: mm_vmscan_lru_shrink_inactive, Count: 3
+    Action: irq_softirq_raise, Count: 3
+    Action: x86_exceptions_page_fault_kernel, Count: 2
+    Action: irq_handler_exit, Count: 2
+    Action: mm_vmscan_shrink_slab_start, Count: 2
+    Action: workqueue_activate_work, Count: 2
+    Action: irq_softirq_entry, Count: 2
+    Action: workqueue_queue_work, Count: 2
+    Action: syscall_exit_newlstat, Count: 2
+    Action: syscall_exit_sched_yield, Count: 2
+    Action: workqueue_execute_end, Count: 2
+    Action: block_rq_complete, Count: 2
+    Action: syscall_exit_nanosleep, Count: 2
+    Action: timer_hrtimer_expire_exit, Count: 2
+    Action: timer_hrtimer_start, Count: 2
+    Action: syscall_exit_rt_sigprocmask, Count: 1
+    Action: syscall_exit_poll, Count: 1
+    Action: syscall_exit_epoll_pwait, Count: 1
+    Action: syscall_exit_ppoll, Count: 1
+    Action: x86_irq_vectors_call_function_single_exit, Count: 1
+    Action: skb_kfree, Count: 1
+    Action: x86_irq_vectors_reschedule_entry, Count: 1
+    Action: syscall_exit_madvise, Count: 1
+    Action: syscall_exit_sync_file_range, Count: 1
+    Action: timer_hrtimer_expire_entry, Count: 1
+    Action: x86_irq_vectors_local_timer_entry, Count: 1
+    Action: timer_itimer_state, Count: 1
+    Action: syscall_exit_setitimer, Count: 1
+Event Type: openat
+  For long syscalls:
+  Average duration: 16740
+    Action: kmem_cache_alloc, Count: 2249
+    Action: kmem_cache_free, Count: 588
+    Action: kmem_kfree, Count: 194
+    Action: kmem_kmalloc, Count: 193
+    Action: block_touch_buffer, Count: 52
+    Action: kmem_mm_page_alloc, Count: 30
+    Action: irq_handler_exit, Count: 14
+    Action: rcu_utilization, Count: 14
+    Action: x86_exceptions_page_fault_user, Count: 12
+    Action: kmem_mm_page_free, Count: 12
+    Action: kmem_mm_page_alloc_zone_locked, Count: 11
+    Action: sched_switch, Count: 10
+    Action: block_rq_issue, Count: 10
+    Action: writeback_dirty_inode, Count: 10
+    Action: writeback_dirty_inode_start, Count: 9
+    Action: block_bio_queue, Count: 8
+    Action: scsi_dispatch_cmd_start, Count: 7
+    Action: sched_wakeup, Count: 7
+    Action: block_dirty_buffer, Count: 6
+    Action: writeback_mark_inode_dirty, Count: 6
+    Action: timer_start, Count: 5
+    Action: workqueue_execute_end, Count: 5
+    Action: kmem_mm_page_free_batched, Count: 5
+    Action: kmem_mm_page_pcpu_drain, Count: 4
+    Action: irq_softirq_exit, Count: 4
+    Action: sched_waking, Count: 4
+    Action: scsi_dispatch_cmd_done, Count: 4
+    Action: irq_softirq_entry, Count: 4
+    Action: irq_softirq_raise, Count: 4
+    Action: block_plug, Count: 4
+    Action: x86_irq_vectors_local_timer_exit, Count: 4
+    Action: power_cpu_idle, Count: 4
+    Action: irq_handler_entry, Count: 4
+    Action: skb_consume, Count: 3
+    Action: sched_stat_runtime, Count: 3
+    Action: writeback_dirty_page, Count: 3
+    Action: timer_hrtimer_start, Count: 3
+    Action: block_rq_insert, Count: 2
+    Action: timer_hrtimer_expire_entry, Count: 2
+    Action: block_rq_complete, Count: 2
+    Action: timer_hrtimer_expire_exit, Count: 2
+    Action: block_bio_remap, Count: 2
+    Action: workqueue_activate_work, Count: 2
+    Action: workqueue_execute_start, Count: 2
+    Action: syscall_exit_read, Count: 2
+    Action: x86_irq_vectors_reschedule_entry, Count: 2
+    Action: x86_irq_vectors_local_timer_entry, Count: 2
+    Action: block_unplug, Count: 2
+    Action: block_getrq, Count: 1
+    Action: mm_vmscan_shrink_slab_start, Count: 1
+    Action: skb_copy_datagram_iovec, Count: 1
+    Action: x86_irq_vectors_call_function_single_entry, Count: 1
+    Action: timer_init, Count: 1
+    Action: syscall_exit_newfstatat, Count: 1
+    Action: timer_cancel, Count: 1
+    Action: syscall_exit_rt_sigprocmask, Count: 1
+    Action: mm_vmscan_lru_shrink_inactive, Count: 1
+    Action: mm_vmscan_lru_isolate, Count: 1
+    Action: timer_expire_exit, Count: 1
+    Action: block_bio_backmerge, Count: 1
+    Action: workqueue_queue_work, Count: 1
+    Action: timer_hrtimer_init, Count: 1
+    Action: syscall_exit_sched_yield, Count: 1
+    Action: syscall_exit_futex, Count: 1
+    Action: kmem_kmalloc_node, Count: 1
+    Action: kmem_cache_alloc_node, Count: 1
+Event Type: dup3
+  For short syscalls:
+  Average duration: 829
+    Action: None, Count: 2
+  No long syscalls for this event type.
+Event Type: lseek
+  For short syscalls:
+  Average duration: 538
+    Action: None, Count: 328
+    Action: kmem_kmalloc, Count: 13
+    Action: kmem_kfree, Count: 6
+    Action: kmem_cache_free, Count: 6
+    Action: kmem_cache_alloc, Count: 5
+    Action: syscall_exit_openat, Count: 3
+    Action: kmem_mm_page_alloc, Count: 2
+    Action: skb_copy_datagram_iovec, Count: 1
+    Action: block_touch_buffer, Count: 1
+    Action: syscall_exit_write, Count: 1
+    Action: power_cpu_idle, Count: 1
+    Action: block_getrq, Count: 1
+    Action: timer_init, Count: 1
+    Action: sched_wakeup, Count: 1
+    Action: sched_stat_runtime, Count: 1
+    Action: irq_softirq_exit, Count: 1
+    Action: x86_exceptions_page_fault_user, Count: 1
+    Action: syscall_exit_recvmsg, Count: 1
+    Action: kmem_kmalloc_node, Count: 1
+    Action: syscall_exit_read, Count: 1
+    Action: mm_vmscan_lru_isolate, Count: 1
+    Action: syscall_exit_close, Count: 1
+Event Type: lseek
+  For long syscalls:
+  Average duration: 15210
+    Action: None, Count: 3
+Event Type: getrandom
+  For short syscalls:
+  Average duration: 940
+    Action: None, Count: 1456
+    Action: kmem_cache_alloc, Count: 48
+    Action: kmem_cache_free, Count: 36
+    Action: kmem_kfree, Count: 25
+    Action: x86_exceptions_page_fault_user, Count: 25
+    Action: kmem_mm_page_alloc, Count: 14
+    Action: kmem_kmalloc, Count: 13
+    Action: syscall_exit_openat, Count: 8
+    Action: writeback_dirty_inode, Count: 7
+    Action: syscall_exit_newfstat, Count: 7
+    Action: sched_switch, Count: 6
+    Action: kmem_mm_page_free, Count: 4
+    Action: sched_stat_runtime, Count: 4
+    Action: rcu_utilization, Count: 4
+    Action: skb_copy_datagram_iovec, Count: 4
+    Action: x86_exceptions_page_fault_kernel, Count: 3
+    Action: writeback_mark_inode_dirty, Count: 3
+    Action: sched_waking, Count: 3
+    Action: syscall_exit_epoll_wait, Count: 3
+    Action: block_touch_buffer, Count: 3
+    Action: syscall_exit_newstat, Count: 2
+    Action: block_rq_insert, Count: 2
+    Action: kmem_mm_page_free_batched, Count: 2
+    Action: block_rq_issue, Count: 2
+    Action: block_dirty_buffer, Count: 2
+    Action: kmem_cache_alloc_node, Count: 2
+    Action: syscall_exit_recvmsg, Count: 2
+    Action: syscall_exit_sendmsg, Count: 2
+    Action: scsi_dispatch_cmd_start, Count: 2
+    Action: block_bio_remap, Count: 2
+    Action: workqueue_execute_start, Count: 2
+    Action: block_getrq, Count: 2
+    Action: syscall_exit_fadvise64, Count: 2
+    Action: syscall_exit_close, Count: 2
+    Action: timer_start, Count: 1
+    Action: timer_init, Count: 1
+    Action: irq_handler_exit, Count: 1
+    Action: syscall_exit_recvfrom, Count: 1
+    Action: workqueue_queue_work, Count: 1
+    Action: skb_consume, Count: 1
+    Action: sched_process_wait, Count: 1
+    Action: workqueue_activate_work, Count: 1
+    Action: syscall_exit_sync_file_range, Count: 1
+    Action: syscall_exit_write, Count: 1
+    Action: irq_softirq_exit, Count: 1
+    Action: timer_hrtimer_init, Count: 1
+    Action: syscall_exit_read, Count: 1
+    Action: timer_hrtimer_expire_entry, Count: 1
+    Action: timer_hrtimer_start, Count: 1
+    Action: syscall_exit_munmap, Count: 1
+    Action: syscall_exit_rt_sigaction, Count: 1
+    Action: syscall_exit_readlinkat, Count: 1
+Event Type: getrandom
+  For long syscalls:
+  Average duration: 10414
+    Action: None, Count: 19
+    Action: x86_exceptions_page_fault_kernel, Count: 2
+    Action: kmem_kfree, Count: 1
+    Action: kmem_mm_page_alloc, Count: 1
+    Action: irq_handler_entry, Count: 1
+    Action: irq_softirq_entry, Count: 1
+    Action: x86_irq_vectors_local_timer_exit, Count: 1
+Event Type: sync_file_range
+  For short syscalls:
+  Average duration: 970
+    Action: None, Count: 134
+    Action: lttng_statedump_file_descriptor, Count: 15
+    Action: lttng_statedump_process_pid_ns, Count: 2
+    Action: kmem_cache_alloc, Count: 2
+    Action: kmem_cache_free, Count: 2
+    Action: lttng_statedump_process_cgroup_ns, Count: 1
+    Action: lttng_statedump_process_user_ns, Count: 1
+    Action: lttng_statedump_process_state, Count: 1
+    Action: lttng_statedump_process_ipc_ns, Count: 1
+    Action: x86_exceptions_page_fault_user, Count: 1
+    Action: kmem_mm_page_alloc, Count: 1
+    Action: sched_wakeup, Count: 1
+    Action: sched_switch, Count: 1
+    Action: rcu_utilization, Count: 1
+Event Type: sync_file_range
+  For long syscalls:
+  Average duration: 114080
+    Action: kmem_cache_alloc, Count: 208
+    Action: timer_init, Count: 17
+    Action: block_rq_issue, Count: 15
+    Action: block_bio_queue, Count: 15
+    Action: writeback_dirty_inode_start, Count: 15
+    Action: kmem_cache_free, Count: 14
+    Action: block_plug, Count: 14
+    Action: writeback_mark_inode_dirty, Count: 13
+    Action: kmem_kmalloc, Count: 12
+    Action: block_touch_buffer, Count: 12
+    Action: scsi_dispatch_cmd_start, Count: 12
+    Action: block_getrq, Count: 12
+    Action: kmem_kfree, Count: 11
+    Action: writeback_dirty_inode, Count: 11
+    Action: block_bio_remap, Count: 10
+    Action: block_unplug, Count: 9
+    Action: block_rq_insert, Count: 9
+    Action: kmem_mm_page_alloc, Count: 7
+    Action: lttng_statedump_file_descriptor, Count: 5
+    Action: None, Count: 5
+    Action: block_bio_backmerge, Count: 4
+    Action: irq_handler_exit, Count: 3
+    Action: irq_softirq_exit, Count: 3
+    Action: lttng_statedump_process_net_ns, Count: 2
+    Action: scsi_dispatch_cmd_done, Count: 2
+    Action: kmem_mm_page_free_batched, Count: 2
+    Action: irq_handler_entry, Count: 2
+    Action: x86_irq_vectors_call_function_single_entry, Count: 2
+    Action: sched_stat_runtime, Count: 2
+    Action: block_rq_complete, Count: 2
+    Action: x86_irq_vectors_local_timer_entry, Count: 2
+    Action: power_cpu_idle, Count: 2
+    Action: lttng_statedump_process_user_ns, Count: 1
+    Action: lttng_statedump_process_pid_ns, Count: 1
+    Action: lttng_statedump_process_cgroup_ns, Count: 1
+    Action: lttng_statedump_process_uts_ns, Count: 1
+    Action: irq_softirq_entry, Count: 1
+    Action: timer_hrtimer_start, Count: 1
+    Action: mm_vmscan_lru_isolate, Count: 1
+    Action: irq_softirq_raise, Count: 1
+    Action: x86_irq_vectors_call_function_single_exit, Count: 1
+    Action: sched_wakeup, Count: 1
+    Action: rcu_utilization, Count: 1
+    Action: jbd2_end_commit, Count: 1
+    Action: sched_switch, Count: 1
+    Action: timer_start, Count: 1
+    Action: timer_hrtimer_cancel, Count: 1
+Event Type: fstatfs
+  For short syscalls:
+  Average duration: 695
+    Action: None, Count: 752
+    Action: kmem_cache_free, Count: 5
+    Action: block_dirty_buffer, Count: 5
+    Action: kmem_mm_page_alloc, Count: 5
+    Action: kmem_cache_alloc, Count: 4
+    Action: block_touch_buffer, Count: 3
+    Action: kmem_kmalloc, Count: 2
+    Action: irq_handler_exit, Count: 2
+    Action: block_getrq, Count: 2
+    Action: writeback_dirty_page, Count: 2
+    Action: writeback_dirty_inode, Count: 2
+    Action: writeback_mark_inode_dirty, Count: 2
+    Action: kmem_kfree, Count: 2
+    Action: kmem_mm_page_free, Count: 2
+    Action: syscall_exit_recvmsg, Count: 1
+    Action: syscall_exit_ioctl, Count: 1
+    Action: syscall_exit_splice, Count: 1
+    Action: sched_stat_runtime, Count: 1
+Event Type: fstatfs
+  For long syscalls:
+  Average duration: 10488
+    Action: None, Count: 7
+Event Type: brk
+  For short syscalls:
+  Average duration: 1356
+    Action: None, Count: 185
+    Action: kmem_cache_alloc, Count: 27
+    Action: kmem_mm_page_alloc, Count: 6
+    Action: kmem_kmalloc, Count: 4
+    Action: x86_exceptions_page_fault_user, Count: 4
+    Action: kmem_cache_free, Count: 3
+    Action: kmem_kfree, Count: 1
+    Action: kmem_mm_page_free_batched, Count: 1
+    Action: workqueue_queue_work, Count: 1
+    Action: sched_wakeup, Count: 1
+    Action: workqueue_execute_end, Count: 1
+    Action: irq_handler_exit, Count: 1
+    Action: kmem_mm_page_free, Count: 1
+    Action: sched_migrate_task, Count: 1
+    Action: sched_stat_runtime, Count: 1
+    Action: syscall_exit_newfstat, Count: 1
+Event Type: brk
+  For long syscalls:
+  Average duration: 10766
+    Action: None, Count: 13
+    Action: kmem_cache_alloc, Count: 13
+    Action: kmem_cache_free, Count: 5
+    Action: sched_switch, Count: 1
+    Action: kmem_mm_page_free, Count: 1
+    Action: x86_exceptions_page_fault_user, Count: 1
+    Action: kmem_kmalloc, Count: 1
+Event Type: open
+  For short syscalls:
+  Average duration: 2604
+    Action: kmem_cache_alloc, Count: 840
+    Action: kmem_cache_free, Count: 296
+    Action: block_touch_buffer, Count: 4
+    Action: kmem_mm_page_alloc, Count: 2
+    Action: syscall_exit_read, Count: 1
+    Action: writeback_dirty_page, Count: 1
+    Action: writeback_mark_inode_dirty, Count: 1
+    Action: block_rq_complete, Count: 1
+    Action: timer_init, Count: 1
+    Action: writeback_dirty_inode, Count: 1
+    Action: writeback_dirty_inode_start, Count: 1
+    Action: block_dirty_buffer, Count: 1
+    Action: kmem_kmalloc, Count: 1
+    Action: rcu_utilization, Count: 1
+    Action: power_cpu_idle, Count: 1
+Event Type: open
+  For long syscalls:
+  Average duration: 28018
+    Action: kmem_cache_alloc, Count: 116
+    Action: kmem_cache_free, Count: 24
+    Action: block_touch_buffer, Count: 9
+    Action: kmem_kfree, Count: 7
+    Action: kmem_kmalloc, Count: 7
+    Action: irq_handler_exit, Count: 5
+    Action: irq_softirq_entry, Count: 5
+    Action: power_cpu_idle, Count: 2
+    Action: kmem_mm_page_alloc, Count: 2
+    Action: writeback_dirty_inode, Count: 1
+    Action: writeback_dirty_inode_start, Count: 1
+    Action: block_rq_complete, Count: 1
+    Action: block_dirty_buffer, Count: 1
+    Action: writeback_mark_inode_dirty, Count: 1
+Event Type: accept
+  For short syscalls:
+  Average duration: 3203
+    Action: kmem_mm_page_alloc, Count: 1
+Event Type: accept
+  For long syscalls:
+  Average duration: 6701
+    Action: x86_exceptions_page_fault_user, Count: 1
+Event Type: rt_sigprocmask
+  For short syscalls:
+  Average duration: 972
+    Action: None, Count: 106
+    Action: kmem_kfree, Count: 7
+    Action: kmem_cache_alloc, Count: 6
+    Action: kmem_mm_page_alloc, Count: 5
+    Action: kmem_cache_free, Count: 4
+    Action: x86_exceptions_page_fault_user, Count: 3
+    Action: kmem_kmalloc, Count: 2
+    Action: block_rq_complete, Count: 2
+    Action: kmem_mm_page_alloc_zone_locked, Count: 1
+    Action: syscall_exit_epoll_wait, Count: 1
+    Action: syscall_exit_access, Count: 1
+    Action: kmem_mm_page_free, Count: 1
+    Action: block_unplug, Count: 1
+    Action: sched_wakeup, Count: 1
+    Action: syscall_exit_futex, Count: 1
+    Action: syscall_exit_set_robust_list, Count: 1
+    Action: sched_waking, Count: 1
+Event Type: rt_sigprocmask
+  For long syscalls:
+  Average duration: 7305
+    Action: None, Count: 2
+    Action: kmem_kmalloc, Count: 1
+Event Type: recvmsg
+  For short syscalls:
+  Average duration: 1348
+    Action: kmem_kfree, Count: 2967
+    Action: skb_copy_datagram_iovec, Count: 1107
+    Action: kmem_cache_free, Count: 180
+    Action: skb_consume, Count: 156
+    Action: rcu_utilization, Count: 63
+    Action: None, Count: 55
+    Action: kmem_kmalloc, Count: 54
+    Action: kmem_kmalloc_node, Count: 53
+    Action: kmem_cache_alloc, Count: 51
+    Action: kmem_cache_alloc_node, Count: 45
+    Action: syscall_exit_sendmsg, Count: 45
+    Action: sched_switch, Count: 41
+    Action: sched_stat_runtime, Count: 35
+    Action: timer_hrtimer_cancel, Count: 30
+    Action: sched_wakeup, Count: 29
+    Action: sched_waking, Count: 26
+    Action: kmem_mm_page_alloc, Count: 22
+    Action: x86_exceptions_page_fault_user, Count: 18
+    Action: timer_hrtimer_start, Count: 13
+    Action: syscall_exit_epoll_wait, Count: 13
+    Action: timer_hrtimer_init, Count: 12
+    Action: kmem_mm_page_free, Count: 10
+    Action: x86_irq_vectors_reschedule_entry, Count: 8
+    Action: syscall_exit_newstat, Count: 8
+    Action: kmem_mm_page_free_batched, Count: 7
+    Action: syscall_exit_openat, Count: 6
+    Action: kmem_mm_page_alloc_zone_locked, Count: 5
+    Action: syscall_exit_ppoll, Count: 4
+    Action: syscall_exit_close, Count: 4
+    Action: syscall_exit_futex, Count: 3
+    Action: x86_irq_vectors_local_timer_entry, Count: 3
+    Action: syscall_exit_readlinkat, Count: 3
+    Action: block_rq_complete, Count: 3
+    Action: x86_irq_vectors_reschedule_exit, Count: 3
+    Action: irq_handler_entry, Count: 3
+    Action: syscall_exit_read, Count: 3
+    Action: syscall_exit_newfstat, Count: 3
+    Action: timer_init, Count: 2
+    Action: syscall_exit_access, Count: 2
+    Action: block_touch_buffer, Count: 2
+    Action: writeback_mark_inode_dirty, Count: 2
+    Action: block_bio_queue, Count: 2
+    Action: block_rq_insert, Count: 2
+    Action: block_rq_issue, Count: 2
+    Action: irq_softirq_entry, Count: 2
+    Action: syscall_exit_writev, Count: 2
+    Action: timer_itimer_state, Count: 2
+    Action: irq_handler_exit, Count: 2
+    Action: kmem_mm_page_pcpu_drain, Count: 1
+    Action: sched_process_fork, Count: 1
+    Action: syscall_exit_mmap, Count: 1
+    Action: syscall_exit_mprotect, Count: 1
+    Action: timer_start, Count: 1
+    Action: timer_hrtimer_expire_entry, Count: 1
+    Action: timer_hrtimer_expire_exit, Count: 1
+    Action: syscall_exit_brk, Count: 1
+    Action: syscall_exit_getrandom, Count: 1
+    Action: workqueue_execute_end, Count: 1
+    Action: irq_softirq_exit, Count: 1
+    Action: block_getrq, Count: 1
+    Action: syscall_exit_poll, Count: 1
+    Action: block_dirty_buffer, Count: 1
+    Action: writeback_dirty_inode, Count: 1
+    Action: writeback_dirty_inode_start, Count: 1
+    Action: syscall_exit_write, Count: 1
+    Action: scsi_dispatch_cmd_done, Count: 1
+    Action: syscall_exit_sched_yield, Count: 1
+    Action: power_cpu_idle, Count: 1
+Event Type: recvmsg
+  For long syscalls:
+  Average duration: 16288
+    Action: skb_copy_datagram_iovec, Count: 166
+    Action: kmem_kfree, Count: 99
+    Action: kmem_cache_free, Count: 38
+    Action: skb_consume, Count: 37
+    Action: x86_exceptions_page_fault_user, Count: 5
+    Action: kmem_kmalloc, Count: 4
+    Action: irq_softirq_entry, Count: 4
+    Action: irq_handler_exit, Count: 4
+    Action: rcu_utilization, Count: 3
+    Action: writeback_dirty_inode, Count: 2
+    Action: irq_handler_entry, Count: 2
+    Action: timer_hrtimer_cancel, Count: 2
+    Action: kmem_mm_page_free, Count: 2
+    Action: timer_hrtimer_expire_exit, Count: 1
+    Action: timer_init, Count: 1
+    Action: timer_hrtimer_start, Count: 1
+    Action: syscall_exit_openat, Count: 1
+    Action: scsi_dispatch_cmd_start, Count: 1
+    Action: block_rq_insert, Count: 1
+    Action: block_bio_remap, Count: 1
+    Action: block_bio_queue, Count: 1
+    Action: workqueue_activate_work, Count: 1
+    Action: scsi_dispatch_cmd_done, Count: 1
+    Action: writeback_dirty_page, Count: 1
+    Action: sched_wakeup, Count: 1
+    Action: x86_irq_vectors_local_timer_entry, Count: 1
+    Action: timer_hrtimer_init, Count: 1
+    Action: syscall_exit_futex, Count: 1
+    Action: sched_stat_runtime, Count: 1
+    Action: block_getrq, Count: 1
+    Action: jbd2_commit_logging, Count: 1
+    Action: kmem_cache_alloc, Count: 1
+Event Type: readlink
+  For short syscalls:
+  Average duration: 2653
+    Action: kmem_cache_alloc, Count: 65
+    Action: kmem_cache_free, Count: 13
+    Action: kmem_kfree, Count: 12
+    Action: kmem_kmalloc, Count: 8
+    Action: x86_exceptions_page_fault_user, Count: 1
+    Action: kmem_mm_page_free_batched, Count: 1
+    Action: block_rq_issue, Count: 1
+Event Type: readlink
+  For long syscalls:
+  Average duration: 9170
+    Action: kmem_cache_alloc, Count: 11
+    Action: kmem_cache_free, Count: 3
+    Action: kmem_kmalloc, Count: 3
+Event Type: access
+  For short syscalls:
+  Average duration: 3212
+    Action: kmem_cache_alloc, Count: 1269
+    Action: kmem_kmalloc, Count: 296
+    Action: kmem_cache_free, Count: 289
+    Action: kmem_kfree, Count: 264
+    Action: kmem_mm_page_alloc, Count: 19
+    Action: x86_exceptions_page_fault_user, Count: 13
+    Action: block_touch_buffer, Count: 9
+    Action: block_getrq, Count: 8
+    Action: writeback_dirty_inode_start, Count: 6
+    Action: rcu_utilization, Count: 5
+    Action: block_bio_queue, Count: 5
+    Action: kmem_mm_page_free, Count: 4
+    Action: block_rq_insert, Count: 4
+    Action: sched_stat_runtime, Count: 3
+    Action: skb_copy_datagram_iovec, Count: 3
+    Action: kmem_mm_page_alloc_zone_locked, Count: 3
+    Action: syscall_exit_read, Count: 3
+    Action: syscall_exit_mprotect, Count: 2
+    Action: block_rq_issue, Count: 2
+    Action: block_bio_remap, Count: 2
+    Action: writeback_mark_inode_dirty, Count: 2
+    Action: syscall_exit_epoll_wait, Count: 2
+    Action: sched_wakeup, Count: 2
+    Action: sched_switch, Count: 2
+    Action: block_unplug, Count: 2
+    Action: block_bio_backmerge, Count: 2
+    Action: timer_init, Count: 2
+    Action: kmem_mm_page_free_batched, Count: 1
+    Action: writeback_dirty_inode, Count: 1
+    Action: writeback_dirty_page, Count: 1
+    Action: mm_vmscan_lru_isolate, Count: 1
+    Action: scsi_dispatch_cmd_done, Count: 1
+    Action: syscall_exit_ppoll, Count: 1
+    Action: workqueue_queue_work, Count: 1
+    Action: block_rq_complete, Count: 1
+    Action: syscall_exit_close, Count: 1
+    Action: None, Count: 1
+    Action: syscall_exit_newstat, Count: 1
+    Action: scsi_dispatch_cmd_start, Count: 1
+    Action: power_cpu_idle, Count: 1
+    Action: sched_waking, Count: 1
+    Action: syscall_exit_poll, Count: 1
+Event Type: access
+  For long syscalls:
+  Average duration: 28851
+    Action: kmem_cache_alloc, Count: 482
+    Action: kmem_cache_free, Count: 107
+    Action: kmem_kmalloc, Count: 107
+    Action: kmem_kfree, Count: 106
+    Action: kmem_mm_page_alloc, Count: 9
+    Action: block_touch_buffer, Count: 7
+    Action: writeback_mark_inode_dirty, Count: 6
+    Action: sched_switch, Count: 4
+    Action: kmem_mm_page_free, Count: 4
+    Action: x86_exceptions_page_fault_user, Count: 3
+    Action: rcu_utilization, Count: 3
+    Action: irq_handler_entry, Count: 3
+    Action: writeback_dirty_inode, Count: 3
+    Action: power_cpu_idle, Count: 3
+    Action: mm_vmscan_lru_shrink_inactive, Count: 2
+    Action: kmem_mm_page_pcpu_drain, Count: 2
+    Action: sched_stat_runtime, Count: 2
+    Action: irq_handler_exit, Count: 2
+    Action: block_bio_queue, Count: 2
+    Action: sched_wakeup, Count: 2
+    Action: writeback_dirty_inode_start, Count: 2
+    Action: timer_init, Count: 1
+    Action: kmem_mm_page_free_batched, Count: 1
+    Action: timer_hrtimer_cancel, Count: 1
+    Action: block_bio_remap, Count: 1
+    Action: scsi_dispatch_cmd_done, Count: 1
+    Action: irq_softirq_raise, Count: 1
+    Action: block_getrq, Count: 1
+    Action: x86_irq_vectors_call_function_single_exit, Count: 1
+    Action: timer_hrtimer_expire_exit, Count: 1
+    Action: block_unplug, Count: 1
+    Action: block_rq_insert, Count: 1
+    Action: irq_softirq_exit, Count: 1
+    Action: kmem_mm_page_alloc_zone_locked, Count: 1
+    Action: block_bio_backmerge, Count: 1
+    Action: timer_hrtimer_init, Count: 1
+    Action: syscall_exit_futex, Count: 1
+Event Type: getdents64
+  For short syscalls:
+  Average duration: 1365
+    Action: None, Count: 223
+    Action: kmem_kmalloc, Count: 54
+    Action: kmem_kfree, Count: 18
+    Action: block_touch_buffer, Count: 12
+    Action: kmem_cache_free, Count: 3
+    Action: kmem_mm_page_pcpu_drain, Count: 2
+    Action: syscall_exit_openat, Count: 1
+    Action: kmem_cache_alloc_node, Count: 1
+    Action: sched_switch, Count: 1
+    Action: timer_hrtimer_start, Count: 1
+    Action: kmem_mm_page_free, Count: 1
+Event Type: getdents64
+  For long syscalls:
+  Average duration: 21472
+    Action: kmem_kmalloc, Count: 96
+    Action: kmem_kfree, Count: 23
+    Action: block_touch_buffer, Count: 9
+    Action: None, Count: 4
+    Action: kmem_mm_page_free_batched, Count: 3
+    Action: timer_init, Count: 1
+    Action: block_rq_insert, Count: 1
+    Action: sched_stat_runtime, Count: 1
+    Action: block_bio_queue, Count: 1
+    Action: rcu_utilization, Count: 1
+    Action: sched_switch, Count: 1
+    Action: timer_hrtimer_expire_exit, Count: 1
+    Action: power_cpu_idle, Count: 1
+    Action: kmem_mm_page_free, Count: 1
+    Action: kmem_mm_page_pcpu_drain, Count: 1
+    Action: syscall_exit_poll, Count: 1
+Event Type: mkdir
+  For short syscalls:
+  Average duration: 3346
+    Action: kmem_cache_alloc, Count: 160
+    Action: kmem_cache_free, Count: 71
+    Action: kmem_kmalloc, Count: 4
+    Action: rcu_utilization, Count: 1
+Event Type: mkdir
+  For long syscalls:
+  Average duration: 18339
+    Action: kmem_cache_alloc, Count: 81
+    Action: kmem_cache_free, Count: 15
+    Action: kmem_kmalloc, Count: 11
+    Action: timer_init, Count: 10
+    Action: kmem_mm_page_alloc, Count: 2
+    Action: kmem_mm_page_alloc_zone_locked, Count: 1
+Event Type: setxattr
+  For short syscalls:
+  Average duration: 4822
+    Action: kmem_cache_alloc, Count: 8
+    Action: kmem_kmalloc_node, Count: 3
+    Action: kmem_cache_free, Count: 1
+    Action: kmem_kmalloc, Count: 1
+Event Type: setxattr
+  For long syscalls:
+  Average duration: 6389
+    Action: kmem_cache_alloc, Count: 48
+    Action: kmem_kmalloc_node, Count: 12
+    Action: kmem_cache_free, Count: 10
+    Action: kmem_kmalloc, Count: 9
+    Action: kmem_kfree, Count: 9
+Event Type: dup
+  For short syscalls:
+  Average duration: 810
+    Action: None, Count: 5
+    Action: irq_softirq_entry, Count: 1
+  No long syscalls for this event type.
+Event Type: pipe2
+  For short syscalls:
+  Average duration: 3452
+    Action: kmem_cache_alloc, Count: 10
+    Action: kmem_kmalloc, Count: 5
+Event Type: pipe2
+  For long syscalls:
+  Average duration: 8349
+    Action: kmem_cache_alloc, Count: 10
+    Action: kmem_kmalloc, Count: 4
+    Action: kmem_mm_page_alloc_zone_locked, Count: 1
+    Action: x86_irq_vectors_reschedule_exit, Count: 1
+    Action: sched_waking, Count: 1
+Event Type: munmap
+  For short syscalls:
+  Average duration: 2570
+    Action: kmem_cache_free, Count: 528
+    Action: rcu_utilization, Count: 5
+    Action: kmem_cache_alloc, Count: 3
+    Action: x86_exceptions_page_fault_user, Count: 3
+    Action: kmem_mm_page_alloc, Count: 3
+    Action: kmem_mm_page_free_batched, Count: 2
+    Action: sched_waking, Count: 2
+    Action: block_touch_buffer, Count: 2
+    Action: workqueue_queue_work, Count: 1
+    Action: sched_stat_runtime, Count: 1
+    Action: kmem_mm_page_free, Count: 1
+    Action: syscall_exit_poll, Count: 1
+    Action: writeback_mark_inode_dirty, Count: 1
+    Action: writeback_dirty_inode, Count: 1
+    Action: syscall_exit_mprotect, Count: 1
+    Action: sched_wakeup, Count: 1
+    Action: timer_hrtimer_expire_entry, Count: 1
+    Action: syscall_exit_sched_yield, Count: 1
+    Action: sched_switch, Count: 1
+    Action: syscall_exit_futex, Count: 1
+    Action: kmem_kmalloc_node, Count: 1
+Event Type: munmap
+  For long syscalls:
+  Average duration: 20464
+    Action: kmem_cache_free, Count: 68
+    Action: kmem_mm_page_alloc, Count: 44
+    Action: kmem_mm_page_free, Count: 12
+    Action: kmem_cache_alloc, Count: 6
+    Action: rcu_utilization, Count: 3
+    Action: kmem_mm_page_free_batched, Count: 2
+    Action: sched_waking, Count: 2
+    Action: kmem_kfree, Count: 1
+    Action: irq_softirq_entry, Count: 1
+    Action: block_bio_queue, Count: 1
+    Action: skb_consume, Count: 1
+    Action: syscall_exit_recvmsg, Count: 1
+    Action: timer_hrtimer_expire_exit, Count: 1
+    Action: irq_softirq_exit, Count: 1
+    Action: sched_switch, Count: 1
+    Action: x86_irq_vectors_local_timer_exit, Count: 1
+    Action: sched_wakeup, Count: 1
+    Action: kmem_kmalloc_node, Count: 1
+Event Type: pipe
+  No short syscalls for this event type.
+Event Type: pipe
+  For long syscalls:
+  Average duration: 7225
+    Action: kmem_cache_alloc, Count: 1
+Event Type: kill
+  For short syscalls:
+  Average duration: 1569
+    Action: None, Count: 33
+Event Type: kill
+  For long syscalls:
+  Average duration: 30541
+    Action: None, Count: 1
+    Action: kmem_cache_alloc, Count: 1
+Event Type: poll
+  For short syscalls:
+  Average duration: 1700
+    Action: None, Count: 480
+    Action: kmem_kfree, Count: 24
+    Action: kmem_kmalloc, Count: 16
+    Action: kmem_cache_free, Count: 11
+    Action: rcu_utilization, Count: 11
+    Action: kmem_mm_page_alloc, Count: 10
+    Action: x86_exceptions_page_fault_user, Count: 8
+    Action: kmem_cache_alloc, Count: 7
+    Action: sched_switch, Count: 7
+    Action: sched_wakeup, Count: 6
+    Action: sched_stat_runtime, Count: 4
+    Action: sched_waking, Count: 4
+    Action: block_getrq, Count: 3
+    Action: syscall_exit_mmap, Count: 2
+    Action: irq_handler_entry, Count: 2
+    Action: power_cpu_idle, Count: 2
+    Action: kmem_mm_page_free, Count: 2
+    Action: block_rq_issue, Count: 2
+    Action: x86_irq_vectors_reschedule_entry, Count: 2
+    Action: kmem_mm_page_alloc_zone_locked, Count: 2
+    Action: syscall_exit_recvmsg, Count: 1
+    Action: syscall_exit_read, Count: 1
+    Action: block_touch_buffer, Count: 1
+    Action: kmem_kmalloc_node, Count: 1
+    Action: workqueue_execute_end, Count: 1
+    Action: block_bio_remap, Count: 1
+    Action: block_rq_complete, Count: 1
+    Action: skb_consume, Count: 1
+    Action: mm_vmscan_lru_shrink_inactive, Count: 1
+    Action: x86_irq_vectors_reschedule_exit, Count: 1
+    Action: block_dirty_buffer, Count: 1
+    Action: kmem_mm_page_free_batched, Count: 1
+    Action: x86_irq_vectors_local_timer_exit, Count: 1
+    Action: timer_hrtimer_cancel, Count: 1
+    Action: timer_init, Count: 1
+    Action: syscall_exit_sched_yield, Count: 1
+    Action: writeback_mark_inode_dirty, Count: 1
+    Action: syscall_exit_nanosleep, Count: 1
+    Action: timer_hrtimer_expire_exit, Count: 1
+    Action: syscall_exit_epoll_pwait, Count: 1
+    Action: timer_cancel, Count: 1
+    Action: syscall_exit_newfstat, Count: 1
+    Action: syscall_exit_openat, Count: 1
+Event Type: poll
+  For long syscalls:
+  Average duration: 41740
+    Action: None, Count: 71
+    Action: rcu_utilization, Count: 20
+    Action: sched_switch, Count: 8
+    Action: sched_stat_runtime, Count: 7
+    Action: kmem_cache_alloc, Count: 7
+    Action: kmem_mm_page_alloc, Count: 5
+    Action: irq_handler_exit, Count: 4
+    Action: kmem_cache_free, Count: 3
+    Action: timer_hrtimer_init, Count: 3
+    Action: block_bio_queue, Count: 3
+    Action: kmem_kfree, Count: 3
+    Action: kmem_mm_page_free, Count: 2
+    Action: irq_handler_entry, Count: 2
+    Action: timer_hrtimer_start, Count: 2
+    Action: net_napi_gro_receive_exit, Count: 1
+    Action: sched_waking, Count: 1
+    Action: irq_softirq_raise, Count: 1
+    Action: writeback_dirty_inode_start, Count: 1
+    Action: power_cpu_idle, Count: 1
+    Action: kmem_mm_page_alloc_zone_locked, Count: 1
+    Action: syscall_exit_epoll_wait, Count: 1
+    Action: writeback_dirty_page, Count: 1
+    Action: irq_softirq_entry, Count: 1
+    Action: scsi_dispatch_cmd_start, Count: 1
+    Action: syscall_exit_recvmsg, Count: 1
+    Action: writeback_mark_inode_dirty, Count: 1
+    Action: scsi_dispatch_cmd_done, Count: 1
+    Action: syscall_exit_futex, Count: 1
+    Action: block_rq_issue, Count: 1
+    Action: x86_irq_vectors_reschedule_entry, Count: 1
+    Action: skb_consume, Count: 1
+Event Type: prlimit64
+  For short syscalls:
+  Average duration: 809
+    Action: None, Count: 69
+    Action: kmem_kfree, Count: 1
+    Action: kmem_mm_page_free_batched, Count: 1
+    Action: block_rq_complete, Count: 1
+    Action: sched_wakeup, Count: 1
+Event Type: prlimit64
+  For long syscalls:
+  Average duration: 7598
+    Action: None, Count: 3
+Event Type: renameat
+  No short syscalls for this event type.
+Event Type: renameat
+  For long syscalls:
+  Average duration: 79661
+    Action: kmem_cache_alloc, Count: 43
+    Action: block_touch_buffer, Count: 4
+    Action: timer_start, Count: 4
+    Action: writeback_dirty_inode_start, Count: 4
+    Action: writeback_mark_inode_dirty, Count: 3
+    Action: kmem_kmalloc, Count: 2
+    Action: kmem_mm_page_free, Count: 2
+    Action: writeback_dirty_inode, Count: 2
+    Action: kmem_cache_free, Count: 1
+    Action: power_cpu_idle, Count: 1
+    Action: kmem_mm_page_free_batched, Count: 1
+    Action: kmem_kfree, Count: 1
+Event Type: bpf
+  For short syscalls:
+  Average duration: 1556
+    Action: None, Count: 89
+    Action: kmem_kmalloc, Count: 9
+    Action: kmem_kfree, Count: 3
+    Action: kmem_cache_alloc, Count: 2
+    Action: kmem_kmalloc_node, Count: 1
+Event Type: bpf
+  For long syscalls:
+  Average duration: 253617
+    Action: kmem_kmalloc, Count: 4
+    Action: None, Count: 3
+    Action: kmem_kmalloc_node, Count: 3
+    Action: kmem_kfree, Count: 1
+Event Type: madvise
+  For short syscalls:
+  Average duration: 2103
+    Action: None, Count: 313
+    Action: kmem_kmalloc_node, Count: 21
+    Action: kmem_mm_page_free, Count: 19
+    Action: kmem_mm_page_free_batched, Count: 14
+    Action: kmem_kfree, Count: 11
+    Action: rcu_utilization, Count: 10
+    Action: kmem_cache_free, Count: 10
+    Action: kmem_cache_alloc, Count: 8
+    Action: sched_switch, Count: 8
+    Action: kmem_mm_page_alloc, Count: 5
+    Action: kmem_kmalloc, Count: 5
+    Action: sched_wakeup, Count: 4
+    Action: power_cpu_idle, Count: 4
+    Action: block_touch_buffer, Count: 3
+    Action: sched_stat_runtime, Count: 3
+    Action: x86_irq_vectors_reschedule_entry, Count: 3
+    Action: syscall_exit_read, Count: 2
+    Action: sched_waking, Count: 2
+    Action: block_bio_queue, Count: 2
+    Action: scsi_dispatch_cmd_error, Count: 1
+    Action: workqueue_execute_end, Count: 1
+    Action: block_rq_insert, Count: 1
+    Action: writeback_mark_inode_dirty, Count: 1
+    Action: x86_irq_vectors_local_timer_exit, Count: 1
+    Action: x86_exceptions_page_fault_user, Count: 1
+    Action: syscall_exit_munmap, Count: 1
+    Action: syscall_exit_epoll_wait, Count: 1
+    Action: irq_softirq_entry, Count: 1
+    Action: timer_hrtimer_expire_entry, Count: 1
+    Action: scsi_dispatch_cmd_start, Count: 1
+    Action: timer_cancel, Count: 1
+    Action: x86_irq_vectors_reschedule_exit, Count: 1
+    Action: irq_softirq_exit, Count: 1
+    Action: writeback_dirty_inode_start, Count: 1
+    Action: timer_hrtimer_cancel, Count: 1
+    Action: kmem_mm_page_pcpu_drain, Count: 1
+    Action: mm_vmscan_lru_shrink_inactive, Count: 1
+    Action: syscall_exit_rt_sigprocmask, Count: 1
+    Action: syscall_exit_readlinkat, Count: 1
+    Action: syscall_exit_futex, Count: 1
+    Action: timer_hrtimer_expire_exit, Count: 1
+Event Type: madvise
+  For long syscalls:
+  Average duration: 35499
+    Action: kmem_kmalloc_node, Count: 83
+    Action: None, Count: 54
+    Action: kmem_kfree, Count: 18
+    Action: kmem_mm_page_alloc, Count: 14
+    Action: kmem_mm_page_free, Count: 7
+    Action: rcu_utilization, Count: 7
+    Action: x86_irq_vectors_call_function_single_entry, Count: 5
+    Action: sched_wakeup, Count: 4
+    Action: x86_irq_vectors_call_function_single_exit, Count: 4
+    Action: kmem_cache_free, Count: 4
+    Action: sched_stat_runtime, Count: 4
+    Action: timer_hrtimer_start, Count: 3
+    Action: x86_irq_vectors_local_timer_entry, Count: 3
+    Action: sched_switch, Count: 3
+    Action: timer_hrtimer_cancel, Count: 2
+    Action: block_rq_issue, Count: 2
+    Action: writeback_dirty_inode, Count: 2
+    Action: block_touch_buffer, Count: 2
+    Action: kmem_kmalloc, Count: 2
+    Action: kmem_mm_page_free_batched, Count: 2
+    Action: power_cpu_idle, Count: 2
+    Action: x86_exceptions_page_fault_user, Count: 1
+    Action: writeback_mark_inode_dirty, Count: 1
+    Action: writeback_dirty_page, Count: 1
+    Action: block_dirty_buffer, Count: 1
+    Action: irq_handler_entry, Count: 1
+    Action: x86_irq_vectors_reschedule_entry, Count: 1
+    Action: sched_waking, Count: 1
+    Action: timer_hrtimer_expire_entry, Count: 1
+    Action: block_bio_remap, Count: 1
+    Action: workqueue_execute_end, Count: 1
+    Action: timer_init, Count: 1
+    Action: scsi_dispatch_cmd_done, Count: 1
+    Action: irq_softirq_raise, Count: 1
+    Action: kmem_mm_page_pcpu_drain, Count: 1
+    Action: x86_irq_vectors_reschedule_exit, Count: 1
+    Action: syscall_exit_poll, Count: 1
+    Action: block_getrq, Count: 1
+Event Type: rt_sigaction
+  For short syscalls:
+  Average duration: 333
+    Action: None, Count: 971
+    Action: kmem_cache_alloc, Count: 6
+    Action: x86_exceptions_page_fault_user, Count: 5
+    Action: kmem_cache_free, Count: 5
+    Action: rcu_utilization, Count: 5
+    Action: power_cpu_idle, Count: 5
+    Action: kmem_kfree, Count: 4
+    Action: kmem_mm_page_alloc_zone_locked, Count: 4
+    Action: kmem_mm_page_alloc, Count: 4
+    Action: sched_stat_runtime, Count: 4
+    Action: sched_switch, Count: 3
+    Action: timer_hrtimer_cancel, Count: 3
+    Action: x86_irq_vectors_local_timer_exit, Count: 3
+    Action: kmem_kmalloc, Count: 2
+    Action: kmem_mm_page_free, Count: 2
+    Action: timer_hrtimer_expire_entry, Count: 2
+    Action: timer_hrtimer_start, Count: 2
+    Action: syscall_exit_newfstat, Count: 2
+    Action: kmem_kmalloc_node, Count: 2
+    Action: syscall_exit_mprotect, Count: 1
+    Action: writeback_mark_inode_dirty, Count: 1
+    Action: x86_irq_vectors_local_timer_entry, Count: 1
+    Action: irq_softirq_raise, Count: 1
+    Action: block_getrq, Count: 1
+    Action: block_plug, Count: 1
+    Action: syscall_exit_openat, Count: 1
+    Action: timer_hrtimer_expire_exit, Count: 1
+    Action: irq_handler_entry, Count: 1
+    Action: syscall_exit_futex, Count: 1
+    Action: sched_waking, Count: 1
+    Action: syscall_exit_getrandom, Count: 1
+Event Type: rt_sigaction
+  For long syscalls:
+  Average duration: 27210
+    Action: None, Count: 6
+    Action: x86_irq_vectors_local_timer_entry, Count: 3
+    Action: kmem_kfree, Count: 1
+Event Type: getsockopt
+  For short syscalls:
+  Average duration: 1339
+    Action: None, Count: 30
+    Action: kmem_kfree, Count: 2
+    Action: x86_exceptions_page_fault_user, Count: 1
+    Action: irq_softirq_exit, Count: 1
+    Action: skb_copy_datagram_iovec, Count: 1
+    Action: kmem_kmalloc, Count: 1
+Event Type: getsockopt
+  For long syscalls:
+  Average duration: 8568
+    Action: None, Count: 1
+Event Type: socket
+  For short syscalls:
+  Average duration: 3146
+    Action: kmem_cache_alloc, Count: 3
+    Action: timer_init, Count: 2
+    Action: kmem_kmalloc, Count: 2
+Event Type: socket
+  For long syscalls:
+  Average duration: 15711
+    Action: kmem_cache_alloc, Count: 9
+    Action: timer_init, Count: 4
+    Action: kmem_kmalloc, Count: 2
+    Action: kmem_cache_free, Count: 1
+    Action: x86_exceptions_page_fault_user, Count: 1
+Event Type: mmap
+  For short syscalls:
+  Average duration: 2688
+    Action: kmem_cache_alloc, Count: 953
+    Action: kmem_cache_free, Count: 242
+    Action: None, Count: 81
+    Action: x86_exceptions_page_fault_user, Count: 38
+    Action: kmem_kmalloc, Count: 36
+    Action: kmem_mm_page_alloc, Count: 23
+    Action: kmem_kfree, Count: 22
+    Action: sched_switch, Count: 6
+    Action: rcu_utilization, Count: 6
+    Action: sched_stat_runtime, Count: 5
+    Action: writeback_mark_inode_dirty, Count: 5
+    Action: syscall_exit_sched_yield, Count: 4
+    Action: block_bio_remap, Count: 3
+    Action: irq_softirq_raise, Count: 3
+    Action: kmem_mm_page_alloc_zone_locked, Count: 2
+    Action: kmem_mm_page_pcpu_drain, Count: 2
+    Action: block_bio_queue, Count: 2
+    Action: block_getrq, Count: 2
+    Action: writeback_dirty_page, Count: 2
+    Action: writeback_dirty_inode_start, Count: 2
+    Action: scsi_dispatch_cmd_start, Count: 2
+    Action: block_touch_buffer, Count: 2
+    Action: timer_init, Count: 2
+    Action: sched_waking, Count: 2
+    Action: kmem_kmalloc_node, Count: 2
+    Action: irq_handler_exit, Count: 2
+    Action: power_cpu_idle, Count: 2
+    Action: sched_wakeup, Count: 1
+    Action: syscall_exit_poll, Count: 1
+    Action: writeback_dirty_inode, Count: 1
+    Action: x86_exceptions_page_fault_kernel, Count: 1
+    Action: syscall_exit_statfs, Count: 1
+    Action: block_unplug, Count: 1
+    Action: block_rq_insert, Count: 1
+    Action: syscall_exit_close, Count: 1
+    Action: timer_hrtimer_init, Count: 1
+    Action: syscall_exit_mprotect, Count: 1
+    Action: x86_irq_vectors_local_timer_entry, Count: 1
+    Action: jbd2_commit_logging, Count: 1
+    Action: scsi_dispatch_cmd_done, Count: 1
+    Action: timer_hrtimer_start, Count: 1
+    Action: block_bio_backmerge, Count: 1
+    Action: timer_hrtimer_expire_exit, Count: 1
+    Action: irq_softirq_entry, Count: 1
+Event Type: mmap
+  For long syscalls:
+  Average duration: 12627
+    Action: kmem_cache_alloc, Count: 167
+    Action: kmem_cache_free, Count: 44
+    Action: writeback_mark_inode_dirty, Count: 11
+    Action: writeback_dirty_inode, Count: 7
+    Action: None, Count: 6
+    Action: block_touch_buffer, Count: 6
+    Action: writeback_dirty_inode_start, Count: 5
+    Action: kmem_mm_page_alloc, Count: 4
+    Action: rcu_utilization, Count: 3
+    Action: kmem_kmalloc, Count: 2
+    Action: irq_handler_exit, Count: 2
+    Action: sched_switch, Count: 2
+    Action: kmem_kfree, Count: 2
+    Action: x86_exceptions_page_fault_user, Count: 1
+    Action: block_bio_remap, Count: 1
+    Action: block_unplug, Count: 1
+    Action: kmem_kmalloc_node, Count: 1
+    Action: x86_irq_vectors_reschedule_entry, Count: 1
+    Action: sched_waking, Count: 1
+    Action: syscall_exit_write, Count: 1
+    Action: block_bio_queue, Count: 1
+    Action: workqueue_execute_end, Count: 1
+    Action: syscall_exit_read, Count: 1
+    Action: timer_cancel, Count: 1
+    Action: timer_hrtimer_cancel, Count: 1
+    Action: x86_irq_vectors_local_timer_entry, Count: 1
+    Action: timer_hrtimer_expire_entry, Count: 1
+    Action: irq_softirq_entry, Count: 1
+Event Type: sched_yield
+  For short syscalls:
+  Average duration: 968
+    Action: sched_stat_runtime, Count: 2761
+    Action: rcu_utilization, Count: 1508
+    Action: sched_switch, Count: 67
+    Action: x86_exceptions_page_fault_user, Count: 27
+    Action: kmem_cache_alloc, Count: 11
+    Action: None, Count: 10
+    Action: kmem_cache_free, Count: 8
+    Action: block_getrq, Count: 2
+    Action: sched_wakeup, Count: 2
+    Action: timer_hrtimer_start, Count: 2
+    Action: irq_softirq_raise, Count: 2
+    Action: syscall_exit_close, Count: 2
+    Action: x86_irq_vectors_reschedule_exit, Count: 2
+    Action: sched_waking, Count: 2
+    Action: syscall_exit_openat, Count: 2
+    Action: timer_hrtimer_cancel, Count: 2
+    Action: irq_handler_exit, Count: 1
+    Action: syscall_exit_getrandom, Count: 1
+    Action: syscall_exit_newfstat, Count: 1
+    Action: kmem_kfree, Count: 1
+    Action: timer_hrtimer_expire_exit, Count: 1
+    Action: workqueue_execute_start, Count: 1
+    Action: syscall_exit_recvmsg, Count: 1
+    Action: kmem_mm_page_alloc, Count: 1
+    Action: x86_irq_vectors_reschedule_entry, Count: 1
+    Action: syscall_exit_futex, Count: 1
+    Action: syscall_exit_mmap, Count: 1
+    Action: kmem_kmalloc_node, Count: 1
+    Action: writeback_dirty_page, Count: 1
+    Action: timer_expire_exit, Count: 1
+Event Type: sched_yield
+  For long syscalls:
+  Average duration: 17578
+    Action: rcu_utilization, Count: 16
+    Action: sched_stat_runtime, Count: 16
+    Action: sched_switch, Count: 3
+    Action: block_getrq, Count: 1
+    Action: kmem_mm_page_alloc, Count: 1
+    Action: block_rq_complete, Count: 1
+    Action: kmem_cache_free, Count: 1
+Event Type: read
+  For short syscalls:
+  Average duration: 1275
+    Action: None, Count: 6591
+    Action: kmem_kmalloc_node, Count: 1621
+    Action: kmem_kmalloc, Count: 257
+    Action: kmem_kfree, Count: 203
+    Action: kmem_cache_alloc, Count: 167
+    Action: writeback_mark_inode_dirty, Count: 155
+    Action: x86_exceptions_page_fault_kernel, Count: 148
+    Action: kmem_cache_free, Count: 136
+    Action: kmem_mm_page_alloc, Count: 130
+    Action: x86_exceptions_page_fault_user, Count: 49
+    Action: writeback_dirty_inode, Count: 41
+    Action: writeback_dirty_inode_start, Count: 40
+    Action: kmem_mm_page_free, Count: 30
+    Action: rcu_utilization, Count: 26
+    Action: block_touch_buffer, Count: 22
+    Action: kmem_mm_page_alloc_zone_locked, Count: 22
+    Action: sched_stat_runtime, Count: 20
+    Action: syscall_exit_close, Count: 17
+    Action: irq_handler_exit, Count: 14
+    Action: sched_wakeup, Count: 12
+    Action: kmem_mm_page_free_batched, Count: 12
+    Action: syscall_exit_openat, Count: 10
+    Action: sched_switch, Count: 10
+    Action: block_bio_remap, Count: 9
+    Action: timer_init, Count: 9
+    Action: kmem_cache_alloc_node, Count: 9
+    Action: skb_consume, Count: 9
+    Action: skb_copy_datagram_iovec, Count: 9
+    Action: syscall_exit_newfstat, Count: 9
+    Action: sched_waking, Count: 8
+    Action: syscall_exit_newstat, Count: 8
+    Action: kmem_mm_page_pcpu_drain, Count: 7
+    Action: block_dirty_buffer, Count: 7
+    Action: block_rq_insert, Count: 7
+    Action: scsi_dispatch_cmd_start, Count: 7
+    Action: block_plug, Count: 6
+    Action: block_bio_queue, Count: 6
+    Action: block_rq_complete, Count: 6
+    Action: workqueue_execute_end, Count: 5
+    Action: power_cpu_idle, Count: 5
+    Action: syscall_exit_recvmsg, Count: 5
+    Action: irq_softirq_raise, Count: 5
+    Action: block_getrq, Count: 4
+    Action: x86_irq_vectors_reschedule_entry, Count: 4
+    Action: syscall_exit_epoll_wait, Count: 4
+    Action: irq_softirq_entry, Count: 4
+    Action: workqueue_execute_start, Count: 4
+    Action: irq_softirq_exit, Count: 4
+    Action: block_rq_issue, Count: 4
+    Action: syscall_exit_write, Count: 4
+    Action: x86_irq_vectors_local_timer_exit, Count: 4
+    Action: timer_hrtimer_init, Count: 4
+    Action: syscall_exit_getrandom, Count: 4
+    Action: writeback_dirty_page, Count: 3
+    Action: syscall_exit_splice, Count: 3
+    Action: syscall_exit_readlinkat, Count: 3
+    Action: irq_handler_entry, Count: 3
+    Action: syscall_exit_access, Count: 3
+    Action: syscall_exit_futex, Count: 2
+    Action: syscall_exit_ioctl, Count: 2
+    Action: syscall_exit_mmap, Count: 2
+    Action: syscall_exit_sync_file_range, Count: 2
+    Action: scsi_dispatch_cmd_done, Count: 2
+    Action: scsi_dispatch_cmd_error, Count: 2
+    Action: workqueue_activate_work, Count: 2
+    Action: timer_hrtimer_expire_entry, Count: 2
+    Action: mm_vmscan_lru_isolate, Count: 2
+    Action: block_unplug, Count: 2
+    Action: syscall_exit_poll, Count: 2
+    Action: x86_irq_vectors_reschedule_exit, Count: 2
+    Action: x86_irq_vectors_local_timer_entry, Count: 2
+    Action: timer_hrtimer_start, Count: 2
+    Action: timer_hrtimer_cancel, Count: 2
+    Action: syscall_exit_madvise, Count: 2
+    Action: syscall_exit_brk, Count: 1
+    Action: syscall_exit_getpid, Count: 1
+    Action: syscall_exit_mprotect, Count: 1
+    Action: syscall_exit_execve, Count: 1
+    Action: workqueue_queue_work, Count: 1
+    Action: timer_cancel, Count: 1
+    Action: syscall_exit_sendmsg, Count: 1
+    Action: mm_vmscan_lru_shrink_inactive, Count: 1
+    Action: syscall_exit_nanosleep, Count: 1
+    Action: jbd2_end_commit, Count: 1
+    Action: timer_hrtimer_expire_exit, Count: 1
+    Action: timer_expire_entry, Count: 1
+    Action: syscall_exit_getuid, Count: 1
+    Action: block_bio_backmerge, Count: 1
+    Action: module_get, Count: 1
+    Action: syscall_exit_getdents, Count: 1
+Event Type: read
+  For long syscalls:
+  Average duration: 147022
+    Action: kmem_kmalloc_node, Count: 404
+    Action: None, Count: 350
+    Action: kmem_mm_page_alloc, Count: 225
+    Action: kmem_kmalloc, Count: 199
+    Action: kmem_kfree, Count: 104
+    Action: writeback_mark_inode_dirty, Count: 46
+    Action: kmem_cache_free, Count: 43
+    Action: kmem_cache_alloc, Count: 28
+    Action: rcu_utilization, Count: 27
+    Action: kmem_mm_page_free, Count: 24
+    Action: writeback_dirty_inode_start, Count: 21
+    Action: sched_stat_runtime, Count: 19
+    Action: irq_handler_entry, Count: 19
+    Action: scsi_dispatch_cmd_done, Count: 18
+    Action: kmem_mm_page_pcpu_drain, Count: 17
+    Action: writeback_dirty_inode, Count: 16
+    Action: block_bio_remap, Count: 16
+    Action: x86_exceptions_page_fault_user, Count: 15
+    Action: block_getrq, Count: 15
+    Action: block_plug, Count: 15
+    Action: sched_switch, Count: 12
+    Action: block_rq_insert, Count: 12
+    Action: irq_handler_exit, Count: 12
+    Action: block_rq_issue, Count: 11
+    Action: scsi_dispatch_cmd_start, Count: 11
+    Action: block_rq_complete, Count: 11
+    Action: sched_wakeup, Count: 10
+    Action: irq_softirq_raise, Count: 10
+    Action: timer_init, Count: 10
+    Action: block_unplug, Count: 9
+    Action: power_cpu_idle, Count: 9
+    Action: irq_softirq_entry, Count: 9
+    Action: mm_vmscan_lru_isolate, Count: 9
+    Action: block_bio_queue, Count: 8
+    Action: skb_copy_datagram_iovec, Count: 7
+    Action: irq_softirq_exit, Count: 7
+    Action: sched_waking, Count: 7
+    Action: kmem_mm_page_free_batched, Count: 7
+    Action: block_touch_buffer, Count: 6
+    Action: mm_vmscan_lru_shrink_inactive, Count: 6
+    Action: x86_exceptions_page_fault_kernel, Count: 4
+    Action: timer_hrtimer_start, Count: 4
+    Action: workqueue_execute_end, Count: 4
+    Action: x86_irq_vectors_call_function_single_exit, Count: 3
+    Action: skb_consume, Count: 3
+    Action: x86_irq_vectors_call_function_single_entry, Count: 3
+    Action: x86_irq_vectors_local_timer_exit, Count: 3
+    Action: kmem_mm_page_alloc_zone_locked, Count: 2
+    Action: timer_expire_entry, Count: 2
+    Action: timer_start, Count: 2
+    Action: x86_irq_vectors_local_timer_entry, Count: 2
+    Action: workqueue_queue_work, Count: 2
+    Action: writeback_dirty_page, Count: 2
+    Action: x86_irq_vectors_reschedule_entry, Count: 2
+    Action: timer_hrtimer_expire_exit, Count: 2
+    Action: timer_hrtimer_cancel, Count: 2
+    Action: kmem_cache_alloc_node, Count: 1
+    Action: block_dirty_buffer, Count: 1
+    Action: workqueue_execute_start, Count: 1
+    Action: syscall_exit_close, Count: 1
+    Action: syscall_exit_epoll_wait, Count: 1
+Event Type: getegid
+  For short syscalls:
+  Average duration: 361
+    Action: None, Count: 19
+  No long syscalls for this event type.
+Event Type: umask
+  For short syscalls:
+  Average duration: 843
+    Action: None, Count: 19
+    Action: kmem_mm_page_alloc, Count: 2
+    Action: sched_switch, Count: 1
+    Action: kmem_cache_alloc, Count: 1
+  No long syscalls for this event type.
+Event Type: kcmp
+  For short syscalls:
+  Average duration: 366
+    Action: None, Count: 12558
+    Action: kmem_cache_alloc, Count: 12
+    Action: x86_exceptions_page_fault_user, Count: 4
+    Action: kmem_mm_page_alloc, Count: 4
+    Action: x86_exceptions_page_fault_kernel, Count: 2
+    Action: kmem_cache_free, Count: 2
+    Action: syscall_exit_openat, Count: 2
+    Action: kmem_kfree, Count: 2
+    Action: syscall_exit_access, Count: 1
+    Action: kmem_kmalloc, Count: 1
+    Action: syscall_exit_newfstat, Count: 1
+    Action: syscall_exit_mmap, Count: 1
+Event Type: kcmp
+  For long syscalls:
+  Average duration: 76883
+    Action: x86_irq_vectors_local_timer_entry, Count: 1
+    Action: None, Count: 1
+Event Type: getuid
+  For short syscalls:
+  Average duration: 460
+    Action: None, Count: 867
+    Action: kmem_cache_free, Count: 19
+    Action: kmem_cache_alloc, Count: 8
+    Action: kmem_kfree, Count: 5
+    Action: kmem_mm_page_alloc, Count: 5
+    Action: kmem_mm_page_free_batched, Count: 4
+    Action: block_bio_queue, Count: 3
+    Action: block_bio_remap, Count: 3
+    Action: x86_exceptions_page_fault_user, Count: 2
+    Action: block_rq_insert, Count: 2
+    Action: sched_wakeup, Count: 2
+    Action: rcu_utilization, Count: 2
+    Action: kmem_kmalloc, Count: 1
+    Action: kmem_cache_alloc_node, Count: 1
+    Action: syscall_exit_read, Count: 1
+    Action: skb_copy_datagram_iovec, Count: 1
+    Action: sched_waking, Count: 1
+    Action: writeback_global_dirty_state, Count: 1
+    Action: syscall_exit_close, Count: 1
+    Action: kmem_mm_page_alloc_zone_locked, Count: 1
+    Action: kmem_mm_page_free, Count: 1
+    Action: kmem_mm_page_pcpu_drain, Count: 1
+    Action: power_cpu_idle, Count: 1
+    Action: sched_stat_runtime, Count: 1
+    Action: workqueue_execute_start, Count: 1
+    Action: syscall_exit_futex, Count: 1
+    Action: irq_handler_exit, Count: 1
+    Action: sched_switch, Count: 1
+    Action: writeback_mark_inode_dirty, Count: 1
+Event Type: getuid
+  For long syscalls:
+  Average duration: 17608
+    Action: None, Count: 8
+    Action: sched_wakeup, Count: 1
+    Action: irq_handler_entry, Count: 1
+Event Type: rmdir
+  For short syscalls:
+  Average duration: 2911
+    Action: kmem_cache_alloc, Count: 3
+    Action: kmem_kmalloc, Count: 1
+Event Type: rmdir
+  For long syscalls:
+  Average duration: 6509
+    Action: kmem_cache_alloc, Count: 1
+Event Type: newlstat
+  For short syscalls:
+  Average duration: 1728
+    Action: kmem_cache_alloc, Count: 768
+    Action: kmem_cache_free, Count: 290
+    Action: block_touch_buffer, Count: 8
+    Action: kmem_mm_page_free, Count: 8
+    Action: kmem_kfree, Count: 6
+    Action: x86_exceptions_page_fault_user, Count: 4
+    Action: kmem_mm_page_alloc, Count: 2
+    Action: sched_stat_runtime, Count: 2
+    Action: kmem_kmalloc, Count: 2
+    Action: syscall_exit_poll, Count: 2
+    Action: kmem_mm_page_free_batched, Count: 2
+    Action: kmem_mm_page_pcpu_drain, Count: 2
+    Action: block_bio_backmerge, Count: 1
+    Action: syscall_exit_close, Count: 1
+    Action: scsi_dispatch_cmd_start, Count: 1
+    Action: sched_switch, Count: 1
+    Action: block_dirty_buffer, Count: 1
+    Action: writeback_dirty_inode, Count: 1
+    Action: sched_wakeup, Count: 1
+    Action: block_bio_remap, Count: 1
+    Action: irq_softirq_exit, Count: 1
+    Action: syscall_exit_epoll_wait, Count: 1
+    Action: block_plug, Count: 1
+    Action: mm_vmscan_lru_isolate, Count: 1
+    Action: sched_waking, Count: 1
+    Action: workqueue_queue_work, Count: 1
+    Action: rcu_utilization, Count: 1
+Event Type: newlstat
+  For long syscalls:
+  Average duration: 25404
+    Action: kmem_cache_alloc, Count: 56
+    Action: kmem_cache_free, Count: 18
+    Action: kmem_kfree, Count: 8
+    Action: block_touch_buffer, Count: 3
+    Action: writeback_dirty_inode, Count: 1
+    Action: x86_irq_vectors_local_timer_exit, Count: 1
+    Action: x86_exceptions_page_fault_user, Count: 1
+    Action: mm_vmscan_lru_isolate, Count: 1
+Event Type: select
+  For short syscalls:
+  Average duration: 1829
+    Action: None, Count: 1
+  No long syscalls for this event type.
+Event Type: timerfd_create
+  For short syscalls:
+  Average duration: 3206
+    Action: timer_hrtimer_init, Count: 3
+    Action: kmem_kmalloc, Count: 2
+Event Type: timerfd_create
+  For long syscalls:
+  Average duration: 7354
+    Action: kmem_kmalloc, Count: 1
+    Action: kmem_cache_free, Count: 1
+Event Type: fchown
+  No short syscalls for this event type.
+Event Type: fchown
+  For long syscalls:
+  Average duration: 8054
+    Action: None, Count: 1
+Event Type: eventfd2
+  No short syscalls for this event type.
+Event Type: eventfd2
+  For long syscalls:
+  Average duration: 8056
+    Action: kmem_kmalloc, Count: 1
+    Action: block_rq_issue, Count: 1
+Event Type: unlink
+  For short syscalls:
+  Average duration: 3869
+    Action: kmem_cache_alloc, Count: 6
+    Action: kmem_kmalloc, Count: 2
+    Action: kmem_cache_free, Count: 1
+    Action: block_touch_buffer, Count: 1
+Event Type: unlink
+  For long syscalls:
+  Average duration: 12991
+    Action: kmem_cache_alloc, Count: 11
+    Action: kmem_cache_free, Count: 4
+    Action: kmem_kmalloc, Count: 2
+    Action: kmem_kfree, Count: 2
+    Action: kmem_mm_page_free_batched, Count: 1
+    Action: block_touch_buffer, Count: 1
+Event Type: getrlimit
+  For short syscalls:
+  Average duration: 1866
+    Action: None, Count: 2
+  No long syscalls for this event type.
+Event Type: sendmsg
+  For short syscalls:
+  Average duration: 2656
+    Action: kmem_cache_alloc_node, Count: 465
+    Action: kmem_kfree, Count: 141
+    Action: kmem_kmalloc_node, Count: 131
+    Action: sched_waking, Count: 32
+    Action: skb_copy_datagram_iovec, Count: 26
+    Action: kmem_cache_free, Count: 24
+    Action: sched_wakeup, Count: 22
+    Action: syscall_exit_recvmsg, Count: 17
+    Action: timer_hrtimer_cancel, Count: 16
+    Action: skb_consume, Count: 15
+    Action: x86_exceptions_page_fault_user, Count: 14
+    Action: kmem_cache_alloc, Count: 13
+    Action: kmem_kmalloc, Count: 9
+    Action: sched_switch, Count: 9
+    Action: kmem_mm_page_alloc, Count: 9
+    Action: rcu_utilization, Count: 7
+    Action: timer_hrtimer_start, Count: 5
+    Action: sched_stat_runtime, Count: 3
+    Action: x86_irq_vectors_reschedule_entry, Count: 2
+    Action: timer_hrtimer_init, Count: 2
+    Action: syscall_exit_epoll_wait, Count: 2
+    Action: syscall_exit_ppoll, Count: 2
+    Action: syscall_exit_futex, Count: 1
+    Action: block_unplug, Count: 1
+    Action: power_cpu_idle, Count: 1
+    Action: kmem_mm_page_pcpu_drain, Count: 1
+    Action: timer_hrtimer_expire_exit, Count: 1
+    Action: None, Count: 1
+    Action: syscall_exit_openat, Count: 1
+    Action: syscall_exit_getrandom, Count: 1
+    Action: syscall_exit_access, Count: 1
+    Action: x86_irq_vectors_reschedule_exit, Count: 1
+Event Type: sendmsg
+  For long syscalls:
+  Average duration: 21497
+    Action: kmem_cache_alloc_node, Count: 288
+    Action: kmem_kfree, Count: 71
+    Action: sched_waking, Count: 56
+    Action: kmem_kmalloc_node, Count: 51
+    Action: sched_wakeup, Count: 24
+    Action: sched_stat_runtime, Count: 12
+    Action: x86_irq_vectors_reschedule_entry, Count: 8
+    Action: kmem_mm_page_alloc, Count: 7
+    Action: kmem_cache_free, Count: 5
+    Action: x86_exceptions_page_fault_user, Count: 5
+    Action: rcu_utilization, Count: 4
+    Action: power_cpu_idle, Count: 4
+    Action: x86_irq_vectors_reschedule_exit, Count: 4
+    Action: timer_hrtimer_cancel, Count: 4
+    Action: kmem_kmalloc, Count: 3
+    Action: timer_hrtimer_start, Count: 3
+    Action: kmem_mm_page_alloc_zone_locked, Count: 2
+    Action: x86_irq_vectors_local_timer_entry, Count: 2
+    Action: timer_hrtimer_init, Count: 2
+    Action: sched_switch, Count: 2
+    Action: syscall_exit_epoll_wait, Count: 2
+    Action: irq_handler_entry, Count: 2
+    Action: irq_softirq_entry, Count: 1
+    Action: writeback_dirty_page, Count: 1
+    Action: timer_expire_entry, Count: 1
+    Action: skb_copy_datagram_iovec, Count: 1
+    Action: x86_irq_vectors_local_timer_exit, Count: 1
+    Action: syscall_exit_recvmsg, Count: 1
+    Action: kmem_cache_alloc, Count: 1
+    Action: block_rq_issue, Count: 1
+    Action: syscall_exit_newfstat, Count: 1
+    Action: scsi_dispatch_cmd_done, Count: 1
+    Action: irq_handler_exit, Count: 1
+    Action: sched_migrate_task, Count: 1
+    Action: timer_start, Count: 1
+Event Type: fadvise64
+  For short syscalls:
+  Average duration: 1632
+    Action: None, Count: 184
+    Action: kmem_cache_free, Count: 37
+    Action: kmem_mm_page_free_batched, Count: 19
+    Action: kmem_mm_page_free, Count: 14
+    Action: irq_handler_entry, Count: 8
+    Action: lttng_statedump_file_descriptor, Count: 6
+    Action: lttng_statedump_process_state, Count: 3
+    Action: lttng_statedump_process_uts_ns, Count: 2
+    Action: kmem_mm_page_alloc_zone_locked, Count: 1
+    Action: lttng_statedump_process_ipc_ns, Count: 1
+    Action: lttng_statedump_process_user_ns, Count: 1
+    Action: lttng_statedump_process_pid_ns, Count: 1
+    Action: syscall_exit_mmap, Count: 1
+    Action: x86_exceptions_page_fault_user, Count: 1
+    Action: kmem_cache_alloc, Count: 1
+    Action: block_bio_remap, Count: 1
+Event Type: fadvise64
+  For long syscalls:
+  Average duration: 112494
+    Action: kmem_cache_free, Count: 35
+    Action: kmem_mm_page_alloc, Count: 17
+    Action: kmem_mm_page_free, Count: 11
+    Action: block_rq_insert, Count: 4
+    Action: kmem_mm_page_free_batched, Count: 3
+    Action: block_plug, Count: 3
+    Action: block_bio_queue, Count: 2
+    Action: irq_handler_entry, Count: 2
+    Action: irq_softirq_exit, Count: 2
+    Action: block_rq_issue, Count: 2
+    Action: kmem_mm_page_alloc_zone_locked, Count: 2
+    Action: lttng_statedump_file_descriptor, Count: 1
+    Action: irq_handler_exit, Count: 1
+    Action: scsi_dispatch_cmd_start, Count: 1
+    Action: block_getrq, Count: 1
+    Action: writeback_dirty_inode, Count: 1
+    Action: writeback_dirty_page, Count: 1
+    Action: writeback_mark_inode_dirty, Count: 1
+    Action: block_unplug, Count: 1
+    Action: timer_init, Count: 1
+    Action: scsi_dispatch_cmd_done, Count: 1
+Event Type: symlinkat
+  No short syscalls for this event type.
+Event Type: symlinkat
+  For long syscalls:
+  Average duration: 48540
+    Action: kmem_cache_alloc, Count: 1
+    Action: block_touch_buffer, Count: 1
+    Action: kmem_kfree, Count: 1
+Event Type: writev
+  For short syscalls:
+  Average duration: 2557
+    Action: kmem_cache_alloc_node, Count: 126
+    Action: kmem_kmalloc_node, Count: 40
+    Action: kmem_kfree, Count: 21
+    Action: x86_irq_vectors_reschedule_entry, Count: 3
+    Action: timer_hrtimer_cancel, Count: 2
+    Action: kmem_cache_alloc, Count: 2
+    Action: sched_waking, Count: 2
+    Action: timer_hrtimer_expire_entry, Count: 1
+    Action: irq_softirq_raise, Count: 1
+    Action: power_cpu_idle, Count: 1
+    Action: syscall_exit_recvmsg, Count: 1
+Event Type: writev
+  For long syscalls:
+  Average duration: 21433
+    Action: kmem_cache_alloc_node, Count: 113
+    Action: kmem_kfree, Count: 22
+    Action: kmem_kmalloc_node, Count: 19
+    Action: sched_waking, Count: 11
+    Action: sched_switch, Count: 7
+    Action: sched_stat_runtime, Count: 6
+    Action: sched_wakeup, Count: 6
+    Action: x86_irq_vectors_reschedule_entry, Count: 4
+    Action: kmem_mm_page_alloc, Count: 3
+    Action: x86_exceptions_page_fault_user, Count: 3
+    Action: irq_handler_exit, Count: 3
+    Action: kmem_cache_alloc, Count: 3
+    Action: rcu_utilization, Count: 2
+    Action: kmem_kmalloc, Count: 2
+    Action: timer_hrtimer_start, Count: 2
+    Action: timer_hrtimer_cancel, Count: 1
+    Action: workqueue_execute_start, Count: 1
+    Action: block_touch_buffer, Count: 1
+    Action: block_dirty_buffer, Count: 1
+    Action: irq_handler_entry, Count: 1
+    Action: scsi_dispatch_cmd_done, Count: 1
+    Action: scsi_dispatch_cmd_start, Count: 1
+    Action: syscall_exit_poll, Count: 1
+    Action: block_plug, Count: 1
+    Action: timer_hrtimer_init, Count: 1
+Event Type: sched_getaffinity
+  For short syscalls:
+  Average duration: 3804
+    Action: kmem_kmalloc_node, Count: 2
+    Action: kmem_mm_page_alloc, Count: 1
+    Action: kmem_kfree, Count: 1
+  No long syscalls for this event type.
+Event Type: mkdirat
+  No short syscalls for this event type.
+Event Type: mkdirat
+  For long syscalls:
+  Average duration: 53251
+    Action: kmem_cache_alloc, Count: 2
+Event Type: set_robust_list
+  For short syscalls:
+  Average duration: 935
+    Action: None, Count: 41
+    Action: kmem_cache_alloc, Count: 5
+    Action: kmem_mm_page_alloc, Count: 4
+    Action: kmem_kfree, Count: 3
+    Action: x86_exceptions_page_fault_user, Count: 3
+    Action: kmem_kmalloc, Count: 3
+    Action: kmem_mm_page_free_batched, Count: 1
+    Action: syscall_exit_newfstat, Count: 1
+    Action: block_getrq, Count: 1
+  No long syscalls for this event type.
+Event Type: unknown
+  For short syscalls:
+  Average duration: 1260
+    Action: None, Count: 2
+  No long syscalls for this event type.
+Event Type: wait4
+  For short syscalls:
+  Average duration: 3039
+    Action: sched_process_wait, Count: 3
+Event Type: wait4
+  For long syscalls:
+  Average duration: 12866
+    Action: sched_process_wait, Count: 8
+    Action: kmem_cache_free, Count: 3
+    Action: power_cpu_idle, Count: 1
+Event Type: inotify_add_watch
+  For short syscalls:
+  Average duration: 2510
+    Action: kmem_cache_alloc, Count: 36
+    Action: kmem_cache_free, Count: 12
+Event Type: inotify_add_watch
+  For long syscalls:
+  Average duration: 11799
+    Action: kmem_cache_alloc, Count: 81
+    Action: kmem_cache_free, Count: 30
+    Action: kmem_kmalloc, Count: 5
+    Action: kmem_kfree, Count: 3
+    Action: sched_waking, Count: 1
+Event Type: clone
+  No short syscalls for this event type.
+Event Type: clone
+  For long syscalls:
+  Average duration: 190191
+    Action: kmem_cache_alloc_node, Count: 10
+    Action: sched_process_fork, Count: 4
+    Action: kmem_kmalloc, Count: 2
+    Action: kmem_kmalloc_node, Count: 2
+    Action: block_bio_queue, Count: 1
+    Action: irq_softirq_entry, Count: 1
+    Action: sched_wakeup, Count: 1
+Event Type: rename
+  No short syscalls for this event type.
+Event Type: rename
+  For long syscalls:
+  Average duration: 252565
+    Action: kmem_cache_alloc, Count: 7
+    Action: block_touch_buffer, Count: 1
+    Action: kmem_kfree, Count: 1
+    Action: irq_softirq_exit, Count: 1
+    Action: irq_softirq_entry, Count: 1
+    Action: irq_handler_entry, Count: 1
+    Action: block_plug, Count: 1
+    Action: scsi_dispatch_cmd_done, Count: 1
+    Action: timer_start, Count: 1
+Event Type: newstat
+  For short syscalls:
+  Average duration: 2083
+    Action: kmem_cache_alloc, Count: 5179
+    Action: kmem_cache_free, Count: 1786
+    Action: kmem_kfree, Count: 117
+    Action: block_touch_buffer, Count: 97
+    Action: kmem_kmalloc, Count: 18
+    Action: kmem_mm_page_alloc, Count: 13
+    Action: writeback_mark_inode_dirty, Count: 7
+    Action: block_rq_insert, Count: 7
+    Action: kmem_mm_page_free, Count: 7
+    Action: writeback_dirty_inode, Count: 6
+    Action: sched_stat_runtime, Count: 6
+    Action: kmem_mm_page_free_batched, Count: 6
+    Action: sched_switch, Count: 6
+    Action: writeback_dirty_inode_start, Count: 5
+    Action: skb_consume, Count: 4
+    Action: x86_exceptions_page_fault_user, Count: 4
+    Action: block_rq_complete, Count: 3
+    Action: rcu_utilization, Count: 3
+    Action: block_bio_queue, Count: 3
+    Action: block_bio_backmerge, Count: 3
+    Action: syscall_exit_read, Count: 3
+    Action: sched_waking, Count: 3
+    Action: kmem_mm_page_alloc_zone_locked, Count: 2
+    Action: sched_wakeup, Count: 2
+    Action: block_bio_remap, Count: 2
+    Action: block_plug, Count: 2
+    Action: block_rq_issue, Count: 2
+    Action: kmem_kmalloc_node, Count: 2
+    Action: timer_hrtimer_start, Count: 2
+    Action: syscall_exit_epoll_wait, Count: 2
+    Action: power_cpu_idle, Count: 2
+    Action: syscall_exit_recvmsg, Count: 2
+    Action: scsi_dispatch_cmd_done, Count: 1
+    Action: syscall_exit_getrandom, Count: 1
+    Action: irq_softirq_raise, Count: 1
+    Action: scsi_dispatch_cmd_start, Count: 1
+    Action: syscall_exit_readlinkat, Count: 1
+    Action: block_getrq, Count: 1
+    Action: kmem_mm_page_pcpu_drain, Count: 1
+    Action: x86_irq_vectors_call_function_single_entry, Count: 1
+    Action: timer_init, Count: 1
+    Action: writeback_global_dirty_state, Count: 1
+    Action: timer_hrtimer_init, Count: 1
+    Action: syscall_exit_open, Count: 1
+    Action: syscall_exit_close, Count: 1
+    Action: syscall_exit_sync_file_range, Count: 1
+    Action: syscall_exit_setitimer, Count: 1
+    Action: syscall_exit_writev, Count: 1
+    Action: timer_itimer_state, Count: 1
+    Action: timer_hrtimer_cancel, Count: 1
+Event Type: newstat
+  For long syscalls:
+  Average duration: 35324
+    Action: kmem_cache_alloc, Count: 434
+    Action: kmem_cache_free, Count: 100
+    Action: kmem_kfree, Count: 56
+    Action: block_touch_buffer, Count: 50
+    Action: writeback_mark_inode_dirty, Count: 21
+    Action: writeback_dirty_inode, Count: 18
+    Action: writeback_dirty_inode_start, Count: 18
+    Action: kmem_mm_page_alloc, Count: 7
+    Action: kmem_mm_page_free, Count: 5
+    Action: x86_exceptions_page_fault_user, Count: 4
+    Action: kmem_kmalloc, Count: 4
+    Action: writeback_dirty_page, Count: 4
+    Action: irq_softirq_raise, Count: 3
+    Action: block_rq_issue, Count: 3
+    Action: sched_wakeup, Count: 2
+    Action: block_bio_queue, Count: 2
+    Action: block_bio_remap, Count: 2
+    Action: rcu_utilization, Count: 2
+    Action: block_unplug, Count: 1
+    Action: kmem_mm_page_free_batched, Count: 1
+    Action: scsi_dispatch_cmd_done, Count: 1
+    Action: irq_handler_exit, Count: 1
+    Action: block_getrq, Count: 1
+    Action: block_plug, Count: 1
+    Action: workqueue_activate_work, Count: 1
+    Action: syscall_exit_poll, Count: 1
+    Action: sched_stat_runtime, Count: 1
+    Action: irq_handler_entry, Count: 1
+    Action: block_rq_complete, Count: 1
+    Action: workqueue_queue_work, Count: 1
+    Action: scsi_dispatch_cmd_start, Count: 1
+Event Type: arch_prctl
+  For short syscalls:
+  Average duration: 1601
+    Action: None, Count: 22
+    Action: kmem_kfree, Count: 3
+    Action: kmem_cache_alloc, Count: 2
+    Action: syscall_exit_poll, Count: 1
+    Action: sched_stat_runtime, Count: 1
+    Action: kmem_cache_free, Count: 1
+Event Type: arch_prctl
+  For long syscalls:
+  Average duration: 7590
+    Action: None, Count: 1
+Event Type: set_tid_address
+  For short syscalls:
+  Average duration: 1261
+    Action: None, Count: 21
+    Action: kmem_kfree, Count: 1
+    Action: kmem_mm_page_free, Count: 1
+Event Type: set_tid_address
+  For long syscalls:
+  Average duration: 65017
+    Action: irq_handler_exit, Count: 1
+Event Type: seccomp
+  For short syscalls:
+  Average duration: 1342
+    Action: None, Count: 10
+    Action: x86_exceptions_page_fault_kernel, Count: 8
+  No long syscalls for this event type.
+Event Type: alarm
+  For short syscalls:
+  Average duration: 3706
+    Action: timer_hrtimer_start, Count: 1
+Event Type: alarm
+  For long syscalls:
+  Average duration: 5508
+    Action: kmem_kfree, Count: 1
+Event Type: getgid
+  For short syscalls:
+  Average duration: 439
+    Action: None, Count: 15
+    Action: syscall_exit_getrandom, Count: 1
+  No long syscalls for this event type.
+Event Type: getdents
+  For short syscalls:
+  Average duration: 1258
+    Action: None, Count: 1517
+    Action: writeback_mark_inode_dirty, Count: 440
+    Action: writeback_dirty_inode_start, Count: 119
+    Action: writeback_dirty_inode, Count: 106
+    Action: kmem_kmalloc, Count: 73
+    Action: kmem_kfree, Count: 30
+    Action: kmem_mm_page_alloc, Count: 7
+    Action: kmem_cache_alloc, Count: 7
+    Action: kmem_cache_free, Count: 7
+    Action: block_touch_buffer, Count: 4
+    Action: irq_handler_exit, Count: 4
+    Action: timer_init, Count: 3
+    Action: block_dirty_buffer, Count: 2
+    Action: irq_softirq_exit, Count: 2
+    Action: skb_consume, Count: 2
+    Action: syscall_exit_read, Count: 2
+    Action: x86_exceptions_page_fault_user, Count: 1
+    Action: x86_exceptions_page_fault_kernel, Count: 1
+    Action: rcu_utilization, Count: 1
+    Action: sched_stat_runtime, Count: 1
+    Action: power_cpu_idle, Count: 1
+    Action: timer_cancel, Count: 1
+    Action: irq_softirq_entry, Count: 1
+    Action: kmem_mm_page_free, Count: 1
+    Action: sched_wakeup, Count: 1
+    Action: block_rq_issue, Count: 1
+    Action: sched_switch, Count: 1
+    Action: syscall_exit_newfstat, Count: 1
+    Action: kmem_cache_alloc_node, Count: 1
+    Action: syscall_exit_epoll_wait, Count: 1
+Event Type: getdents
+  For long syscalls:
+  Average duration: 121820
+    Action: kmem_kmalloc, Count: 111
+    Action: None, Count: 47
+    Action: writeback_mark_inode_dirty, Count: 29
+    Action: kmem_kfree, Count: 20
+    Action: writeback_dirty_inode, Count: 15
+    Action: writeback_dirty_inode_start, Count: 10
+    Action: kmem_cache_alloc, Count: 8
+    Action: block_touch_buffer, Count: 8
+    Action: kmem_cache_free, Count: 4
+    Action: x86_exceptions_page_fault_kernel, Count: 4
+    Action: kmem_mm_page_alloc, Count: 3
+    Action: timer_init, Count: 3
+    Action: irq_handler_entry, Count: 3
+    Action: block_bio_queue, Count: 2
+    Action: irq_softirq_exit, Count: 2
+    Action: sched_waking, Count: 2
+    Action: sched_wakeup, Count: 2
+    Action: irq_softirq_entry, Count: 2
+    Action: x86_exceptions_page_fault_user, Count: 2
+    Action: irq_softirq_raise, Count: 1
+    Action: timer_hrtimer_expire_entry, Count: 1
+    Action: sched_switch, Count: 1
+    Action: block_rq_complete, Count: 1
+    Action: rcu_utilization, Count: 1
+    Action: workqueue_queue_work, Count: 1
+    Action: workqueue_execute_end, Count: 1
+    Action: block_getrq, Count: 1
+    Action: irq_handler_exit, Count: 1
+    Action: block_bio_remap, Count: 1
+    Action: block_dirty_buffer, Count: 1
+    Action: block_rq_issue, Count: 1
+    Action: x86_irq_vectors_reschedule_exit, Count: 1
+    Action: power_cpu_idle, Count: 1
+Event Type: newfstat
+  For short syscalls:
+  Average duration: 482
+    Action: None, Count: 19817
+    Action: kmem_cache_alloc, Count: 312
+    Action: kmem_cache_free, Count: 214
+    Action: kmem_mm_page_alloc, Count: 130
+    Action: kmem_kfree, Count: 98
+    Action: x86_exceptions_page_fault_user, Count: 68
+    Action: kmem_kmalloc, Count: 66
+    Action: kmem_mm_page_free, Count: 58
+    Action: writeback_dirty_inode, Count: 39
+    Action: rcu_utilization, Count: 38
+    Action: kmem_mm_page_free_batched, Count: 34
+    Action: block_touch_buffer, Count: 31
+    Action: writeback_mark_inode_dirty, Count: 28
+    Action: kmem_mm_page_alloc_zone_locked, Count: 28
+    Action: block_dirty_buffer, Count: 25
+    Action: sched_wakeup, Count: 23
+    Action: kmem_mm_page_pcpu_drain, Count: 23
+    Action: syscall_exit_close, Count: 23
+    Action: sched_stat_runtime, Count: 23
+    Action: sched_switch, Count: 21
+    Action: syscall_exit_read, Count: 19
+    Action: syscall_exit_openat, Count: 18
+    Action: skb_copy_datagram_iovec, Count: 17
+    Action: syscall_exit_recvmsg, Count: 15
+    Action: block_bio_queue, Count: 14
+    Action: writeback_dirty_page, Count: 14
+    Action: block_rq_insert, Count: 14
+    Action: timer_init, Count: 13
+    Action: writeback_dirty_inode_start, Count: 13
+    Action: kmem_kmalloc_node, Count: 12
+    Action: sched_waking, Count: 11
+    Action: scsi_dispatch_cmd_start, Count: 9
+    Action: power_cpu_idle, Count: 9
+    Action: irq_handler_exit, Count: 8
+    Action: block_bio_remap, Count: 8
+    Action: block_rq_issue, Count: 8
+    Action: block_getrq, Count: 7
+    Action: irq_handler_entry, Count: 7
+    Action: kmem_cache_alloc_node, Count: 7
+    Action: skb_consume, Count: 7
+    Action: syscall_exit_epoll_wait, Count: 7
+    Action: syscall_exit_mprotect, Count: 6
+    Action: block_rq_complete, Count: 6
+    Action: syscall_exit_getrandom, Count: 6
+    Action: syscall_exit_newstat, Count: 5
+    Action: scsi_dispatch_cmd_done, Count: 5
+    Action: syscall_exit_sendmsg, Count: 5
+    Action: irq_softirq_entry, Count: 5
+    Action: timer_hrtimer_start, Count: 5
+    Action: mm_vmscan_shrink_slab_end, Count: 4
+    Action: mm_vmscan_shrink_slab_start, Count: 4
+    Action: irq_softirq_exit, Count: 4
+    Action: syscall_exit_splice, Count: 4
+    Action: syscall_exit_sched_yield, Count: 4
+    Action: syscall_exit_futex, Count: 4
+    Action: syscall_exit_write, Count: 4
+    Action: syscall_exit_ioctl, Count: 3
+    Action: mm_vmscan_lru_isolate, Count: 3
+    Action: syscall_exit_sync_file_range, Count: 3
+    Action: irq_softirq_raise, Count: 3
+    Action: block_plug, Count: 3
+    Action: syscall_exit_access, Count: 2
+    Action: workqueue_execute_end, Count: 2
+    Action: workqueue_queue_work, Count: 2
+    Action: block_unplug, Count: 2
+    Action: workqueue_execute_start, Count: 2
+    Action: syscall_exit_madvise, Count: 2
+    Action: timer_hrtimer_expire_entry, Count: 2
+    Action: syscall_exit_readlinkat, Count: 2
+    Action: syscall_exit_poll, Count: 1
+    Action: syscall_exit_rt_sigprocmask, Count: 1
+    Action: syscall_exit_prlimit64, Count: 1
+    Action: sched_process_exit, Count: 1
+    Action: syscall_exit_newlstat, Count: 1
+    Action: mm_vmscan_lru_shrink_inactive, Count: 1
+    Action: syscall_exit_sendto, Count: 1
+    Action: syscall_exit_kcmp, Count: 1
+    Action: x86_irq_vectors_call_function_single_entry, Count: 1
+    Action: x86_irq_vectors_reschedule_exit, Count: 1
+    Action: scsi_dispatch_cmd_error, Count: 1
+    Action: syscall_exit_renameat, Count: 1
+    Action: timer_start, Count: 1
+    Action: block_bio_backmerge, Count: 1
+    Action: skb_kfree, Count: 1
+    Action: jbd2_commit_flushing, Count: 1
+    Action: syscall_exit_newfstatat, Count: 1
+    Action: x86_irq_vectors_local_timer_exit, Count: 1
+    Action: syscall_exit_epoll_pwait, Count: 1
+    Action: x86_irq_vectors_local_timer_entry, Count: 1
+    Action: timer_hrtimer_expire_exit, Count: 1
+    Action: syscall_exit_recvfrom, Count: 1
+    Action: syscall_exit_munmap, Count: 1
+    Action: syscall_exit_getsockname, Count: 1
+    Action: timer_hrtimer_init, Count: 1
+    Action: syscall_exit_clone, Count: 1
+    Action: module_put, Count: 1
+Event Type: newfstat
+  For long syscalls:
+  Average duration: 17743
+    Action: None, Count: 112
+    Action: x86_irq_vectors_local_timer_entry, Count: 3
+    Action: kmem_cache_alloc, Count: 1
+    Action: x86_exceptions_page_fault_user, Count: 1
+    Action: x86_irq_vectors_reschedule_entry, Count: 1
+    Action: block_rq_complete, Count: 1
+    Action: sched_wakeup, Count: 1
+    Action: syscall_exit_read, Count: 1
+    Action: timer_cancel, Count: 1
+    Action: irq_handler_exit, Count: 1
+Event Type: sendto
+  No short syscalls for this event type.
+Event Type: sendto
+  For long syscalls:
+  Average duration: 51837
+    Action: kmem_cache_alloc_node, Count: 11
+    Action: kmem_kmalloc_node, Count: 2
+    Action: sched_waking, Count: 2
+    Action: timer_hrtimer_expire_exit, Count: 1
+    Action: irq_softirq_entry, Count: 1
+    Action: skb_consume, Count: 1
+    Action: irq_softirq_raise, Count: 1
+    Action: x86_irq_vectors_call_function_single_exit, Count: 1
+    Action: kmem_cache_alloc, Count: 1
+    Action: block_touch_buffer, Count: 1
+    Action: kmem_mm_page_alloc, Count: 1
+    Action: sched_wakeup, Count: 1
+Event Type: newfstatat
+  For short syscalls:
+  Average duration: 1941
+    Action: kmem_cache_alloc, Count: 1542
+    Action: kmem_cache_free, Count: 533
+    Action: kmem_mm_page_alloc, Count: 11
+    Action: block_touch_buffer, Count: 10
+    Action: kmem_mm_page_free, Count: 9
+    Action: kmem_kfree, Count: 6
+    Action: writeback_dirty_inode_start, Count: 6
+    Action: kmem_mm_page_free_batched, Count: 6
+    Action: writeback_dirty_inode, Count: 5
+    Action: writeback_mark_inode_dirty, Count: 4
+    Action: timer_init, Count: 4
+    Action: kmem_kmalloc, Count: 3
+    Action: scsi_dispatch_cmd_start, Count: 3
+    Action: block_dirty_buffer, Count: 3
+    Action: block_bio_queue, Count: 3
+    Action: block_rq_issue, Count: 2
+    Action: block_rq_insert, Count: 2
+    Action: syscall_exit_splice, Count: 2
+    Action: sched_stat_runtime, Count: 2
+    Action: writeback_dirty_page, Count: 1
+    Action: block_getrq, Count: 1
+    Action: block_plug, Count: 1
+    Action: block_bio_remap, Count: 1
+    Action: timer_hrtimer_expire_exit, Count: 1
+Event Type: newfstatat
+  For long syscalls:
+  Average duration: 38657
+    Action: kmem_cache_alloc, Count: 160
+    Action: kmem_cache_free, Count: 54
+    Action: kmem_kfree, Count: 26
+    Action: kmem_kmalloc, Count: 9
+    Action: block_touch_buffer, Count: 3
+    Action: block_getrq, Count: 2
+    Action: kmem_mm_page_free, Count: 2
+    Action: power_cpu_idle, Count: 2
+    Action: sched_switch, Count: 2
+    Action: writeback_dirty_page, Count: 1
+    Action: writeback_mark_inode_dirty, Count: 1
+    Action: x86_exceptions_page_fault_user, Count: 1
+    Action: block_bio_remap, Count: 1
+    Action: timer_hrtimer_start, Count: 1
+Event Type: memfd_create
+  No short syscalls for this event type.
+Event Type: memfd_create
+  For long syscalls:
+  Average duration: 7945
+    Action: kmem_kfree, Count: 1
+    Action: kmem_kmalloc, Count: 1
+Event Type: ioctl
+  For short syscalls:
+  Average duration: 625
+    Action: None, Count: 985
+    Action: lttng_statedump_file_descriptor, Count: 35
+    Action: kmem_cache_free, Count: 29
+    Action: irq_handler_entry, Count: 20
+    Action: kmem_cache_alloc, Count: 20
+    Action: kmem_mm_page_alloc, Count: 10
+    Action: lttng_statedump_process_pid_ns, Count: 9
+    Action: lttng_statedump_process_net_ns, Count: 8
+    Action: lttng_statedump_process_user_ns, Count: 7
+    Action: x86_exceptions_page_fault_user, Count: 7
+    Action: kmem_kfree, Count: 6
+    Action: lttng_statedump_process_cgroup_ns, Count: 5
+    Action: lttng_statedump_process_state, Count: 5
+    Action: syscall_exit_openat, Count: 5
+    Action: lttng_statedump_process_uts_ns, Count: 4
+    Action: block_touch_buffer, Count: 4
+    Action: kmem_mm_page_free, Count: 3
+    Action: syscall_exit_newfstat, Count: 3
+    Action: sched_waking, Count: 3
+    Action: rcu_utilization, Count: 3
+    Action: timer_init, Count: 3
+    Action: sched_switch, Count: 3
+    Action: kmem_kmalloc, Count: 2
+    Action: syscall_exit_mmap, Count: 2
+    Action: syscall_exit_access, Count: 2
+    Action: irq_softirq_entry, Count: 2
+    Action: block_bio_queue, Count: 2
+    Action: block_bio_remap, Count: 2
+    Action: writeback_mark_inode_dirty, Count: 2
+    Action: scsi_dispatch_cmd_start, Count: 2
+    Action: syscall_exit_read, Count: 2
+    Action: syscall_exit_close, Count: 2
+    Action: kmem_mm_page_alloc_zone_locked, Count: 2
+    Action: lttng_statedump_process_ipc_ns, Count: 1
+    Action: syscall_exit_mprotect, Count: 1
+    Action: kmem_mm_page_free_batched, Count: 1
+    Action: mm_vmscan_shrink_slab_start, Count: 1
+    Action: syscall_exit_mkdir, Count: 1
+    Action: irq_softirq_exit, Count: 1
+    Action: block_plug, Count: 1
+    Action: block_bio_backmerge, Count: 1
+    Action: sched_stat_runtime, Count: 1
+    Action: block_rq_complete, Count: 1
+    Action: syscall_exit_newlstat, Count: 1
+    Action: power_cpu_idle, Count: 1
+    Action: syscall_exit_sendmsg, Count: 1
+    Action: workqueue_execute_start, Count: 1
+    Action: scsi_dispatch_cmd_done, Count: 1
+    Action: syscall_exit_epoll_wait, Count: 1
+    Action: x86_irq_vectors_reschedule_exit, Count: 1
+    Action: writeback_dirty_inode_start, Count: 1
+Event Type: ioctl
+  For long syscalls:
+  Average duration: 157847
+    Action: scsi_dispatch_cmd_done, Count: 41
+    Action: x86_irq_vectors_call_function_single_entry, Count: 31
+    Action: irq_handler_entry, Count: 18
+    Action: None, Count: 18
+    Action: x86_irq_vectors_call_function_single_exit, Count: 14
+    Action: kmem_kmalloc, Count: 10
+    Action: irq_handler_exit, Count: 8
+    Action: lttng_statedump_file_descriptor, Count: 7
+    Action: block_rq_complete, Count: 5
+    Action: lttng_statedump_process_state, Count: 4
+    Action: irq_softirq_raise, Count: 4
+    Action: lttng_statedump_process_cgroup_ns, Count: 3
+    Action: kmem_kmalloc_node, Count: 3
+    Action: lttng_statedump_process_ipc_ns, Count: 2
+    Action: kmem_cache_alloc, Count: 2
+    Action: x86_irq_vectors_local_timer_entry, Count: 2
+    Action: kmem_cache_free, Count: 2
+    Action: block_touch_buffer, Count: 2
+    Action: rcu_utilization, Count: 2
+    Action: sched_stat_runtime, Count: 2
+    Action: kmem_kfree, Count: 2
+    Action: lttng_statedump_process_net_ns, Count: 1
+    Action: lttng_statedump_process_pid_ns, Count: 1
+    Action: irq_softirq_entry, Count: 1
+    Action: mm_vmscan_lru_isolate, Count: 1
+    Action: x86_exceptions_page_fault_user, Count: 1
+    Action: irq_softirq_exit, Count: 1
+    Action: timer_hrtimer_start, Count: 1
+    Action: x86_irq_vectors_reschedule_entry, Count: 1
+    Action: timer_hrtimer_expire_entry, Count: 1
+    Action: sched_switch, Count: 1
+    Action: sched_wakeup, Count: 1
+    Action: kmem_mm_page_free, Count: 1
+    Action: timer_init, Count: 1
+    Action: kmem_cache_alloc_node, Count: 1
+Event Type: recvfrom
+  For short syscalls:
+  Average duration: 1544
+    Action: skb_copy_datagram_iovec, Count: 91
+    Action: None, Count: 8
+    Action: kmem_kmalloc, Count: 2
+    Action: kmem_cache_free, Count: 2
+    Action: kmem_kfree, Count: 1
+    Action: block_bio_remap, Count: 1
+    Action: kmem_mm_page_alloc_zone_locked, Count: 1
+    Action: power_cpu_idle, Count: 1
+Event Type: recvfrom
+  For long syscalls:
+  Average duration: 21087
+    Action: skb_copy_datagram_iovec, Count: 22
+    Action: kmem_cache_free, Count: 3
+    Action: kmem_cache_alloc, Count: 2
+    Action: kmem_kfree, Count: 2
+    Action: sched_switch, Count: 2
+    Action: kmem_kmalloc, Count: 1
+    Action: irq_softirq_exit, Count: 1
+    Action: sched_wakeup, Count: 1
+    Action: irq_handler_entry, Count: 1
+    Action: skb_consume, Count: 1
+    Action: kmem_mm_page_free, Count: 1
+Event Type: name_to_handle_at
+  For short syscalls:
+  Average duration: 1937
+    Action: kmem_kmalloc, Count: 5
+    Action: kmem_kfree, Count: 2
+    Action: kmem_cache_alloc, Count: 2
+    Action: kmem_cache_free, Count: 1
+  No long syscalls for this event type.
+Event Type: chdir
+  No short syscalls for this event type.
+Event Type: chdir
+  For long syscalls:
+  Average duration: 8349
+    Action: x86_exceptions_page_fault_kernel, Count: 1
