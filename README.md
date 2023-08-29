@@ -1,9 +1,9 @@
-# Reinforcement Learning to analyst system calls 
+# Reinforcement Learning for System Trace Analysis
 
 ## Table of Contents
 
 - [Environment Setup](#environment-setup)
-- [Training the Model](#training-the-model)
+- [Reinforcement Learning for System Trace Analysis](#reinforcement-learning-for-system-trace-analysis-1)
 - [References](#references)
 
 ## Environment Setup
@@ -171,22 +171,61 @@ Or run following on commend line:
    Learn Trace Compass Main Features and how to import traces to the project from [this website](https://archive.eclipse.org/tracecompass/doc/stable/org.eclipse.tracecompass.doc.user/Trace-Compass-Main-Features.html#Project_Explorer_View).
    
 
-## Training the Model
-- Python codes that used to train the Reinfocement Learning model
-   - trace analyze (parse tracing data)
-  - syscall analyze (finds all syscalls and events)
-      - Event object
-      - Syscall object
-  - syscall aggregate ( find all syscalls durations, calculate min, max and average durations)
-  - syscall comparator
-  - syscall counter
-  - RL model
-     - State object
-     - Action object
-     - Agent oject
-     - Q Table oject
-     - RL Model for training
- 
+## Reinforcement Learning for System Trace Analysis
+
+### Introduction
+This project utilizes Reinforcement Learning (RL) to analyze system traces, specifically focusing on system calls. The main goal is to understand the events happen between long system calls entry and exit, thus helping in system optimization.
+
+### Requirements
+- Python 3.8+
+- pandas
+- tqdm
+
+### Usage
+- Execute the lttng tracing script first under folder ../lttng_traces:
+  ```bash
+  python3 make_traces.py
+  ```
+   Then you will have tracing data in ../data/my_session and an output as ..data/output.txt
+- Execute the main script to start the analysis:
+    ```bash
+  python3 main.py
+  ```
+### Modules Overview
+- **/data**: all data output in this folder
+  - **/my_session**: tracing data
+  - **aggregated_syscalls.txt**: systems calls with average, min, and max durations and associated events that happened between each system call entry and exit.
+  - **comparator.txt**: compare system call events in long and short syscalls by using threshold of 5000 nanoseconds. This file shows what events happen in long system calls but not in short system calls.
+  - **counter.txt**: count how many times each system calls happen in the tracing data and how many times of the events happens in each system calls.
+  - **output.txt**: babeltrace convert tracing data to a readable txt file.
+  - **RL_actions.txt**: output of the model that shows lists of events that most likely happen in both long and short system calls.
+  - **syscall_data.csv**: output for showing systems and their average, min, and max durations. Easy to use in an excel and analyze the syscalls.
+  - **syscalls.txt**: result of all system calls with all information are sorted by timestamp and the events happen between system call entry and exit.
+- **/lttng_traces**
+  - **make_traces.py**: Utility script for generating traces.
+- /original_code
+  - archived
+- **/reinforcement_learning**
+  - **Action.py**: Action object. Defines actions in the RL model. 
+  - **Agent.py**: Agent object. The RL agent that learns from actions and states. 
+  - **Event.py**: Event object. Represents events in the tracing data. 
+  - **main.py**: The entry point of the application. 
+  - **QTable.py**: QTable object. Represents the Q-table for the Q-Learning algorithm. 
+  - **RLModel.py**: The main RL model that holding the reward function, train the model and print a result as **RL_actions.txt**. 
+    - **reward function**: 
+    - get 3 points when the state is a long system call
+    - get -5 point when the state is a short system call
+  - **State.py**: State object. Represents states in the RL model. 
+  - **Syscall.py**: Syscall object. Represents system calls. 
+  - **SyscallAggregator.py**: Utility for aggregating system call data. Calculate average, min, and max duration of each system calls and the associated events of the system call. Output as **aggregated_syscalls.txt**.
+  - **SyscallAnalyzer.py**: Analyzes system calls and export the data as **syscalls.txt**. Another result file named **syscall_data.csv** uses to show the list of system calls happen in the tracing and the average, min, and max duration of each system syscall.
+  - **SyscallEventComparator.py**: Compares system call events. Compare which events are in long system calls but not in short system calls and vice versa. Export data as **comparator.txt**.
+  - **SyscallEventCounter.py**: Counts system call event. Count how many times the events happen in the trace. Export data as **counter.txt**.
+  - **TraceAnalyzer.py**: Analyzes traces by using **output.txt** from **make_traces.py**.
+      
+
+    
+
 
 ## References
 https://releases.ubuntu.com/18.04/ \
