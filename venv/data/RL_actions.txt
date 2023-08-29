@@ -1,3926 +1,1776 @@
 All event types that most likely happen for each syscall type:
-Event Type: getdents
-  For short syscalls:
-      Average duration: 1258
-      List of event types that most likely happen:
-         None
-         writeback_mark_inode_dirty
-         writeback_dirty_inode_start
-         writeback_dirty_inode
-         kmem_kmalloc
-         kmem_kfree
-         kmem_cache_free
-         kmem_cache_alloc
-         kmem_mm_page_alloc
-         irq_handler_exit
-         timer_init
-         block_touch_buffer
-         rcu_utilization
-         writeback_dirty_page
-         irq_softirq_exit
-         skb_consume
-         syscall_exit_read
-         x86_exceptions_page_fault_user
-         x86_exceptions_page_fault_kernel
-         block_dirty_buffer
-         sched_stat_runtime
-         power_cpu_idle
-         timer_cancel
-         irq_softirq_entry
-         kmem_mm_page_free
-         sched_wakeup
-         block_rq_issue
-         sched_switch
-         syscall_exit_newfstat
-         kmem_cache_alloc_node
-         syscall_exit_epoll_wait
-  For long syscalls:
-      Average duration: 121820
-      List of event types that most likely happen:
-         None
-         writeback_mark_inode_dirty
-         writeback_dirty_inode_start
-         writeback_dirty_inode
-         kmem_kmalloc
-         kmem_kfree
-         kmem_cache_free
-         kmem_cache_alloc
-         kmem_mm_page_alloc
-         irq_handler_exit
-         timer_init
-         block_touch_buffer
-         rcu_utilization
-         writeback_dirty_page
-         irq_softirq_exit
-         skb_consume
-         syscall_exit_read
-         x86_exceptions_page_fault_user
-         x86_exceptions_page_fault_kernel
-         block_dirty_buffer
-         sched_stat_runtime
-         power_cpu_idle
-         timer_cancel
-         irq_softirq_entry
-         kmem_mm_page_free
-         sched_wakeup
-         block_rq_issue
-         sched_switch
-         syscall_exit_newfstat
-         kmem_cache_alloc_node
-         syscall_exit_epoll_wait
-Event Type: getdents64
-  For short syscalls:
-      Average duration: 1365
-      List of event types that most likely happen:
-         None
-         kmem_kmalloc
-         kmem_kfree
-         block_touch_buffer
-         kmem_cache_free
-         kmem_mm_page_pcpu_drain
-         kmem_cache_alloc_node
-         sched_switch
-         timer_hrtimer_start
-         kmem_mm_page_free
-  For long syscalls:
-      Average duration: 21472
-      List of event types that most likely happen:
-         None
-         kmem_kmalloc
-         kmem_kfree
-         block_touch_buffer
-         kmem_cache_free
-         kmem_mm_page_pcpu_drain
-         kmem_cache_alloc_node
-         sched_switch
-         timer_hrtimer_start
-         kmem_mm_page_free
 Event Type: newuname
   For short syscalls:
-      Average duration: 1943
+      Average duration: 3722
       List of event types that most likely happen:
          None
-         x86_exceptions_page_fault_kernel
-         kmem_cache_free
-      No long syscalls for this event type.
-Event Type: ppoll
-  For short syscalls:
-      Average duration: 1882
-      List of event types that most likely happen:
-         None
-         kmem_kfree
-         syscall_exit_sendmsg
-         kmem_cache_alloc_node
-         timer_hrtimer_init
-         kmem_kmalloc_node
-         timer_hrtimer_cancel
-      No long syscalls for this event type.
-Event Type: fchmod
-  For short syscalls:
-      Average duration: 1609
-      List of event types that most likely happen:
-         None
-         kmem_mm_page_free_batched
   For long syscalls:
-      Average duration: 13014
+      Average duration: 5526
       List of event types that most likely happen:
          None
-         kmem_mm_page_free_batched
-Event Type: name_to_handle_at
-  For short syscalls:
-      Average duration: 1937
-      List of event types that most likely happen:
-         kmem_kmalloc
-         kmem_cache_alloc
-         kmem_kfree
-      No long syscalls for this event type.
-Event Type: gettid
-  For short syscalls:
-      Average duration: 720
-      List of event types that most likely happen:
-         None
-         block_rq_complete
-         syscall_exit_epoll_wait
-         sched_waking
-         x86_exceptions_page_fault_user
-  For long syscalls:
-      Average duration: 8035
-      List of event types that most likely happen:
-         None
-         block_rq_complete
-         syscall_exit_epoll_wait
-         sched_waking
-         x86_exceptions_page_fault_user
-Event Type: mkdir
-  For short syscalls:
-      Average duration: 3346
-      List of event types that most likely happen:
-         kmem_cache_alloc
-         kmem_cache_free
-         kmem_kmalloc
-         sched_stat_runtime
-         syscall_exit_openat
-         x86_exceptions_page_fault_user
-  For long syscalls:
-      Average duration: 18339
-      List of event types that most likely happen:
-         kmem_cache_alloc
-         kmem_cache_free
-         kmem_kmalloc
-         sched_stat_runtime
-         syscall_exit_openat
-         x86_exceptions_page_fault_user
-Event Type: epoll_create1
-  For short syscalls:
-      Average duration: 3121
-      List of event types that most likely happen:
-         kmem_cache_alloc
-  For long syscalls:
-      Average duration: 5769
-      List of event types that most likely happen:
-         kmem_cache_alloc
-Event Type: newfstatat
-  For short syscalls:
-      Average duration: 1941
-      List of event types that most likely happen:
-         kmem_cache_alloc
-         kmem_cache_free
-         block_touch_buffer
-         kmem_mm_page_alloc
-         kmem_mm_page_free
-         kmem_kfree
-         kmem_mm_page_free_batched
-         block_dirty_buffer
-         timer_init
-         writeback_mark_inode_dirty
-         writeback_dirty_inode_start
-         kmem_kmalloc
-         block_bio_remap
-         block_bio_queue
-         writeback_dirty_inode
-         scsi_dispatch_cmd_start
-         block_getrq
-         syscall_exit_sync_file_range
-         block_plug
-         block_unplug
-         timer_hrtimer_start
-         block_rq_issue
-  For long syscalls:
-      Average duration: 38657
-      List of event types that most likely happen:
-         kmem_cache_alloc
-         kmem_cache_free
-         block_touch_buffer
-         kmem_mm_page_alloc
-         kmem_mm_page_free
-         kmem_kfree
-         kmem_mm_page_free_batched
-         block_dirty_buffer
-         timer_init
-         writeback_mark_inode_dirty
-         writeback_dirty_inode_start
-         kmem_kmalloc
-         block_bio_remap
-         block_bio_queue
-         writeback_dirty_inode
-         scsi_dispatch_cmd_start
-         block_getrq
-         syscall_exit_sync_file_range
-         block_plug
-         block_unplug
-         timer_hrtimer_start
-         block_rq_issue
-Event Type: wait4
-  For short syscalls:
-      Average duration: 3039
-      List of event types that most likely happen:
-         sched_process_wait
-         irq_handler_entry
-  For long syscalls:
-      Average duration: 12866
-      List of event types that most likely happen:
-         sched_process_wait
-         irq_handler_entry
-Event Type: getuid
-  For short syscalls:
-      Average duration: 460
-      List of event types that most likely happen:
-         None
-         kmem_cache_free
-         kmem_cache_alloc
-         kmem_kfree
-         kmem_mm_page_alloc
-         kmem_mm_page_free_batched
-         block_bio_remap
-         x86_exceptions_page_fault_user
-         rcu_utilization
-         block_bio_queue
-         block_rq_insert
-         kmem_mm_page_pcpu_drain
-         sched_wakeup
-         kmem_kmalloc
-         kmem_cache_alloc_node
-         syscall_exit_read
-         skb_copy_datagram_iovec
-         sched_waking
-         writeback_global_dirty_state
-         kmem_mm_page_alloc_zone_locked
-         kmem_mm_page_free
-         power_cpu_idle
-         workqueue_execute_end
-         workqueue_execute_start
-         syscall_exit_futex
-         irq_handler_exit
-         sched_switch
-         writeback_mark_inode_dirty
-         sched_stat_runtime
-  For long syscalls:
-      Average duration: 17608
-      List of event types that most likely happen:
-         None
-         kmem_cache_free
-         kmem_cache_alloc
-         kmem_kfree
-         kmem_mm_page_alloc
-         kmem_mm_page_free_batched
-         block_bio_remap
-         x86_exceptions_page_fault_user
-         rcu_utilization
-         block_bio_queue
-         block_rq_insert
-         kmem_mm_page_pcpu_drain
-         sched_wakeup
-         kmem_kmalloc
-         kmem_cache_alloc_node
-         syscall_exit_read
-         skb_copy_datagram_iovec
-         sched_waking
-         writeback_global_dirty_state
-         kmem_mm_page_alloc_zone_locked
-         kmem_mm_page_free
-         power_cpu_idle
-         workqueue_execute_end
-         workqueue_execute_start
-         syscall_exit_futex
-         irq_handler_exit
-         sched_switch
-         writeback_mark_inode_dirty
-         sched_stat_runtime
-Event Type: setsockopt
-  For short syscalls:
-      Average duration: 1482
-      List of event types that most likely happen:
-         None
-         kmem_cache_alloc
-         timer_init
-         syscall_exit_newfstat
-         kmem_cache_free
-         kmem_kmalloc
-      No long syscalls for this event type.
-Event Type: nanosleep
-      No short syscalls for this event type.
-  For long syscalls:
-      Average duration: 168012
-      List of event types that most likely happen:
-Event Type: getpid
-  For short syscalls:
-      Average duration: 871
-      List of event types that most likely happen:
-         None
-         kmem_kmalloc
-         kmem_mm_page_alloc
-         kmem_kfree
-         kmem_cache_alloc
-         kmem_mm_page_alloc_zone_locked
-         x86_exceptions_page_fault_user
-         block_getrq
-         irq_softirq_exit
-         kmem_mm_page_free
-  For long syscalls:
-      Average duration: 37635
-      List of event types that most likely happen:
-         None
-         kmem_kmalloc
-         kmem_mm_page_alloc
-         kmem_kfree
-         kmem_cache_alloc
-         kmem_mm_page_alloc_zone_locked
-         x86_exceptions_page_fault_user
-         block_getrq
-         irq_softirq_exit
-         kmem_mm_page_free
-Event Type: getrandom
-  For short syscalls:
-      Average duration: 940
-      List of event types that most likely happen:
-         None
-         kmem_cache_alloc
-         kmem_cache_free
-         x86_exceptions_page_fault_user
-         kmem_kfree
-         kmem_mm_page_alloc
-         kmem_kmalloc
-         syscall_exit_newfstat
-         sched_stat_runtime
-         sched_switch
-         kmem_mm_page_free
-         syscall_exit_openat
-         writeback_mark_inode_dirty
-         skb_copy_datagram_iovec
-         writeback_dirty_inode
-         x86_exceptions_page_fault_kernel
-         block_dirty_buffer
-         rcu_utilization
-         sched_waking
-         syscall_exit_sendmsg
-         syscall_exit_epoll_wait
-         workqueue_activate_work
-         syscall_exit_close
-         syscall_exit_newstat
-         kmem_mm_page_free_batched
-         kmem_cache_alloc_node
-         syscall_exit_recvmsg
-         scsi_dispatch_cmd_start
-         block_bio_remap
-         workqueue_execute_start
-         writeback_dirty_inode_start
-         syscall_exit_fadvise64
-         block_unplug
-         timer_init
-         irq_handler_exit
-         block_rq_insert
-         syscall_exit_recvfrom
-         skb_consume
-         sched_process_wait
-         block_rq_issue
-         block_getrq
-         syscall_exit_sync_file_range
-         syscall_exit_write
-         irq_softirq_exit
-         timer_hrtimer_init
-         block_touch_buffer
-         kmem_kmalloc_node
-         syscall_exit_read
-         timer_hrtimer_expire_entry
-         timer_hrtimer_start
-         syscall_exit_munmap
-         syscall_exit_rt_sigaction
-         syscall_exit_readlinkat
-         syscall_exit_mmap
-  For long syscalls:
-      Average duration: 10414
-      List of event types that most likely happen:
-         None
-         kmem_cache_alloc
-         kmem_cache_free
-         x86_exceptions_page_fault_user
-         kmem_kfree
-         kmem_mm_page_alloc
-         kmem_kmalloc
-         syscall_exit_newfstat
-         sched_stat_runtime
-         sched_switch
-         kmem_mm_page_free
-         syscall_exit_openat
-         writeback_mark_inode_dirty
-         skb_copy_datagram_iovec
-         writeback_dirty_inode
-         x86_exceptions_page_fault_kernel
-         block_dirty_buffer
-         rcu_utilization
-         sched_waking
-         syscall_exit_sendmsg
-         syscall_exit_epoll_wait
-         workqueue_activate_work
-         syscall_exit_close
-         syscall_exit_newstat
-         kmem_mm_page_free_batched
-         kmem_cache_alloc_node
-         syscall_exit_recvmsg
-         scsi_dispatch_cmd_start
-         block_bio_remap
-         workqueue_execute_start
-         writeback_dirty_inode_start
-         syscall_exit_fadvise64
-         block_unplug
-         timer_init
-         irq_handler_exit
-         block_rq_insert
-         syscall_exit_recvfrom
-         skb_consume
-         sched_process_wait
-         block_rq_issue
-         block_getrq
-         syscall_exit_sync_file_range
-         syscall_exit_write
-         irq_softirq_exit
-         timer_hrtimer_init
-         block_touch_buffer
-         kmem_kmalloc_node
-         syscall_exit_read
-         timer_hrtimer_expire_entry
-         timer_hrtimer_start
-         syscall_exit_munmap
-         syscall_exit_rt_sigaction
-         syscall_exit_readlinkat
-         syscall_exit_mmap
-Event Type: set_robust_list
-  For short syscalls:
-      Average duration: 935
-      List of event types that most likely happen:
-         None
-         kmem_cache_alloc
-         kmem_kfree
-         kmem_mm_page_alloc
-         x86_exceptions_page_fault_user
-         kmem_kmalloc
-         kmem_mm_page_free_batched
-         syscall_exit_newfstat
-         block_getrq
-      No long syscalls for this event type.
-Event Type: unknown
-  For short syscalls:
-      Average duration: 1260
-      List of event types that most likely happen:
-         None
-      No long syscalls for this event type.
-Event Type: bpf
-  For short syscalls:
-      Average duration: 1556
-      List of event types that most likely happen:
-         None
-         kmem_kmalloc
-         kmem_kfree
-         kmem_kmalloc_node
-  For long syscalls:
-      Average duration: 253617
-      List of event types that most likely happen:
-         None
-         kmem_kmalloc
-         kmem_kfree
-         kmem_kmalloc_node
-Event Type: symlink
-  For short syscalls:
-      Average duration: 3048
-      List of event types that most likely happen:
-         kmem_cache_free
-         kmem_cache_alloc
-         kmem_kmalloc
-  For long syscalls:
-      Average duration: 15466
-      List of event types that most likely happen:
-         kmem_cache_free
-         kmem_cache_alloc
-         kmem_kmalloc
-Event Type: newfstat
-  For short syscalls:
-      Average duration: 482
-      List of event types that most likely happen:
-         None
-         kmem_cache_alloc
-         kmem_cache_free
-         kmem_mm_page_alloc
-         kmem_kfree
-         x86_exceptions_page_fault_user
-         kmem_kmalloc
-         kmem_mm_page_free
-         rcu_utilization
-         kmem_mm_page_free_batched
-         writeback_dirty_inode
-         writeback_mark_inode_dirty
-         block_touch_buffer
-         block_dirty_buffer
-         kmem_mm_page_alloc_zone_locked
-         sched_stat_runtime
-         kmem_mm_page_pcpu_drain
-         syscall_exit_close
-         syscall_exit_openat
-         sched_switch
-         sched_wakeup
-         syscall_exit_read
-         skb_copy_datagram_iovec
-         syscall_exit_recvmsg
-         block_rq_insert
-         block_bio_queue
-         writeback_dirty_inode_start
-         timer_init
-         kmem_kmalloc_node
-         writeback_dirty_page
-         sched_waking
-         irq_handler_exit
-         block_bio_remap
-         scsi_dispatch_cmd_start
-         power_cpu_idle
-         kmem_cache_alloc_node
-         block_rq_issue
-         skb_consume
-         block_getrq
-         syscall_exit_epoll_wait
-         syscall_exit_mprotect
-         block_rq_complete
-         irq_handler_entry
-         irq_softirq_entry
-         syscall_exit_getrandom
-         syscall_exit_newstat
-         scsi_dispatch_cmd_done
-         mm_vmscan_shrink_slab_start
-         syscall_exit_sendmsg
-         timer_hrtimer_start
-         syscall_exit_splice
-         syscall_exit_sched_yield
-         irq_softirq_exit
-         syscall_exit_futex
-         syscall_exit_write
-         syscall_exit_ioctl
-         mm_vmscan_shrink_slab_end
-         mm_vmscan_lru_isolate
-         syscall_exit_sync_file_range
-         block_plug
-         block_unplug
-         syscall_exit_access
-         workqueue_execute_end
-         irq_softirq_raise
-         workqueue_queue_work
-         workqueue_execute_start
-         syscall_exit_madvise
-         timer_hrtimer_expire_entry
-         syscall_exit_readlinkat
-         syscall_exit_poll
-         syscall_exit_rt_sigprocmask
-         syscall_exit_prlimit64
-         sched_process_exit
-         syscall_exit_newlstat
-         mm_vmscan_lru_shrink_inactive
-         syscall_exit_sendto
-         syscall_exit_kcmp
-         x86_irq_vectors_call_function_single_entry
-         x86_irq_vectors_reschedule_exit
-         scsi_dispatch_cmd_error
-         syscall_exit_renameat
-         timer_start
-         block_bio_backmerge
-         jbd2_commit_flushing
-         syscall_exit_newfstatat
-         syscall_exit_epoll_pwait
-         x86_irq_vectors_local_timer_entry
-         timer_hrtimer_expire_exit
-         syscall_exit_recvfrom
-         syscall_exit_munmap
-         syscall_exit_getsockname
-         timer_hrtimer_init
-         syscall_exit_clone
-         module_put
-  For long syscalls:
-      Average duration: 17743
-      List of event types that most likely happen:
-         None
-         kmem_cache_alloc
-         kmem_cache_free
-         kmem_mm_page_alloc
-         kmem_kfree
-         x86_exceptions_page_fault_user
-         kmem_kmalloc
-         kmem_mm_page_free
-         rcu_utilization
-         kmem_mm_page_free_batched
-         writeback_dirty_inode
-         writeback_mark_inode_dirty
-         block_touch_buffer
-         block_dirty_buffer
-         kmem_mm_page_alloc_zone_locked
-         sched_stat_runtime
-         kmem_mm_page_pcpu_drain
-         syscall_exit_close
-         syscall_exit_openat
-         sched_switch
-         sched_wakeup
-         syscall_exit_read
-         skb_copy_datagram_iovec
-         syscall_exit_recvmsg
-         block_rq_insert
-         block_bio_queue
-         writeback_dirty_inode_start
-         timer_init
-         kmem_kmalloc_node
-         writeback_dirty_page
-         sched_waking
-         irq_handler_exit
-         block_bio_remap
-         scsi_dispatch_cmd_start
-         power_cpu_idle
-         kmem_cache_alloc_node
-         block_rq_issue
-         skb_consume
-         block_getrq
-         syscall_exit_epoll_wait
-         syscall_exit_mprotect
-         block_rq_complete
-         irq_handler_entry
-         irq_softirq_entry
-         syscall_exit_getrandom
-         syscall_exit_newstat
-         scsi_dispatch_cmd_done
-         mm_vmscan_shrink_slab_start
-         syscall_exit_sendmsg
-         timer_hrtimer_start
-         syscall_exit_splice
-         syscall_exit_sched_yield
-         irq_softirq_exit
-         syscall_exit_futex
-         syscall_exit_write
-         syscall_exit_ioctl
-         mm_vmscan_shrink_slab_end
-         mm_vmscan_lru_isolate
-         syscall_exit_sync_file_range
-         block_plug
-         block_unplug
-         syscall_exit_access
-         workqueue_execute_end
-         irq_softirq_raise
-         workqueue_queue_work
-         workqueue_execute_start
-         syscall_exit_madvise
-         timer_hrtimer_expire_entry
-         syscall_exit_readlinkat
-         syscall_exit_poll
-         syscall_exit_rt_sigprocmask
-         syscall_exit_prlimit64
-         sched_process_exit
-         syscall_exit_newlstat
-         mm_vmscan_lru_shrink_inactive
-         syscall_exit_sendto
-         syscall_exit_kcmp
-         x86_irq_vectors_call_function_single_entry
-         x86_irq_vectors_reschedule_exit
-         scsi_dispatch_cmd_error
-         syscall_exit_renameat
-         timer_start
-         block_bio_backmerge
-         jbd2_commit_flushing
-         syscall_exit_newfstatat
-         syscall_exit_epoll_pwait
-         x86_irq_vectors_local_timer_entry
-         timer_hrtimer_expire_exit
-         syscall_exit_recvfrom
-         syscall_exit_munmap
-         syscall_exit_getsockname
-         timer_hrtimer_init
-         syscall_exit_clone
-         module_put
-Event Type: sendmsg
-  For short syscalls:
-      Average duration: 2656
-      List of event types that most likely happen:
-         kmem_cache_alloc_node
-         kmem_kfree
-         kmem_kmalloc_node
-         skb_copy_datagram_iovec
-         sched_waking
-         kmem_cache_free
-         sched_wakeup
-         skb_consume
-         timer_hrtimer_cancel
-         syscall_exit_recvmsg
-         x86_exceptions_page_fault_user
-         kmem_cache_alloc
-         rcu_utilization
-         timer_hrtimer_start
-         kmem_mm_page_alloc
-         sched_switch
-         kmem_kmalloc
-         x86_irq_vectors_reschedule_entry
-         timer_hrtimer_init
-         sched_stat_runtime
-         syscall_exit_ppoll
-         block_unplug
-         syscall_exit_epoll_wait
-         kmem_mm_page_pcpu_drain
-         timer_hrtimer_expire_exit
-         None
-         syscall_exit_getrandom
-         block_getrq
-         scsi_dispatch_cmd_done
-         x86_irq_vectors_reschedule_exit
-  For long syscalls:
-      Average duration: 21497
-      List of event types that most likely happen:
-         kmem_cache_alloc_node
-         kmem_kfree
-         kmem_kmalloc_node
-         skb_copy_datagram_iovec
-         sched_waking
-         kmem_cache_free
-         sched_wakeup
-         skb_consume
-         timer_hrtimer_cancel
-         syscall_exit_recvmsg
-         x86_exceptions_page_fault_user
-         kmem_cache_alloc
-         rcu_utilization
-         timer_hrtimer_start
-         kmem_mm_page_alloc
-         sched_switch
-         kmem_kmalloc
-         x86_irq_vectors_reschedule_entry
-         timer_hrtimer_init
-         sched_stat_runtime
-         syscall_exit_ppoll
-         block_unplug
-         syscall_exit_epoll_wait
-         kmem_mm_page_pcpu_drain
-         timer_hrtimer_expire_exit
-         None
-         syscall_exit_getrandom
-         block_getrq
-         scsi_dispatch_cmd_done
-         x86_irq_vectors_reschedule_exit
-Event Type: mmap
-  For short syscalls:
-      Average duration: 2688
-      List of event types that most likely happen:
-         kmem_cache_alloc
-         kmem_cache_free
-         None
-         kmem_kfree
-         kmem_kmalloc
-         x86_exceptions_page_fault_user
-         kmem_mm_page_alloc
-         block_touch_buffer
-         block_bio_queue
-         rcu_utilization
-         syscall_exit_sched_yield
-         block_dirty_buffer
-         sched_switch
-         kmem_mm_page_alloc_zone_locked
-         sched_waking
-         sched_stat_runtime
-         block_getrq
-         kmem_mm_page_free
-         kmem_mm_page_pcpu_drain
-         writeback_dirty_page
-         scsi_dispatch_cmd_start
-         writeback_mark_inode_dirty
-         syscall_exit_close
-         syscall_exit_mprotect
-         kmem_kmalloc_node
-         scsi_dispatch_cmd_done
-         irq_softirq_raise
-         sched_process_fork
-         syscall_exit_poll
-         workqueue_execute_start
-         x86_exceptions_page_fault_kernel
-         syscall_exit_clone
-         syscall_exit_munmap
-         block_plug
-         timer_init
-         block_unplug
-         timer_hrtimer_init
-         syscall_exit_futex
-         block_rq_issue
-         x86_irq_vectors_local_timer_exit
-         irq_handler_exit
-         syscall_exit_newstat
-         writeback_dirty_inode_start
-         jbd2_commit_logging
-         irq_softirq_entry
-         power_cpu_idle
-         timer_hrtimer_start
-         sched_migrate_task
-         skb_consume
-         block_bio_backmerge
-         timer_hrtimer_expire_exit
-  For long syscalls:
-      Average duration: 12627
-      List of event types that most likely happen:
-         kmem_cache_alloc
-         kmem_cache_free
-         None
-         kmem_kfree
-         kmem_kmalloc
-         x86_exceptions_page_fault_user
-         kmem_mm_page_alloc
-         block_touch_buffer
-         block_bio_queue
-         rcu_utilization
-         syscall_exit_sched_yield
-         block_dirty_buffer
-         sched_switch
-         kmem_mm_page_alloc_zone_locked
-         sched_waking
-         sched_stat_runtime
-         block_getrq
-         kmem_mm_page_free
-         kmem_mm_page_pcpu_drain
-         writeback_dirty_page
-         scsi_dispatch_cmd_start
-         writeback_mark_inode_dirty
-         syscall_exit_close
-         syscall_exit_mprotect
-         kmem_kmalloc_node
-         scsi_dispatch_cmd_done
-         irq_softirq_raise
-         sched_process_fork
-         syscall_exit_poll
-         workqueue_execute_start
-         x86_exceptions_page_fault_kernel
-         syscall_exit_clone
-         syscall_exit_munmap
-         block_plug
-         timer_init
-         block_unplug
-         timer_hrtimer_init
-         syscall_exit_futex
-         block_rq_issue
-         x86_irq_vectors_local_timer_exit
-         irq_handler_exit
-         syscall_exit_newstat
-         writeback_dirty_inode_start
-         jbd2_commit_logging
-         irq_softirq_entry
-         power_cpu_idle
-         timer_hrtimer_start
-         sched_migrate_task
-         skb_consume
-         block_bio_backmerge
-         timer_hrtimer_expire_exit
-Event Type: epoll_ctl
-  For short syscalls:
-      Average duration: 832
-      List of event types that most likely happen:
-         None
-         kmem_cache_alloc
-         kmem_cache_free
-         kmem_mm_page_free
-         sched_stat_runtime
-         kmem_kfree
-         sched_switch
-         rcu_utilization
-         block_bio_remap
-         timer_hrtimer_cancel
-         syscall_exit_poll
-         sched_wakeup
-         power_cpu_idle
-         x86_irq_vectors_reschedule_entry
-         x86_exceptions_page_fault_user
-         syscall_exit_newfstat
-         kmem_kmalloc
-         block_getrq
-         irq_softirq_entry
-         block_rq_complete
-         workqueue_execute_end
-         block_bio_queue
-         block_touch_buffer
-         timer_hrtimer_start
-         timer_expire_entry
-         kmem_kmalloc_node
-         skb_copy_datagram_iovec
-         syscall_exit_recvmsg
-         kmem_mm_page_alloc
-         sched_waking
-         kmem_mm_page_free_batched
-  For long syscalls:
-      Average duration: 13580
-      List of event types that most likely happen:
-         None
-         kmem_cache_alloc
-         kmem_cache_free
-         kmem_mm_page_free
-         sched_stat_runtime
-         kmem_kfree
-         sched_switch
-         rcu_utilization
-         block_bio_remap
-         timer_hrtimer_cancel
-         syscall_exit_poll
-         sched_wakeup
-         power_cpu_idle
-         x86_irq_vectors_reschedule_entry
-         x86_exceptions_page_fault_user
-         syscall_exit_newfstat
-         kmem_kmalloc
-         block_getrq
-         irq_softirq_entry
-         block_rq_complete
-         workqueue_execute_end
-         block_bio_queue
-         block_touch_buffer
-         timer_hrtimer_start
-         timer_expire_entry
-         kmem_kmalloc_node
-         skb_copy_datagram_iovec
-         syscall_exit_recvmsg
-         kmem_mm_page_alloc
-         sched_waking
-         kmem_mm_page_free_batched
-Event Type: getgid
-  For short syscalls:
-      Average duration: 439
-      List of event types that most likely happen:
-         None
-         syscall_exit_getrandom
-      No long syscalls for this event type.
-Event Type: recvfrom
-  For short syscalls:
-      Average duration: 1544
-      List of event types that most likely happen:
-         skb_copy_datagram_iovec
-         None
-         kmem_kfree
-         kmem_kmalloc
-         timer_init
-         block_getrq
-         kmem_mm_page_alloc_zone_locked
-         x86_irq_vectors_reschedule_entry
-         power_cpu_idle
-         sched_wakeup
-         kmem_cache_alloc
-  For long syscalls:
-      Average duration: 21087
-      List of event types that most likely happen:
-         skb_copy_datagram_iovec
-         None
-         kmem_kfree
-         kmem_kmalloc
-         timer_init
-         block_getrq
-         kmem_mm_page_alloc_zone_locked
-         x86_irq_vectors_reschedule_entry
-         power_cpu_idle
-         sched_wakeup
-         kmem_cache_alloc
-Event Type: sysinfo
-      No short syscalls for this event type.
-  For long syscalls:
-      Average duration: 6100
-      List of event types that most likely happen:
-Event Type: sync_file_range
-  For short syscalls:
-      Average duration: 970
-      List of event types that most likely happen:
-         None
-         lttng_statedump_file_descriptor
-         lttng_statedump_process_net_ns
-         lttng_statedump_process_pid_ns
-         kmem_cache_alloc
-         kmem_cache_free
-         sched_switch
-         lttng_statedump_process_state
-         lttng_statedump_process_ipc_ns
-         x86_exceptions_page_fault_user
-         kmem_mm_page_alloc
-         sched_stat_runtime
-  For long syscalls:
-      Average duration: 114080
-      List of event types that most likely happen:
-         None
-         lttng_statedump_file_descriptor
-         lttng_statedump_process_net_ns
-         lttng_statedump_process_pid_ns
-         kmem_cache_alloc
-         kmem_cache_free
-         sched_switch
-         lttng_statedump_process_state
-         lttng_statedump_process_ipc_ns
-         x86_exceptions_page_fault_user
-         kmem_mm_page_alloc
-         sched_stat_runtime
-Event Type: flock
-  For short syscalls:
-      Average duration: 4899
-      List of event types that most likely happen:
-         kmem_cache_alloc
-  For long syscalls:
-      Average duration: 10166
-      List of event types that most likely happen:
-         kmem_cache_alloc
-Event Type: alarm
-  For short syscalls:
-      Average duration: 3706
-      List of event types that most likely happen:
-         timer_hrtimer_start
-  For long syscalls:
-      Average duration: 5508
-      List of event types that most likely happen:
-         timer_hrtimer_start
-Event Type: epoll_wait
-  For short syscalls:
-      Average duration: 1094
-      List of event types that most likely happen:
-         None
-         kmem_cache_free
-         kmem_cache_alloc
-         kmem_kfree
-         x86_exceptions_page_fault_user
-         sched_switch
-         kmem_mm_page_alloc
-         syscall_exit_newfstat
-         syscall_exit_openat
-         kmem_kmalloc
-         sched_stat_runtime
-         syscall_exit_close
-         syscall_exit_getrandom
-         kmem_cache_alloc_node
-         rcu_utilization
-         syscall_exit_sendmsg
-         kmem_mm_page_pcpu_drain
-         syscall_exit_newstat
-         scsi_dispatch_cmd_done
-         sched_wakeup
-         kmem_kmalloc_node
-         timer_hrtimer_cancel
-         kmem_mm_page_free_batched
-         syscall_exit_nanosleep
-         skb_copy_datagram_iovec
-         block_getrq
-         workqueue_activate_work
-         timer_init
-         block_bio_queue
-         block_rq_issue
-         workqueue_execute_start
-         x86_irq_vectors_reschedule_exit
-         scsi_dispatch_cmd_start
-         kmem_mm_page_free
-         block_touch_buffer
-         block_rq_complete
-         irq_handler_entry
-         sched_process_exec
-         syscall_exit_execve
-         syscall_exit_getppid
-         syscall_exit_read
-  For long syscalls:
-      Average duration: 33818
-      List of event types that most likely happen:
-         None
-         kmem_cache_free
-         kmem_cache_alloc
-         kmem_kfree
-         x86_exceptions_page_fault_user
-         sched_switch
-         kmem_mm_page_alloc
-         syscall_exit_newfstat
-         syscall_exit_openat
-         kmem_kmalloc
-         sched_stat_runtime
-         syscall_exit_close
-         syscall_exit_getrandom
-         kmem_cache_alloc_node
-         rcu_utilization
-         syscall_exit_sendmsg
-         kmem_mm_page_pcpu_drain
-         syscall_exit_newstat
-         scsi_dispatch_cmd_done
-         sched_wakeup
-         kmem_kmalloc_node
-         timer_hrtimer_cancel
-         kmem_mm_page_free_batched
-         syscall_exit_nanosleep
-         skb_copy_datagram_iovec
-         block_getrq
-         workqueue_activate_work
-         timer_init
-         block_bio_queue
-         block_rq_issue
-         workqueue_execute_start
-         x86_irq_vectors_reschedule_exit
-         scsi_dispatch_cmd_start
-         kmem_mm_page_free
-         block_touch_buffer
-         block_rq_complete
-         irq_handler_entry
-         sched_process_exec
-         syscall_exit_execve
-         syscall_exit_getppid
-         syscall_exit_read
-Event Type: brk
-  For short syscalls:
-      Average duration: 1356
-      List of event types that most likely happen:
-         None
-         kmem_cache_alloc
-         x86_exceptions_page_fault_user
-         kmem_mm_page_alloc
-         kmem_cache_free
-         kmem_kmalloc
-         kmem_kfree
-         kmem_mm_page_free_batched
-         workqueue_queue_work
-         sched_wakeup
-         workqueue_execute_end
-         irq_handler_entry
-         kmem_mm_page_free
-         sched_migrate_task
-         sched_stat_runtime
-         syscall_exit_newfstat
-  For long syscalls:
-      Average duration: 10766
-      List of event types that most likely happen:
-         None
-         kmem_cache_alloc
-         x86_exceptions_page_fault_user
-         kmem_mm_page_alloc
-         kmem_cache_free
-         kmem_kmalloc
-         kmem_kfree
-         kmem_mm_page_free_batched
-         workqueue_queue_work
-         sched_wakeup
-         workqueue_execute_end
-         irq_handler_entry
-         kmem_mm_page_free
-         sched_migrate_task
-         sched_stat_runtime
-         syscall_exit_newfstat
-Event Type: mprotect
-  For short syscalls:
-      Average duration: 3425
-      List of event types that most likely happen:
-         kmem_cache_alloc
-         kmem_cache_free
-         kmem_kfree
-         kmem_kmalloc
-         x86_exceptions_page_fault_user
-         kmem_mm_page_alloc
-         None
-         kmem_mm_page_free
-         block_touch_buffer
-         rcu_utilization
-         syscall_exit_close
-         syscall_exit_mmap
-         sched_waking
-         writeback_dirty_inode
-         block_unplug
-         block_bio_queue
-         syscall_exit_openat
-         sched_switch
-         syscall_exit_prctl
-         scsi_dispatch_cmd_start
-         sched_stat_runtime
-         syscall_exit_statfs
-         kmem_mm_page_free_batched
-         writeback_mark_inode_dirty
-         syscall_exit_write
-         writeback_dirty_inode_start
-         kmem_mm_page_alloc_zone_locked
-         skb_consume
-         block_rq_insert
-         syscall_exit_poll
-         power_cpu_idle
-         irq_softirq_exit
-  For long syscalls:
-      Average duration: 8544
-      List of event types that most likely happen:
-         kmem_cache_alloc
-         kmem_cache_free
-         kmem_kfree
-         kmem_kmalloc
-         x86_exceptions_page_fault_user
-         kmem_mm_page_alloc
-         None
-         kmem_mm_page_free
-         block_touch_buffer
-         rcu_utilization
-         syscall_exit_close
-         syscall_exit_mmap
-         sched_waking
-         writeback_dirty_inode
-         block_unplug
-         block_bio_queue
-         syscall_exit_openat
-         sched_switch
-         syscall_exit_prctl
-         scsi_dispatch_cmd_start
-         sched_stat_runtime
-         syscall_exit_statfs
-         kmem_mm_page_free_batched
-         writeback_mark_inode_dirty
-         syscall_exit_write
-         writeback_dirty_inode_start
-         kmem_mm_page_alloc_zone_locked
-         skb_consume
-         block_rq_insert
-         syscall_exit_poll
-         power_cpu_idle
-         irq_softirq_exit
-Event Type: quotactl
-  For short syscalls:
-      Average duration: 2622
-      List of event types that most likely happen:
-         kmem_kfree
-      No long syscalls for this event type.
-Event Type: write
-  For short syscalls:
-      Average duration: 1636
-      List of event types that most likely happen:
-         None
-         kmem_kmalloc
-         kmem_kfree
-         kmem_cache_alloc
-         kmem_cache_free
-         kmem_mm_page_alloc
-         sched_switch
-         sched_stat_runtime
-         rcu_utilization
-         writeback_mark_inode_dirty
-         sched_wakeup
-         writeback_dirty_inode
-         sched_waking
-         kmem_cache_alloc_node
-         x86_exceptions_page_fault_user
-         block_touch_buffer
-         syscall_exit_openat
-         kmem_mm_page_pcpu_drain
-         writeback_dirty_inode_start
-         block_bio_queue
-         power_cpu_idle
-         irq_handler_entry
-         kmem_mm_page_alloc_zone_locked
-         kmem_mm_page_free
-         timer_init
-         block_getrq
-         irq_softirq_exit
-         syscall_exit_newstat
-         syscall_exit_newfstat
-         irq_handler_exit
-         kmem_mm_page_free_batched
-         block_rq_complete
-         writeback_dirty_page
-         syscall_exit_read
-         irq_softirq_entry
-         timer_expire_exit
-         x86_irq_vectors_local_timer_exit
-         x86_irq_vectors_local_timer_entry
-         net_napi_gro_receive_entry
-         scsi_dispatch_cmd_start
-         syscall_exit_ioctl
-         syscall_exit_poll
-         block_rq_insert
-         block_plug
-         syscall_exit_sched_yield
-         block_bio_backmerge
-         timer_hrtimer_cancel
-         syscall_exit_munmap
-         syscall_exit_nanosleep
-         timer_hrtimer_expire_entry
-         block_dirty_buffer
-         syscall_exit_madvise
-         irq_softirq_raise
-         timer_hrtimer_start
-         syscall_exit_futex
-         syscall_exit_close
-         syscall_exit_getdents
-  For long syscalls:
-      Average duration: 26056
-      List of event types that most likely happen:
-         None
-         kmem_kmalloc
-         kmem_kfree
-         kmem_cache_alloc
-         kmem_cache_free
-         kmem_mm_page_alloc
-         sched_switch
-         sched_stat_runtime
-         rcu_utilization
-         writeback_mark_inode_dirty
-         sched_wakeup
-         writeback_dirty_inode
-         sched_waking
-         kmem_cache_alloc_node
-         x86_exceptions_page_fault_user
-         block_touch_buffer
-         syscall_exit_openat
-         kmem_mm_page_pcpu_drain
-         writeback_dirty_inode_start
-         block_bio_queue
-         power_cpu_idle
-         irq_handler_entry
-         kmem_mm_page_alloc_zone_locked
-         kmem_mm_page_free
-         timer_init
-         block_getrq
-         irq_softirq_exit
-         syscall_exit_newstat
-         syscall_exit_newfstat
-         irq_handler_exit
-         kmem_mm_page_free_batched
-         block_rq_complete
-         writeback_dirty_page
-         syscall_exit_read
-         irq_softirq_entry
-         timer_expire_exit
-         x86_irq_vectors_local_timer_exit
-         x86_irq_vectors_local_timer_entry
-         net_napi_gro_receive_entry
-         scsi_dispatch_cmd_start
-         syscall_exit_ioctl
-         syscall_exit_poll
-         block_rq_insert
-         block_plug
-         syscall_exit_sched_yield
-         block_bio_backmerge
-         timer_hrtimer_cancel
-         syscall_exit_munmap
-         syscall_exit_nanosleep
-         timer_hrtimer_expire_entry
-         block_dirty_buffer
-         syscall_exit_madvise
-         irq_softirq_raise
-         timer_hrtimer_start
-         syscall_exit_futex
-         syscall_exit_close
-         syscall_exit_getdents
-Event Type: inotify_init1
-  For short syscalls:
-      Average duration: 2827
-      List of event types that most likely happen:
-         kmem_kmalloc
-         kmem_cache_alloc
-  For long syscalls:
-      Average duration: 5322
-      List of event types that most likely happen:
-         kmem_kmalloc
-         kmem_cache_alloc
-Event Type: read
-  For short syscalls:
-      Average duration: 1275
-      List of event types that most likely happen:
-         None
-         kmem_kmalloc_node
-         kmem_kmalloc
-         kmem_kfree
-         kmem_cache_alloc
-         x86_exceptions_page_fault_kernel
-         writeback_mark_inode_dirty
-         kmem_cache_free
-         kmem_mm_page_alloc
-         x86_exceptions_page_fault_user
-         writeback_dirty_inode
-         writeback_dirty_inode_start
-         kmem_mm_page_free
-         rcu_utilization
-         kmem_mm_page_alloc_zone_locked
-         sched_stat_runtime
-         block_touch_buffer
-         syscall_exit_close
-         sched_switch
-         sched_wakeup
-         irq_handler_exit
-         kmem_mm_page_free_batched
-         skb_consume
-         syscall_exit_openat
-         skb_copy_datagram_iovec
-         syscall_exit_newstat
-         block_bio_remap
-         block_dirty_buffer
-         timer_init
-         syscall_exit_newfstat
-         power_cpu_idle
-         kmem_cache_alloc_node
-         kmem_mm_page_pcpu_drain
-         block_getrq
-         block_bio_queue
-         scsi_dispatch_cmd_start
-         block_rq_insert
-         syscall_exit_recvmsg
-         block_rq_complete
-         sched_waking
-         workqueue_execute_end
-         irq_softirq_entry
-         irq_softirq_exit
-         timer_hrtimer_cancel
-         x86_irq_vectors_reschedule_entry
-         writeback_dirty_page
-         syscall_exit_epoll_wait
-         block_unplug
-         irq_handler_entry
-         irq_softirq_raise
-         block_rq_issue
-         syscall_exit_mmap
-         syscall_exit_splice
-         workqueue_execute_start
-         syscall_exit_write
-         block_plug
-         timer_hrtimer_init
-         syscall_exit_getrandom
-         syscall_exit_futex
-         syscall_exit_ioctl
-         syscall_exit_sync_file_range
-         syscall_exit_readlinkat
-         scsi_dispatch_cmd_done
-         workqueue_activate_work
-         mm_vmscan_lru_isolate
-         syscall_exit_poll
-         x86_irq_vectors_local_timer_exit
-         x86_irq_vectors_local_timer_entry
-         syscall_exit_madvise
-         syscall_exit_access
-         syscall_exit_brk
-         syscall_exit_mprotect
-         syscall_exit_execve
-         workqueue_queue_work
-         scsi_dispatch_cmd_error
-         syscall_exit_sendmsg
-         timer_hrtimer_expire_entry
-         mm_vmscan_lru_shrink_inactive
-         syscall_exit_nanosleep
-         jbd2_end_commit
-         block_rq_requeue
-         timer_cancel
-         syscall_exit_getuid
-         block_bio_backmerge
-         syscall_exit_sched_yield
-         x86_irq_vectors_reschedule_exit
-         module_get
-         syscall_exit_getdents
-         syscall_exit_clone
-         sched_process_fork
-  For long syscalls:
-      Average duration: 147022
-      List of event types that most likely happen:
-         None
-         kmem_kmalloc_node
-         kmem_kmalloc
-         kmem_kfree
-         kmem_cache_alloc
-         x86_exceptions_page_fault_kernel
-         writeback_mark_inode_dirty
-         kmem_cache_free
-         kmem_mm_page_alloc
-         x86_exceptions_page_fault_user
-         writeback_dirty_inode
-         writeback_dirty_inode_start
-         kmem_mm_page_free
-         rcu_utilization
-         kmem_mm_page_alloc_zone_locked
-         sched_stat_runtime
-         block_touch_buffer
-         syscall_exit_close
-         sched_switch
-         sched_wakeup
-         irq_handler_exit
-         kmem_mm_page_free_batched
-         skb_consume
-         syscall_exit_openat
-         skb_copy_datagram_iovec
-         syscall_exit_newstat
-         block_bio_remap
-         block_dirty_buffer
-         timer_init
-         syscall_exit_newfstat
-         power_cpu_idle
-         kmem_cache_alloc_node
-         kmem_mm_page_pcpu_drain
-         block_getrq
-         block_bio_queue
-         scsi_dispatch_cmd_start
-         block_rq_insert
-         syscall_exit_recvmsg
-         block_rq_complete
-         sched_waking
-         workqueue_execute_end
-         irq_softirq_entry
-         irq_softirq_exit
-         timer_hrtimer_cancel
-         x86_irq_vectors_reschedule_entry
-         writeback_dirty_page
-         syscall_exit_epoll_wait
-         block_unplug
-         irq_handler_entry
-         irq_softirq_raise
-         block_rq_issue
-         syscall_exit_mmap
-         syscall_exit_splice
-         workqueue_execute_start
-         syscall_exit_write
-         block_plug
-         timer_hrtimer_init
-         syscall_exit_getrandom
-         syscall_exit_futex
-         syscall_exit_ioctl
-         syscall_exit_sync_file_range
-         syscall_exit_readlinkat
-         scsi_dispatch_cmd_done
-         workqueue_activate_work
-         mm_vmscan_lru_isolate
-         syscall_exit_poll
-         x86_irq_vectors_local_timer_exit
-         x86_irq_vectors_local_timer_entry
-         syscall_exit_madvise
-         syscall_exit_access
-         syscall_exit_brk
-         syscall_exit_mprotect
-         syscall_exit_execve
-         workqueue_queue_work
-         scsi_dispatch_cmd_error
-         syscall_exit_sendmsg
-         timer_hrtimer_expire_entry
-         mm_vmscan_lru_shrink_inactive
-         syscall_exit_nanosleep
-         jbd2_end_commit
-         block_rq_requeue
-         timer_cancel
-         syscall_exit_getuid
-         block_bio_backmerge
-         syscall_exit_sched_yield
-         x86_irq_vectors_reschedule_exit
-         module_get
-         syscall_exit_getdents
-         syscall_exit_clone
-         sched_process_fork
-Event Type: rmdir
-  For short syscalls:
-      Average duration: 2911
-      List of event types that most likely happen:
-         kmem_cache_free
-         kmem_cache_alloc
-         kmem_kmalloc
-  For long syscalls:
-      Average duration: 6509
-      List of event types that most likely happen:
-         kmem_cache_free
-         kmem_cache_alloc
-         kmem_kmalloc
-Event Type: memfd_create
-      No short syscalls for this event type.
-  For long syscalls:
-      Average duration: 7945
-      List of event types that most likely happen:
-Event Type: dup2
-  For short syscalls:
-      Average duration: 773
-      List of event types that most likely happen:
-         None
-         x86_exceptions_page_fault_user
-         rcu_utilization
-         kmem_kmalloc
-         block_bio_remap
-         syscall_exit_sendmsg
-         kmem_kmalloc_node
-         syscall_exit_futex
-         sched_stat_runtime
-      No long syscalls for this event type.
-Event Type: pipe2
-  For short syscalls:
-      Average duration: 3452
-      List of event types that most likely happen:
-         kmem_cache_alloc
-         kmem_kmalloc
-         sched_stat_runtime
-  For long syscalls:
-      Average duration: 8349
-      List of event types that most likely happen:
-         kmem_cache_alloc
-         kmem_kmalloc
-         sched_stat_runtime
-Event Type: ftruncate
-      No short syscalls for this event type.
-  For long syscalls:
-      Average duration: 23112
-      List of event types that most likely happen:
-Event Type: chdir
-      No short syscalls for this event type.
-  For long syscalls:
-      Average duration: 8349
-      List of event types that most likely happen:
-Event Type: setxattr
-  For short syscalls:
-      Average duration: 4822
-      List of event types that most likely happen:
-         kmem_cache_alloc
-         kmem_kfree
-  For long syscalls:
-      Average duration: 6389
-      List of event types that most likely happen:
-         kmem_cache_alloc
-         kmem_kfree
-Event Type: open
-  For short syscalls:
-      Average duration: 2604
-      List of event types that most likely happen:
-         kmem_cache_alloc
-         kmem_cache_free
-         block_dirty_buffer
-         syscall_exit_read
-         kmem_mm_page_alloc
-         syscall_exit_openat
-         block_touch_buffer
-         timer_init
-         kmem_kmalloc
-         sched_stat_runtime
-         syscall_exit_poll
-         power_cpu_idle
-  For long syscalls:
-      Average duration: 28018
-      List of event types that most likely happen:
-         kmem_cache_alloc
-         kmem_cache_free
-         block_dirty_buffer
-         syscall_exit_read
-         kmem_mm_page_alloc
-         syscall_exit_openat
-         block_touch_buffer
-         timer_init
-         kmem_kmalloc
-         sched_stat_runtime
-         syscall_exit_poll
-         power_cpu_idle
-Event Type: clone
-      No short syscalls for this event type.
-  For long syscalls:
-      Average duration: 190191
-      List of event types that most likely happen:
-Event Type: bind
-  For short syscalls:
-      Average duration: 2355
-      List of event types that most likely happen:
-         None
-         kmem_cache_free
-         kmem_cache_alloc
-         kmem_kfree
-      No long syscalls for this event type.
-Event Type: set_tid_address
-  For short syscalls:
-      Average duration: 1261
-      List of event types that most likely happen:
-         None
-         kmem_kfree
-         kmem_mm_page_free
-  For long syscalls:
-      Average duration: 65017
-      List of event types that most likely happen:
-         None
-         kmem_kfree
-         kmem_mm_page_free
-Event Type: accept
-  For short syscalls:
-      Average duration: 3203
-      List of event types that most likely happen:
-         kmem_kfree
-  For long syscalls:
-      Average duration: 6701
-      List of event types that most likely happen:
-         kmem_kfree
 Event Type: readlink
   For short syscalls:
-      Average duration: 2653
+      Average duration: 2591
       List of event types that most likely happen:
          kmem_cache_alloc
-         kmem_kmalloc
-         kmem_kfree
-         kmem_cache_free
-         scsi_dispatch_cmd_start
-         kmem_mm_page_free
-  For long syscalls:
-      Average duration: 9170
-      List of event types that most likely happen:
-         kmem_cache_alloc
-         kmem_kmalloc
-         kmem_kfree
-         kmem_cache_free
-         scsi_dispatch_cmd_start
-         kmem_mm_page_free
-Event Type: prlimit64
+      No long syscalls for this event type.
+Event Type: shutdown
   For short syscalls:
-      Average duration: 809
+      Average duration: 3248
       List of event types that most likely happen:
          None
-         kmem_kfree
-         kmem_mm_page_free
-         block_rq_complete
-         sched_wakeup
-  For long syscalls:
-      Average duration: 7598
-      List of event types that most likely happen:
-         None
-         kmem_kfree
-         kmem_mm_page_free
-         block_rq_complete
-         sched_wakeup
-Event Type: utimensat
-  For short syscalls:
-      Average duration: 3225
-      List of event types that most likely happen:
-         kmem_cache_free
-         block_bio_queue
-         kmem_cache_alloc
-  For long syscalls:
-      Average duration: 12930
-      List of event types that most likely happen:
-         kmem_cache_free
-         block_bio_queue
-         kmem_cache_alloc
+      No long syscalls for this event type.
 Event Type: setitimer
   For short syscalls:
-      Average duration: 1966
+      Average duration: 2868
       List of event types that most likely happen:
          timer_hrtimer_cancel
          timer_hrtimer_start
          timer_itimer_state
-         syscall_exit_recvmsg
-         block_plug
-         kmem_mm_page_alloc
-         writeback_dirty_inode_start
-         writeback_mark_inode_dirty
-         irq_handler_exit
-         kmem_cache_alloc
-         block_touch_buffer
-         kmem_cache_free
-         skb_consume
-         x86_irq_vectors_reschedule_exit
-         sched_switch
          kmem_kfree
+         syscall_exit_poll
+         rcu_utilization
+         kmem_kmalloc
+         skb_copy_datagram_iovec
+         skb_consume
+         sched_switch
+         power_cpu_idle
+         syscall_exit_recvmsg
+         kmem_cache_free
+         kmem_mm_page_pcpu_drain
+         irq_handler_exit
+         sched_stat_runtime
+         writeback_mark_inode_dirty
+         kmem_kmalloc_node
+         kmem_mm_page_free_batched
+         kmem_mm_page_free
+         irq_softirq_raise
+         sched_waking
+         block_dirty_buffer
+         x86_exceptions_page_fault_user
+         timer_hrtimer_init
+         syscall_exit_ioctl
+         kmem_cache_alloc_node
+         sched_wakeup
+         writeback_wbc_writepage
+         scsi_dispatch_cmd_done
   For long syscalls:
-      Average duration: 8434
+      Average duration: 8960
       List of event types that most likely happen:
          timer_hrtimer_cancel
          timer_hrtimer_start
          timer_itimer_state
-         syscall_exit_recvmsg
-         block_plug
-         kmem_mm_page_alloc
-         writeback_dirty_inode_start
-         writeback_mark_inode_dirty
-         irq_handler_exit
-         kmem_cache_alloc
-         block_touch_buffer
-         kmem_cache_free
-         skb_consume
-         x86_irq_vectors_reschedule_exit
-         sched_switch
          kmem_kfree
+         syscall_exit_poll
+         rcu_utilization
+         kmem_kmalloc
+         skb_copy_datagram_iovec
+         skb_consume
+         sched_switch
+         power_cpu_idle
+         syscall_exit_recvmsg
+         kmem_cache_free
+         kmem_mm_page_pcpu_drain
+         irq_handler_exit
+         sched_stat_runtime
+         writeback_mark_inode_dirty
+         kmem_kmalloc_node
+         kmem_mm_page_free_batched
+         kmem_mm_page_free
+         irq_softirq_raise
+         sched_waking
+         block_dirty_buffer
+         x86_exceptions_page_fault_user
+         timer_hrtimer_init
+         syscall_exit_ioctl
+         kmem_cache_alloc_node
+         sched_wakeup
+         writeback_wbc_writepage
+         scsi_dispatch_cmd_done
 Event Type: newstat
   For short syscalls:
-      Average duration: 2083
+      Average duration: 3542
       List of event types that most likely happen:
          kmem_cache_alloc
          kmem_cache_free
-         kmem_kfree
-         block_touch_buffer
-         kmem_kmalloc
-         kmem_mm_page_alloc
-         sched_stat_runtime
-         writeback_mark_inode_dirty
-         kmem_mm_page_free
-         rcu_utilization
-         syscall_exit_read
-         sched_wakeup
-         writeback_dirty_inode
-         writeback_dirty_inode_start
-         block_getrq
          sched_switch
-         block_rq_insert
-         kmem_mm_page_free_batched
-         block_bio_queue
-         timer_hrtimer_start
-         block_rq_complete
-         syscall_exit_epoll_wait
-         x86_exceptions_page_fault_user
-         scsi_dispatch_cmd_start
-         irq_handler_entry
-         timer_hrtimer_cancel
-         kmem_mm_page_alloc_zone_locked
-         skb_consume
-         scsi_dispatch_cmd_done
-         block_bio_backmerge
-         syscall_exit_access
-         sched_waking
-         block_bio_remap
-         syscall_exit_getrandom
-         irq_softirq_raise
-         syscall_exit_readlinkat
-         syscall_exit_poll
-         syscall_exit_sched_yield
-         kmem_cache_alloc_node
-         mm_vmscan_lru_isolate
-         kmem_mm_page_pcpu_drain
-         block_plug
-         timer_hrtimer_init
-         block_rq_issue
-         syscall_exit_close
-         syscall_exit_sync_file_range
-         syscall_exit_fadvise64
-         writeback_dirty_page
-         power_cpu_idle
-         syscall_exit_writev
-  For long syscalls:
-      Average duration: 35324
-      List of event types that most likely happen:
-         kmem_cache_alloc
-         kmem_cache_free
-         kmem_kfree
-         block_touch_buffer
-         kmem_kmalloc
-         kmem_mm_page_alloc
-         sched_stat_runtime
-         writeback_mark_inode_dirty
-         kmem_mm_page_free
-         rcu_utilization
-         syscall_exit_read
-         sched_wakeup
-         writeback_dirty_inode
-         writeback_dirty_inode_start
-         block_getrq
-         sched_switch
-         block_rq_insert
-         kmem_mm_page_free_batched
-         block_bio_queue
-         timer_hrtimer_start
-         block_rq_complete
-         syscall_exit_epoll_wait
-         x86_exceptions_page_fault_user
-         scsi_dispatch_cmd_start
-         irq_handler_entry
-         timer_hrtimer_cancel
-         kmem_mm_page_alloc_zone_locked
-         skb_consume
-         scsi_dispatch_cmd_done
-         block_bio_backmerge
-         syscall_exit_access
-         sched_waking
-         block_bio_remap
-         syscall_exit_getrandom
-         irq_softirq_raise
-         syscall_exit_readlinkat
-         syscall_exit_poll
-         syscall_exit_sched_yield
-         kmem_cache_alloc_node
-         mm_vmscan_lru_isolate
-         kmem_mm_page_pcpu_drain
-         block_plug
-         timer_hrtimer_init
-         block_rq_issue
-         syscall_exit_close
-         syscall_exit_sync_file_range
-         syscall_exit_fadvise64
-         writeback_dirty_page
-         power_cpu_idle
-         syscall_exit_writev
-Event Type: kill
-  For short syscalls:
-      Average duration: 1569
-      List of event types that most likely happen:
-         None
-  For long syscalls:
-      Average duration: 30541
-      List of event types that most likely happen:
-         None
-Event Type: openat
-  For short syscalls:
-      Average duration: 2574
-      List of event types that most likely happen:
-         kmem_cache_alloc
-         kmem_cache_free
-         kmem_kfree
-         kmem_kmalloc
-         kmem_mm_page_alloc
-         x86_exceptions_page_fault_user
-         kmem_mm_page_free
-         block_touch_buffer
-         kmem_mm_page_free_batched
-         sched_switch
-         writeback_dirty_inode
-         writeback_mark_inode_dirty
-         writeback_dirty_inode_start
-         kmem_mm_page_alloc_zone_locked
-         sched_waking
-         sched_stat_runtime
-         rcu_utilization
-         block_dirty_buffer
-         writeback_dirty_page
-         None
-         block_bio_queue
-         block_rq_issue
-         kmem_mm_page_pcpu_drain
-         block_getrq
-         timer_init
-         syscall_exit_read
-         skb_consume
-         kmem_kmalloc_node
-         scsi_dispatch_cmd_start
-         block_bio_remap
-         syscall_exit_sendmsg
-         syscall_exit_mprotect
-         block_unplug
-         block_plug
-         skb_copy_datagram_iovec
-         syscall_exit_close
-         syscall_exit_getrandom
-         power_cpu_idle
-         timer_hrtimer_cancel
-         syscall_exit_recvmsg
-         kmem_cache_alloc_node
-         mm_vmscan_lru_isolate
-         irq_softirq_entry
-         sched_wakeup
-         workqueue_queue_work
-         scsi_dispatch_cmd_done
-         syscall_exit_write
-         block_rq_insert
-         block_bio_backmerge
-         irq_softirq_exit
-         irq_handler_exit
-         mm_vmscan_shrink_slab_start
-         syscall_exit_splice
-         irq_softirq_raise
-         syscall_exit_epoll_wait
-         timer_hrtimer_init
-         timer_hrtimer_start
-         irq_handler_entry
-         mm_vmscan_lru_shrink_inactive
-         workqueue_execute_end
-         workqueue_activate_work
-         syscall_exit_sched_yield
-         timer_expire_entry
-         syscall_exit_futex
-         syscall_exit_newfstat
-         syscall_exit_rt_sigprocmask
-         syscall_exit_mmap
-         syscall_exit_access
-         block_rq_complete
-         syscall_exit_set_tid_address
-         syscall_exit_statfs
-         mm_vmscan_shrink_slab_end
-         syscall_exit_fadvise64
-         syscall_exit_epoll_pwait
-         workqueue_execute_start
-         x86_irq_vectors_call_function_single_exit
-         x86_irq_vectors_reschedule_entry
-         syscall_exit_newstat
          syscall_exit_ioctl
-         sched_migrate_task
-         syscall_exit_sync_file_range
-         x86_irq_vectors_local_timer_entry
-         timer_hrtimer_expire_exit
-         syscall_exit_newlstat
-         sched_process_fork
-  For long syscalls:
-      Average duration: 16740
-      List of event types that most likely happen:
-         kmem_cache_alloc
-         kmem_cache_free
-         kmem_kfree
-         kmem_kmalloc
-         kmem_mm_page_alloc
          x86_exceptions_page_fault_user
-         kmem_mm_page_free
-         block_touch_buffer
-         kmem_mm_page_free_batched
-         sched_switch
-         writeback_dirty_inode
-         writeback_mark_inode_dirty
-         writeback_dirty_inode_start
-         kmem_mm_page_alloc_zone_locked
-         sched_waking
-         sched_stat_runtime
-         rcu_utilization
-         block_dirty_buffer
-         writeback_dirty_page
-         None
-         block_bio_queue
-         block_rq_issue
-         kmem_mm_page_pcpu_drain
-         block_getrq
-         timer_init
-         syscall_exit_read
+         kmem_mm_page_alloc
          skb_consume
-         kmem_kmalloc_node
-         scsi_dispatch_cmd_start
-         block_bio_remap
-         syscall_exit_sendmsg
-         syscall_exit_mprotect
-         block_unplug
-         block_plug
-         skb_copy_datagram_iovec
-         syscall_exit_close
-         syscall_exit_getrandom
-         power_cpu_idle
-         timer_hrtimer_cancel
-         syscall_exit_recvmsg
-         kmem_cache_alloc_node
-         mm_vmscan_lru_isolate
-         irq_softirq_entry
-         sched_wakeup
-         workqueue_queue_work
-         scsi_dispatch_cmd_done
-         syscall_exit_write
-         block_rq_insert
-         block_bio_backmerge
-         irq_softirq_exit
-         irq_handler_exit
-         mm_vmscan_shrink_slab_start
-         syscall_exit_splice
-         irq_softirq_raise
-         syscall_exit_epoll_wait
-         timer_hrtimer_init
-         timer_hrtimer_start
-         irq_handler_entry
-         mm_vmscan_lru_shrink_inactive
-         workqueue_execute_end
-         workqueue_activate_work
-         syscall_exit_sched_yield
-         timer_expire_entry
-         syscall_exit_futex
-         syscall_exit_newfstat
-         syscall_exit_rt_sigprocmask
-         syscall_exit_mmap
-         syscall_exit_access
-         block_rq_complete
-         syscall_exit_set_tid_address
-         syscall_exit_statfs
-         mm_vmscan_shrink_slab_end
-         syscall_exit_fadvise64
-         syscall_exit_epoll_pwait
-         workqueue_execute_start
-         x86_irq_vectors_call_function_single_exit
-         x86_irq_vectors_reschedule_entry
-         syscall_exit_newstat
+         None
+  For long syscalls:
+      Average duration: 7000
+      List of event types that most likely happen:
+         kmem_cache_alloc
+         kmem_cache_free
+         sched_switch
          syscall_exit_ioctl
-         sched_migrate_task
-         syscall_exit_sync_file_range
-         x86_irq_vectors_local_timer_entry
-         timer_hrtimer_expire_exit
-         syscall_exit_newlstat
-         sched_process_fork
-Event Type: seccomp
-  For short syscalls:
-      Average duration: 1342
-      List of event types that most likely happen:
-         None
-         x86_exceptions_page_fault_kernel
-      No long syscalls for this event type.
-Event Type: timerfd_create
-  For short syscalls:
-      Average duration: 3206
-      List of event types that most likely happen:
-         kmem_kmalloc
-         timer_hrtimer_init
-  For long syscalls:
-      Average duration: 7354
-      List of event types that most likely happen:
-         kmem_kmalloc
-         timer_hrtimer_init
-Event Type: madvise
-  For short syscalls:
-      Average duration: 2103
-      List of event types that most likely happen:
-         None
-         kmem_kmalloc_node
-         kmem_mm_page_free
-         kmem_cache_free
-         kmem_cache_alloc
-         sched_stat_runtime
-         kmem_mm_page_free_batched
-         rcu_utilization
-         sched_wakeup
-         kmem_mm_page_alloc
-         kmem_kfree
-         power_cpu_idle
-         block_touch_buffer
-         sched_switch
-         x86_irq_vectors_reschedule_entry
-         irq_softirq_raise
-         syscall_exit_read
-         sched_waking
-         block_bio_remap
-         irq_softirq_exit
-         kmem_kmalloc
-         syscall_exit_futex
-         scsi_dispatch_cmd_error
-         block_rq_insert
-         writeback_mark_inode_dirty
-         x86_irq_vectors_local_timer_exit
          x86_exceptions_page_fault_user
-         syscall_exit_munmap
-         syscall_exit_openat
-         syscall_exit_epoll_wait
-         irq_softirq_entry
-         timer_hrtimer_expire_entry
-         scsi_dispatch_cmd_start
-         timer_cancel
-         x86_irq_vectors_reschedule_exit
-         writeback_dirty_inode
-         x86_irq_vectors_local_timer_entry
-         kmem_mm_page_pcpu_drain
-         mm_vmscan_lru_shrink_inactive
-         mm_vmscan_lru_isolate
-         syscall_exit_rt_sigprocmask
-  For long syscalls:
-      Average duration: 35499
-      List of event types that most likely happen:
-         None
-         kmem_kmalloc_node
-         kmem_mm_page_free
-         kmem_cache_free
-         kmem_cache_alloc
-         sched_stat_runtime
-         kmem_mm_page_free_batched
-         rcu_utilization
-         sched_wakeup
          kmem_mm_page_alloc
-         kmem_kfree
-         power_cpu_idle
-         block_touch_buffer
-         sched_switch
-         x86_irq_vectors_reschedule_entry
-         irq_softirq_raise
-         syscall_exit_read
-         sched_waking
-         block_bio_remap
-         irq_softirq_exit
-         kmem_kmalloc
-         syscall_exit_futex
-         scsi_dispatch_cmd_error
-         block_rq_insert
-         writeback_mark_inode_dirty
-         x86_irq_vectors_local_timer_exit
-         x86_exceptions_page_fault_user
-         syscall_exit_munmap
-         syscall_exit_openat
-         syscall_exit_epoll_wait
-         irq_softirq_entry
-         timer_hrtimer_expire_entry
-         scsi_dispatch_cmd_start
-         timer_cancel
-         x86_irq_vectors_reschedule_exit
-         writeback_dirty_inode
-         x86_irq_vectors_local_timer_entry
-         kmem_mm_page_pcpu_drain
-         mm_vmscan_lru_shrink_inactive
-         mm_vmscan_lru_isolate
-         syscall_exit_rt_sigprocmask
-Event Type: close
-  For short syscalls:
-      Average duration: 356
-      List of event types that most likely happen:
-         None
-         kmem_cache_alloc
-         kmem_cache_free
-         kmem_mm_page_alloc
-         kmem_mm_page_free
-         kmem_kfree
-         x86_exceptions_page_fault_user
-         kmem_kmalloc
-         kmem_mm_page_free_batched
-         writeback_mark_inode_dirty
-         rcu_utilization
-         syscall_exit_openat
-         kmem_mm_page_alloc_zone_locked
-         writeback_dirty_inode
-         block_touch_buffer
-         kmem_mm_page_pcpu_drain
-         syscall_exit_newfstat
-         sched_switch
-         syscall_exit_recvmsg
-         block_dirty_buffer
-         writeback_dirty_page
-         sched_waking
          skb_consume
-         sched_stat_runtime
-         syscall_exit_read
-         scsi_dispatch_cmd_start
-         skb_copy_datagram_iovec
-         writeback_dirty_inode_start
-         block_bio_queue
-         block_plug
-         block_unplug
-         sched_wakeup
-         power_cpu_idle
-         syscall_exit_epoll_wait
-         kmem_cache_alloc_node
-         block_bio_remap
-         block_rq_insert
-         irq_handler_exit
-         kmem_kmalloc_node
-         syscall_exit_getrandom
-         timer_hrtimer_init
-         syscall_exit_mprotect
-         mm_vmscan_shrink_slab_end
-         scsi_dispatch_cmd_done
-         workqueue_execute_start
-         syscall_exit_futex
-         irq_handler_entry
-         syscall_exit_splice
-         timer_init
-         timer_hrtimer_start
-         irq_softirq_exit
-         workqueue_queue_work
-         syscall_exit_newstat
-         irq_softirq_raise
-         syscall_exit_poll
-         x86_irq_vectors_local_timer_exit
-         syscall_exit_ioctl
-         mm_vmscan_shrink_slab_start
-         block_rq_issue
-         workqueue_execute_end
-         irq_softirq_entry
-         block_getrq
-         syscall_exit_sched_yield
-         syscall_exit_nanosleep
-         syscall_exit_mmap
-         block_bio_backmerge
-         mm_vmscan_lru_shrink_inactive
-         x86_irq_vectors_call_function_single_entry
-         syscall_exit_sendmsg
-         block_rq_complete
-         syscall_exit_readlinkat
-         timer_start
-         syscall_exit_write
-         timer_hrtimer_cancel
-         timer_hrtimer_expire_entry
-         timer_hrtimer_expire_exit
-         syscall_exit_madvise
-         syscall_exit_prctl
-         syscall_exit_set_tid_address
-         syscall_exit_access
-         syscall_exit_kcmp
-         syscall_exit_recvfrom
-         workqueue_activate_work
-         timer_expire_entry
-         syscall_exit_sync_file_range
-         x86_irq_vectors_local_timer_entry
-         mm_vmscan_lru_isolate
-         syscall_exit_getuid
-         timer_cancel
-         x86_irq_vectors_reschedule_exit
-         syscall_exit_lseek
-  For long syscalls:
-      Average duration: 13922
-      List of event types that most likely happen:
          None
+Event Type: access
+  For short syscalls:
+      Average duration: 3508
+      List of event types that most likely happen:
          kmem_cache_alloc
          kmem_cache_free
-         kmem_mm_page_alloc
-         kmem_mm_page_free
          kmem_kfree
-         x86_exceptions_page_fault_user
          kmem_kmalloc
-         kmem_mm_page_free_batched
-         writeback_mark_inode_dirty
-         rcu_utilization
-         syscall_exit_openat
-         kmem_mm_page_alloc_zone_locked
-         writeback_dirty_inode
-         block_touch_buffer
-         kmem_mm_page_pcpu_drain
-         syscall_exit_newfstat
-         sched_switch
-         syscall_exit_recvmsg
-         block_dirty_buffer
-         writeback_dirty_page
-         sched_waking
-         skb_consume
-         sched_stat_runtime
+         None
          syscall_exit_read
-         scsi_dispatch_cmd_start
-         skb_copy_datagram_iovec
-         writeback_dirty_inode_start
-         block_bio_queue
-         block_plug
-         block_unplug
-         sched_wakeup
-         power_cpu_idle
-         syscall_exit_epoll_wait
-         kmem_cache_alloc_node
-         block_bio_remap
-         block_rq_insert
-         irq_handler_exit
-         kmem_kmalloc_node
-         syscall_exit_getrandom
-         timer_hrtimer_init
-         syscall_exit_mprotect
-         mm_vmscan_shrink_slab_end
-         scsi_dispatch_cmd_done
-         workqueue_execute_start
-         syscall_exit_futex
-         irq_handler_entry
-         syscall_exit_splice
-         timer_init
-         timer_hrtimer_start
-         irq_softirq_exit
-         workqueue_queue_work
-         syscall_exit_newstat
-         irq_softirq_raise
-         syscall_exit_poll
-         x86_irq_vectors_local_timer_exit
-         syscall_exit_ioctl
-         mm_vmscan_shrink_slab_start
-         block_rq_issue
-         workqueue_execute_end
-         irq_softirq_entry
-         block_getrq
-         syscall_exit_sched_yield
-         syscall_exit_nanosleep
-         syscall_exit_mmap
-         block_bio_backmerge
-         mm_vmscan_lru_shrink_inactive
-         x86_irq_vectors_call_function_single_entry
-         syscall_exit_sendmsg
-         block_rq_complete
-         syscall_exit_readlinkat
-         timer_start
-         syscall_exit_write
-         timer_hrtimer_cancel
-         timer_hrtimer_expire_entry
-         timer_hrtimer_expire_exit
-         syscall_exit_madvise
-         syscall_exit_prctl
-         syscall_exit_set_tid_address
-         syscall_exit_access
-         syscall_exit_kcmp
-         syscall_exit_recvfrom
-         workqueue_activate_work
-         timer_expire_entry
-         syscall_exit_sync_file_range
-         x86_irq_vectors_local_timer_entry
-         mm_vmscan_lru_isolate
-         syscall_exit_getuid
-         timer_cancel
-         x86_irq_vectors_reschedule_exit
-         syscall_exit_lseek
-Event Type: sendto
+  For long syscalls:
+      Average duration: 11593
+      List of event types that most likely happen:
+         kmem_cache_alloc
+         kmem_cache_free
+         kmem_kfree
+         kmem_kmalloc
+         None
+         syscall_exit_read
+Event Type: chmod
       No short syscalls for this event type.
   For long syscalls:
-      Average duration: 51837
+      Average duration: 113099
+      List of event types that most likely happen:
+Event Type: epoll_ctl
+  For short syscalls:
+      Average duration: 2350
+      List of event types that most likely happen:
+         None
+         kmem_mm_page_free
+         kmem_kfree
+         kmem_cache_free
+         sched_switch
+         kmem_mm_page_free_batched
+         rcu_utilization
+         kmem_mm_page_pcpu_drain
+         kmem_mm_page_alloc
+         syscall_exit_write
+         sched_stat_runtime
+         kmem_kmalloc_node
+         sched_wakeup
+         timer_hrtimer_init
+         kmem_cache_alloc_node
+         block_bio_remap
+         kmem_cache_alloc
+         timer_hrtimer_cancel
+         sched_migrate_task
+         power_cpu_idle
+         timer_hrtimer_start
+         syscall_exit_recvmsg
+         block_bio_queue
+         irq_handler_exit
+         irq_softirq_exit
+         syscall_exit_writev
+  For long syscalls:
+      Average duration: 6102
+      List of event types that most likely happen:
+         None
+         kmem_mm_page_free
+         kmem_kfree
+         kmem_cache_free
+         sched_switch
+         kmem_mm_page_free_batched
+         rcu_utilization
+         kmem_mm_page_pcpu_drain
+         kmem_mm_page_alloc
+         syscall_exit_write
+         sched_stat_runtime
+         kmem_kmalloc_node
+         sched_wakeup
+         timer_hrtimer_init
+         kmem_cache_alloc_node
+         block_bio_remap
+         kmem_cache_alloc
+         timer_hrtimer_cancel
+         sched_migrate_task
+         power_cpu_idle
+         timer_hrtimer_start
+         syscall_exit_recvmsg
+         block_bio_queue
+         irq_handler_exit
+         irq_softirq_exit
+         syscall_exit_writev
+Event Type: fallocate
+      No short syscalls for this event type.
+  For long syscalls:
+      Average duration: 29480
       List of event types that most likely happen:
 Event Type: splice
       No short syscalls for this event type.
   For long syscalls:
-      Average duration: 105873
+      Average duration: 166691
       List of event types that most likely happen:
-Event Type: getpriority
+Event Type: recvmsg
   For short syscalls:
-      Average duration: 887
+      Average duration: 2518
       List of event types that most likely happen:
-         None
-      No long syscalls for this event type.
-Event Type: getegid
-  For short syscalls:
-      Average duration: 361
-      List of event types that most likely happen:
-         None
-      No long syscalls for this event type.
-Event Type: execve
-      No short syscalls for this event type.
-  For long syscalls:
-      Average duration: 411513
-      List of event types that most likely happen:
-Event Type: futex
-  For short syscalls:
-      Average duration: 2374
-      List of event types that most likely happen:
-         sched_waking
-         None
-         sched_stat_runtime
-         rcu_utilization
-         sched_wakeup
-         timer_hrtimer_init
-         sched_switch
-         timer_hrtimer_cancel
-         kmem_kmalloc
-         kmem_cache_free
          kmem_kfree
-         kmem_cache_alloc
-         timer_hrtimer_start
-         kmem_mm_page_alloc
-         power_cpu_idle
-         writeback_mark_inode_dirty
-         writeback_dirty_inode
-         kmem_mm_page_free_batched
-         kmem_mm_page_free
-         block_dirty_buffer
-         x86_exceptions_page_fault_user
-         irq_softirq_exit
-         kmem_mm_page_pcpu_drain
-         kmem_cache_alloc_node
-         syscall_exit_sched_yield
-         skb_consume
-         kmem_mm_page_alloc_zone_locked
-         block_bio_remap
-         block_touch_buffer
-         x86_irq_vectors_reschedule_entry
-         block_bio_queue
-         syscall_exit_lseek
-         syscall_exit_access
-         syscall_exit_newfstatat
-         irq_softirq_raise
-         workqueue_execute_end
-         block_rq_insert
-         x86_irq_vectors_local_timer_exit
-         writeback_dirty_page
-         writeback_dirty_inode_start
-         syscall_exit_madvise
-         jbd2_end_commit
-         timer_cancel
-         timer_init
-         scsi_dispatch_cmd_done
-         timer_expire_exit
-         mm_vmscan_lru_isolate
-         x86_irq_vectors_reschedule_exit
-         syscall_exit_epoll_wait
-  For long syscalls:
-      Average duration: 77346
-      List of event types that most likely happen:
-         sched_waking
-         None
-         sched_stat_runtime
-         rcu_utilization
-         sched_wakeup
-         timer_hrtimer_init
-         sched_switch
-         timer_hrtimer_cancel
-         kmem_kmalloc
-         kmem_cache_free
-         kmem_kfree
-         kmem_cache_alloc
-         timer_hrtimer_start
-         kmem_mm_page_alloc
-         power_cpu_idle
-         writeback_mark_inode_dirty
-         writeback_dirty_inode
-         kmem_mm_page_free_batched
-         kmem_mm_page_free
-         block_dirty_buffer
-         x86_exceptions_page_fault_user
-         irq_softirq_exit
-         kmem_mm_page_pcpu_drain
-         kmem_cache_alloc_node
-         syscall_exit_sched_yield
-         skb_consume
-         kmem_mm_page_alloc_zone_locked
-         block_bio_remap
-         block_touch_buffer
-         x86_irq_vectors_reschedule_entry
-         block_bio_queue
-         syscall_exit_lseek
-         syscall_exit_access
-         syscall_exit_newfstatat
-         irq_softirq_raise
-         workqueue_execute_end
-         block_rq_insert
-         x86_irq_vectors_local_timer_exit
-         writeback_dirty_page
-         writeback_dirty_inode_start
-         syscall_exit_madvise
-         jbd2_end_commit
-         timer_cancel
-         timer_init
-         scsi_dispatch_cmd_done
-         timer_expire_exit
-         mm_vmscan_lru_isolate
-         x86_irq_vectors_reschedule_exit
-         syscall_exit_epoll_wait
-Event Type: connect
-  For short syscalls:
-      Average duration: 4521
-      List of event types that most likely happen:
-         skb_kfree
-         kmem_cache_alloc
-         timer_init
-  For long syscalls:
-      Average duration: 21686
-      List of event types that most likely happen:
-         skb_kfree
-         kmem_cache_alloc
-         timer_init
-Event Type: fsync
-  For short syscalls:
-      Average duration: 1358
-      List of event types that most likely happen:
-         None
-  For long syscalls:
-      Average duration: 1955231
-      List of event types that most likely happen:
-         None
-Event Type: writev
-  For short syscalls:
-      Average duration: 2557
-      List of event types that most likely happen:
-         kmem_cache_alloc_node
-         kmem_kmalloc_node
-         kmem_kfree
-         x86_irq_vectors_reschedule_entry
-         sched_wakeup
-         timer_hrtimer_cancel
-         x86_exceptions_page_fault_user
-         kmem_cache_free
-         rcu_utilization
-         irq_softirq_raise
-         x86_irq_vectors_reschedule_exit
-         power_cpu_idle
-         sched_switch
-         sched_waking
-         syscall_exit_epoll_ctl
-  For long syscalls:
-      Average duration: 21433
-      List of event types that most likely happen:
-         kmem_cache_alloc_node
-         kmem_kmalloc_node
-         kmem_kfree
-         x86_irq_vectors_reschedule_entry
-         sched_wakeup
-         timer_hrtimer_cancel
-         x86_exceptions_page_fault_user
-         kmem_cache_free
-         rcu_utilization
-         irq_softirq_raise
-         x86_irq_vectors_reschedule_exit
-         power_cpu_idle
-         sched_switch
-         sched_waking
-         syscall_exit_epoll_ctl
-Event Type: fchown
-      No short syscalls for this event type.
-  For long syscalls:
-      Average duration: 8054
-      List of event types that most likely happen:
-Event Type: prctl
-  For short syscalls:
-      Average duration: 1381
-      List of event types that most likely happen:
-         None
-         kmem_cache_alloc
-         kmem_kfree
-         kmem_kmalloc
-         kmem_mm_page_alloc
-         x86_exceptions_page_fault_user
-         scsi_dispatch_cmd_start
-  For long syscalls:
-      Average duration: 135047
-      List of event types that most likely happen:
-         None
-         kmem_cache_alloc
-         kmem_kfree
-         kmem_kmalloc
-         kmem_mm_page_alloc
-         x86_exceptions_page_fault_user
-         scsi_dispatch_cmd_start
-Event Type: sched_getaffinity
-  For short syscalls:
-      Average duration: 3804
-      List of event types that most likely happen:
-         kmem_kmalloc_node
-         kmem_mm_page_alloc
-         kmem_kfree
-      No long syscalls for this event type.
-Event Type: mkdirat
-      No short syscalls for this event type.
-  For long syscalls:
-      Average duration: 53251
-      List of event types that most likely happen:
-Event Type: rt_sigaction
-  For short syscalls:
-      Average duration: 333
-      List of event types that most likely happen:
-         None
-         kmem_cache_alloc
-         kmem_kfree
-         x86_exceptions_page_fault_user
-         kmem_cache_free
-         rcu_utilization
-         power_cpu_idle
-         kmem_mm_page_alloc_zone_locked
-         kmem_mm_page_alloc
-         sched_stat_runtime
-         sched_switch
-         timer_hrtimer_cancel
-         x86_irq_vectors_local_timer_exit
-         kmem_mm_page_free
-         timer_hrtimer_expire_entry
-         timer_hrtimer_start
-         syscall_exit_newfstat
-         kmem_kmalloc_node
-         kmem_kmalloc
-         syscall_exit_mprotect
-         block_dirty_buffer
-         writeback_mark_inode_dirty
-         x86_irq_vectors_local_timer_entry
-         irq_softirq_raise
-         block_getrq
-         block_plug
-         syscall_exit_openat
-         timer_hrtimer_expire_exit
-         irq_handler_entry
-         syscall_exit_futex
-         sched_waking
-         syscall_exit_getrandom
-  For long syscalls:
-      Average duration: 27210
-      List of event types that most likely happen:
-         None
-         kmem_cache_alloc
-         kmem_kfree
-         x86_exceptions_page_fault_user
-         kmem_cache_free
-         rcu_utilization
-         power_cpu_idle
-         kmem_mm_page_alloc_zone_locked
-         kmem_mm_page_alloc
-         sched_stat_runtime
-         sched_switch
-         timer_hrtimer_cancel
-         x86_irq_vectors_local_timer_exit
-         kmem_mm_page_free
-         timer_hrtimer_expire_entry
-         timer_hrtimer_start
-         syscall_exit_newfstat
-         kmem_kmalloc_node
-         kmem_kmalloc
-         syscall_exit_mprotect
-         block_dirty_buffer
-         writeback_mark_inode_dirty
-         x86_irq_vectors_local_timer_entry
-         irq_softirq_raise
-         block_getrq
-         block_plug
-         syscall_exit_openat
-         timer_hrtimer_expire_exit
-         irq_handler_entry
-         syscall_exit_futex
-         sched_waking
-         syscall_exit_getrandom
-Event Type: readlinkat
-  For short syscalls:
-      Average duration: 2986
-      List of event types that most likely happen:
-         kmem_cache_alloc
-         kmem_cache_free
-         kmem_kfree
-         kmem_kmalloc
-         writeback_mark_inode_dirty
-         writeback_dirty_inode
-         writeback_dirty_inode_start
-         kmem_mm_page_alloc
-         kmem_mm_page_free
-         x86_exceptions_page_fault_user
-         rcu_utilization
-         kmem_mm_page_pcpu_drain
-         block_rq_insert
-         block_touch_buffer
-         syscall_exit_sync_file_range
-         block_bio_queue
-         sched_switch
-         timer_hrtimer_start
-         syscall_exit_getrandom
-         kmem_mm_page_alloc_zone_locked
-         mm_vmscan_lru_isolate
-         workqueue_queue_work
-         block_rq_issue
-         timer_hrtimer_init
-         syscall_exit_sendmsg
-         syscall_exit_recvmsg
-         sched_wakeup
          skb_copy_datagram_iovec
-         sched_stat_runtime
-         irq_softirq_exit
-         block_getrq
-         timer_init
-         jbd2_commit_logging
-         irq_handler_entry
-         kmem_mm_page_free_batched
-         syscall_exit_read
-         syscall_exit_mprotect
-         syscall_exit_clone
-  For long syscalls:
-      Average duration: 10030
-      List of event types that most likely happen:
-         kmem_cache_alloc
          kmem_cache_free
-         kmem_kfree
          kmem_kmalloc
-         writeback_mark_inode_dirty
-         writeback_dirty_inode
-         writeback_dirty_inode_start
-         kmem_mm_page_alloc
-         kmem_mm_page_free
-         x86_exceptions_page_fault_user
+         None
          rcu_utilization
-         kmem_mm_page_pcpu_drain
-         block_rq_insert
-         block_touch_buffer
-         syscall_exit_sync_file_range
-         block_bio_queue
          sched_switch
+         syscall_exit_ioctl
+         skb_consume
+         sched_stat_runtime
+         power_cpu_idle
+         kmem_cache_alloc
+         timer_hrtimer_cancel
+         syscall_exit_write
+         syscall_exit_poll
          timer_hrtimer_start
-         syscall_exit_getrandom
-         kmem_mm_page_alloc_zone_locked
-         mm_vmscan_lru_isolate
-         workqueue_queue_work
-         block_rq_issue
+         kmem_mm_page_free
+         kmem_kmalloc_node
+         syscall_exit_epoll_wait
          timer_hrtimer_init
-         syscall_exit_sendmsg
-         syscall_exit_recvmsg
+         kmem_mm_page_alloc
+         kmem_cache_alloc_node
+         timer_itimer_state
+         syscall_exit_setitimer
+         kmem_mm_page_pcpu_drain
+         sched_waking
          sched_wakeup
-         skb_copy_datagram_iovec
-         sched_stat_runtime
+         writeback_mark_inode_dirty
+         kmem_mm_page_free_batched
+         irq_handler_entry
+         x86_exceptions_page_fault_user
+         block_touch_buffer
+         kmem_mm_page_alloc_zone_locked
+         writeback_dirty_inode
+         irq_handler_exit
          irq_softirq_exit
+         block_dirty_buffer
+         syscall_exit_read
+         writeback_dirty_inode_start
+         timer_init
+         syscall_exit_writev
+         writeback_dirty_page
+         syscall_exit_futex
+         sched_migrate_task
+         syscall_exit_openat
+         irq_softirq_entry
+         block_bio_remap
+         block_bio_queue
+         workqueue_execute_start
+         block_rq_insert
+         x86_irq_vectors_reschedule_exit
+         syscall_exit_epoll_ctl
+         writeback_wbc_writepage
+         lttng_statedump_process_ipc_ns
+         syscall_exit_fadvise64
          block_getrq
-         timer_init
-         jbd2_commit_logging
-         irq_handler_entry
-         kmem_mm_page_free_batched
-         syscall_exit_read
-         syscall_exit_mprotect
-         syscall_exit_clone
-Event Type: ioctl
-  For short syscalls:
-      Average duration: 625
-      List of event types that most likely happen:
-         None
-         lttng_statedump_file_descriptor
-         kmem_cache_free
-         irq_handler_entry
-         kmem_cache_alloc
-         lttng_statedump_process_pid_ns
-         lttng_statedump_process_user_ns
-         kmem_mm_page_alloc
-         x86_exceptions_page_fault_user
-         lttng_statedump_process_net_ns
-         lttng_statedump_process_cgroup_ns
-         lttng_statedump_process_state
-         kmem_kfree
-         syscall_exit_openat
-         rcu_utilization
-         block_touch_buffer
-         lttng_statedump_process_uts_ns
-         kmem_kmalloc
-         kmem_mm_page_free
-         syscall_exit_newfstat
-         timer_init
-         sched_switch
-         lttng_statedump_process_ipc_ns
-         syscall_exit_mmap
+         i2c_reply
+         x86_irq_vectors_irq_work_exit
+         x86_irq_vectors_reschedule_entry
+         x86_irq_vectors_local_timer_entry
+         block_unplug
+         block_rq_issue
+         x86_irq_vectors_local_timer_exit
+         timer_start
+         syscall_exit_recvfrom
          syscall_exit_access
-         irq_softirq_exit
-         sched_waking
-         block_bio_queue
-         block_bio_remap
-         writeback_mark_inode_dirty
-         scsi_dispatch_cmd_start
-         syscall_exit_read
-         syscall_exit_close
-         kmem_mm_page_alloc_zone_locked
-         syscall_exit_mprotect
-         kmem_mm_page_free_batched
-         mm_vmscan_shrink_slab_start
-         syscall_exit_mkdir
-         irq_softirq_raise
-         irq_softirq_entry
-         block_plug
-         block_bio_backmerge
-         sched_stat_runtime
+         syscall_exit_mmap
+         timer_hrtimer_expire_exit
+         timer_expire_exit
          block_rq_complete
-         syscall_exit_newlstat
-         power_cpu_idle
-         kmem_cache_alloc_node
-         workqueue_execute_start
-         scsi_dispatch_cmd_done
-         syscall_exit_epoll_wait
-         x86_irq_vectors_reschedule_exit
-         writeback_dirty_page
+         irq_softirq_raise
+         syscall_exit_prctl
+         x86_exceptions_page_fault_kernel
   For long syscalls:
-      Average duration: 157847
+      Average duration: 11786
       List of event types that most likely happen:
-         None
-         lttng_statedump_file_descriptor
-         kmem_cache_free
-         irq_handler_entry
-         kmem_cache_alloc
-         lttng_statedump_process_pid_ns
-         lttng_statedump_process_user_ns
-         kmem_mm_page_alloc
-         x86_exceptions_page_fault_user
-         lttng_statedump_process_net_ns
-         lttng_statedump_process_cgroup_ns
-         lttng_statedump_process_state
          kmem_kfree
-         syscall_exit_openat
-         rcu_utilization
-         block_touch_buffer
-         lttng_statedump_process_uts_ns
+         skb_copy_datagram_iovec
+         kmem_cache_free
          kmem_kmalloc
-         kmem_mm_page_free
-         syscall_exit_newfstat
-         timer_init
+         None
+         rcu_utilization
          sched_switch
-         lttng_statedump_process_ipc_ns
-         syscall_exit_mmap
-         syscall_exit_access
-         irq_softirq_exit
-         sched_waking
-         block_bio_queue
-         block_bio_remap
-         writeback_mark_inode_dirty
-         scsi_dispatch_cmd_start
-         syscall_exit_read
-         syscall_exit_close
-         kmem_mm_page_alloc_zone_locked
-         syscall_exit_mprotect
-         kmem_mm_page_free_batched
-         mm_vmscan_shrink_slab_start
-         syscall_exit_mkdir
-         irq_softirq_raise
-         irq_softirq_entry
-         block_plug
-         block_bio_backmerge
+         syscall_exit_ioctl
+         skb_consume
          sched_stat_runtime
-         block_rq_complete
-         syscall_exit_newlstat
          power_cpu_idle
-         kmem_cache_alloc_node
-         workqueue_execute_start
-         scsi_dispatch_cmd_done
+         kmem_cache_alloc
+         timer_hrtimer_cancel
+         syscall_exit_write
+         syscall_exit_poll
+         timer_hrtimer_start
+         kmem_mm_page_free
+         kmem_kmalloc_node
          syscall_exit_epoll_wait
-         x86_irq_vectors_reschedule_exit
+         timer_hrtimer_init
+         kmem_mm_page_alloc
+         kmem_cache_alloc_node
+         timer_itimer_state
+         syscall_exit_setitimer
+         kmem_mm_page_pcpu_drain
+         sched_waking
+         sched_wakeup
+         writeback_mark_inode_dirty
+         kmem_mm_page_free_batched
+         irq_handler_entry
+         x86_exceptions_page_fault_user
+         block_touch_buffer
+         kmem_mm_page_alloc_zone_locked
+         writeback_dirty_inode
+         irq_handler_exit
+         irq_softirq_exit
+         block_dirty_buffer
+         syscall_exit_read
+         writeback_dirty_inode_start
+         timer_init
+         syscall_exit_writev
          writeback_dirty_page
-Event Type: fadvise64
-  For short syscalls:
-      Average duration: 1632
-      List of event types that most likely happen:
-         None
-         kmem_cache_free
-         kmem_mm_page_free
-         kmem_mm_page_free_batched
-         irq_handler_entry
-         lttng_statedump_file_descriptor
-         lttng_statedump_process_pid_ns
-         lttng_statedump_process_state
-         lttng_statedump_process_user_ns
-         kmem_mm_page_alloc_zone_locked
-         lttng_statedump_process_uts_ns
-         syscall_exit_mmap
-         kmem_cache_alloc
+         syscall_exit_futex
+         sched_migrate_task
+         syscall_exit_openat
+         irq_softirq_entry
          block_bio_remap
-  For long syscalls:
-      Average duration: 112494
-      List of event types that most likely happen:
-         None
-         kmem_cache_free
-         kmem_mm_page_free
-         kmem_mm_page_free_batched
-         irq_handler_entry
-         lttng_statedump_file_descriptor
-         lttng_statedump_process_pid_ns
-         lttng_statedump_process_state
-         lttng_statedump_process_user_ns
-         kmem_mm_page_alloc_zone_locked
-         lttng_statedump_process_uts_ns
+         block_bio_queue
+         workqueue_execute_start
+         block_rq_insert
+         x86_irq_vectors_reschedule_exit
+         syscall_exit_epoll_ctl
+         writeback_wbc_writepage
+         lttng_statedump_process_ipc_ns
+         syscall_exit_fadvise64
+         block_getrq
+         i2c_reply
+         x86_irq_vectors_irq_work_exit
+         x86_irq_vectors_reschedule_entry
+         x86_irq_vectors_local_timer_entry
+         block_unplug
+         block_rq_issue
+         x86_irq_vectors_local_timer_exit
+         timer_start
+         syscall_exit_recvfrom
+         syscall_exit_access
          syscall_exit_mmap
-         kmem_cache_alloc
-         block_bio_remap
-Event Type: select
+         timer_hrtimer_expire_exit
+         timer_expire_exit
+         block_rq_complete
+         irq_softirq_raise
+         syscall_exit_prctl
+         x86_exceptions_page_fault_kernel
+Event Type: setsockopt
   For short syscalls:
-      Average duration: 1829
+      Average duration: 2693
       List of event types that most likely happen:
          None
       No long syscalls for this event type.
-Event Type: newlstat
-  For short syscalls:
-      Average duration: 1728
-      List of event types that most likely happen:
-         kmem_cache_alloc
-         kmem_cache_free
-         block_touch_buffer
-         kmem_kfree
-         kmem_mm_page_free
-         kmem_mm_page_pcpu_drain
-         kmem_mm_page_alloc
-         syscall_exit_close
-         syscall_exit_poll
-         x86_exceptions_page_fault_user
-         workqueue_queue_work
-         kmem_mm_page_free_batched
-         block_bio_backmerge
-         sched_switch
-         scsi_dispatch_cmd_start
-         block_dirty_buffer
-         rcu_utilization
-         block_bio_remap
-         block_getrq
-         workqueue_activate_work
-         syscall_exit_openat
-         irq_softirq_exit
-         block_bio_queue
-         mm_vmscan_lru_isolate
-         kmem_cache_alloc_node
-         irq_softirq_raise
-  For long syscalls:
-      Average duration: 25404
-      List of event types that most likely happen:
-         kmem_cache_alloc
-         kmem_cache_free
-         block_touch_buffer
-         kmem_kfree
-         kmem_mm_page_free
-         kmem_mm_page_pcpu_drain
-         kmem_mm_page_alloc
-         syscall_exit_close
-         syscall_exit_poll
-         x86_exceptions_page_fault_user
-         workqueue_queue_work
-         kmem_mm_page_free_batched
-         block_bio_backmerge
-         sched_switch
-         scsi_dispatch_cmd_start
-         block_dirty_buffer
-         rcu_utilization
-         block_bio_remap
-         block_getrq
-         workqueue_activate_work
-         syscall_exit_openat
-         irq_softirq_exit
-         block_bio_queue
-         mm_vmscan_lru_isolate
-         kmem_cache_alloc_node
-         irq_softirq_raise
 Event Type: fcntl
   For short syscalls:
-      Average duration: 420
+      Average duration: 1630
       List of event types that most likely happen:
          None
-         kmem_cache_free
-         kmem_cache_alloc
-         kmem_mm_page_alloc
-         kmem_mm_page_free
-         kmem_kfree
-         kmem_kmalloc
-         block_dirty_buffer
-         kmem_mm_page_free_batched
-         writeback_mark_inode_dirty
-         syscall_exit_sync_file_range
-         block_touch_buffer
-         syscall_exit_write
-         timer_hrtimer_init
-         syscall_exit_epoll_wait
-         timer_init
-         block_getrq
-         writeback_dirty_inode_start
-         block_rq_insert
-         kmem_mm_page_alloc_zone_locked
-         skb_copy_datagram_iovec
-         x86_exceptions_page_fault_user
-         kmem_kmalloc_node
-         rcu_utilization
-         sched_wakeup
-         power_cpu_idle
-  For long syscalls:
-      Average duration: 39423
-      List of event types that most likely happen:
-         None
-         kmem_cache_free
-         kmem_cache_alloc
-         kmem_mm_page_alloc
-         kmem_mm_page_free
-         kmem_kfree
-         kmem_kmalloc
-         block_dirty_buffer
-         kmem_mm_page_free_batched
-         writeback_mark_inode_dirty
-         syscall_exit_sync_file_range
-         block_touch_buffer
-         syscall_exit_write
-         timer_hrtimer_init
-         syscall_exit_epoll_wait
-         timer_init
-         block_getrq
-         writeback_dirty_inode_start
-         block_rq_insert
-         kmem_mm_page_alloc_zone_locked
-         skb_copy_datagram_iovec
-         x86_exceptions_page_fault_user
-         kmem_kmalloc_node
-         rcu_utilization
-         sched_wakeup
-         power_cpu_idle
-Event Type: getsockname
-  For short syscalls:
-      Average duration: 1301
-      List of event types that most likely happen:
-         None
-         kmem_cache_free
-         kmem_cache_alloc
       No long syscalls for this event type.
-Event Type: lseek
-  For short syscalls:
-      Average duration: 538
-      List of event types that most likely happen:
-         None
-         kmem_kmalloc
-         kmem_cache_alloc
-         kmem_kfree
-         kmem_cache_free
-         kmem_mm_page_alloc
-         syscall_exit_openat
-         syscall_exit_recvmsg
-         skb_consume
-         block_touch_buffer
-         syscall_exit_write
-         power_cpu_idle
-         block_getrq
-         timer_init
-         sched_stat_runtime
-         irq_softirq_entry
-         x86_exceptions_page_fault_user
-         kmem_kmalloc_node
-         syscall_exit_read
-         mm_vmscan_lru_isolate
-         syscall_exit_close
-  For long syscalls:
-      Average duration: 15210
-      List of event types that most likely happen:
-         None
-         kmem_kmalloc
-         kmem_cache_alloc
-         kmem_kfree
-         kmem_cache_free
-         kmem_mm_page_alloc
-         syscall_exit_openat
-         syscall_exit_recvmsg
-         skb_consume
-         block_touch_buffer
-         syscall_exit_write
-         power_cpu_idle
-         block_getrq
-         timer_init
-         sched_stat_runtime
-         irq_softirq_entry
-         x86_exceptions_page_fault_user
-         kmem_kmalloc_node
-         syscall_exit_read
-         mm_vmscan_lru_isolate
-         syscall_exit_close
-Event Type: inotify_rm_watch
-  For short syscalls:
-      Average duration: 3326
-      List of event types that most likely happen:
-         kmem_kmalloc
-         sched_stat_runtime
-  For long syscalls:
-      Average duration: 17764
-      List of event types that most likely happen:
-         kmem_kmalloc
-         sched_stat_runtime
-Event Type: access
-  For short syscalls:
-      Average duration: 3212
-      List of event types that most likely happen:
-         kmem_cache_alloc
-         kmem_cache_free
-         kmem_kmalloc
-         kmem_kfree
-         kmem_mm_page_alloc
-         block_touch_buffer
-         x86_exceptions_page_fault_user
-         block_getrq
-         kmem_mm_page_free
-         block_bio_queue
-         syscall_exit_read
-         kmem_mm_page_alloc_zone_locked
-         block_rq_insert
-         block_bio_remap
-         block_unplug
-         writeback_dirty_inode
-         skb_copy_datagram_iovec
-         sched_switch
-         sched_wakeup
-         block_bio_backmerge
-         writeback_dirty_inode_start
-         kmem_cache_alloc_node
-         rcu_utilization
-         writeback_mark_inode_dirty
-         sched_stat_runtime
-         syscall_exit_mprotect
-         block_rq_issue
-         syscall_exit_newlstat
-         scsi_dispatch_cmd_done
-         irq_softirq_exit
-         block_rq_complete
-         syscall_exit_brk
-         syscall_exit_close
-         None
-         scsi_dispatch_cmd_start
-         power_cpu_idle
-         syscall_exit_newstat
-         syscall_exit_poll
-         syscall_exit_epoll_wait
-  For long syscalls:
-      Average duration: 28851
-      List of event types that most likely happen:
-         kmem_cache_alloc
-         kmem_cache_free
-         kmem_kmalloc
-         kmem_kfree
-         kmem_mm_page_alloc
-         block_touch_buffer
-         x86_exceptions_page_fault_user
-         block_getrq
-         kmem_mm_page_free
-         block_bio_queue
-         syscall_exit_read
-         kmem_mm_page_alloc_zone_locked
-         block_rq_insert
-         block_bio_remap
-         block_unplug
-         writeback_dirty_inode
-         skb_copy_datagram_iovec
-         sched_switch
-         sched_wakeup
-         block_bio_backmerge
-         writeback_dirty_inode_start
-         kmem_cache_alloc_node
-         rcu_utilization
-         writeback_mark_inode_dirty
-         sched_stat_runtime
-         syscall_exit_mprotect
-         block_rq_issue
-         syscall_exit_newlstat
-         scsi_dispatch_cmd_done
-         irq_softirq_exit
-         block_rq_complete
-         syscall_exit_brk
-         syscall_exit_close
-         None
-         scsi_dispatch_cmd_start
-         power_cpu_idle
-         syscall_exit_newstat
-         syscall_exit_poll
-         syscall_exit_epoll_wait
-Event Type: dup
-  For short syscalls:
-      Average duration: 810
-      List of event types that most likely happen:
-         None
-         irq_softirq_entry
-      No long syscalls for this event type.
-Event Type: statfs
-  For short syscalls:
-      Average duration: 1737
-      List of event types that most likely happen:
-         kmem_cache_alloc
-         kmem_cache_free
-         kmem_kmalloc
-         x86_exceptions_page_fault_kernel
-  For long syscalls:
-      Average duration: 12978
-      List of event types that most likely happen:
-         kmem_cache_alloc
-         kmem_cache_free
-         kmem_kmalloc
-         x86_exceptions_page_fault_kernel
-Event Type: chmod
+Event Type: rename
       No short syscalls for this event type.
   For long syscalls:
-      Average duration: 18379
+      Average duration: 415265
       List of event types that most likely happen:
-Event Type: shutdown
+Event Type: munmap
+  For short syscalls:
+      Average duration: 2933
+      List of event types that most likely happen:
+         kmem_cache_free
+         kmem_kfree
+         rcu_utilization
+         workqueue_activate_work
+         workqueue_execute_end
+         kmem_mm_page_pcpu_drain
+         kmem_mm_page_alloc_zone_locked
+         kmem_mm_page_alloc
+         sched_switch
+         timer_itimer_state
+         timer_hrtimer_expire_entry
+         sched_stat_runtime
+  For long syscalls:
+      Average duration: 12278
+      List of event types that most likely happen:
+         kmem_cache_free
+         kmem_kfree
+         rcu_utilization
+         workqueue_activate_work
+         workqueue_execute_end
+         kmem_mm_page_pcpu_drain
+         kmem_mm_page_alloc_zone_locked
+         kmem_mm_page_alloc
+         sched_switch
+         timer_itimer_state
+         timer_hrtimer_expire_entry
+         sched_stat_runtime
+Event Type: rt_sigaction
+  For short syscalls:
+      Average duration: 1496
+      List of event types that most likely happen:
+         None
+         kmem_mm_page_alloc_zone_locked
+         kmem_cache_alloc_node
+         writeback_dirty_inode_start
+         sched_waking
+         irq_softirq_entry
+      No long syscalls for this event type.
+Event Type: getdents
+  For short syscalls:
+      Average duration: 1699
+      List of event types that most likely happen:
+         None
+         kmem_kfree
+         syscall_exit_read
+         syscall_exit_poll
+         power_cpu_idle
+         skb_consume
+  For long syscalls:
+      Average duration: 6920
+      List of event types that most likely happen:
+         None
+         kmem_kfree
+         syscall_exit_read
+         syscall_exit_poll
+         power_cpu_idle
+         skb_consume
+Event Type: set_robust_list
+  For short syscalls:
+      Average duration: 1923
+      List of event types that most likely happen:
+         syscall_exit_recvmsg
+         syscall_exit_write
+         None
+         syscall_exit_epoll_wait
+         kmem_cache_free
+      No long syscalls for this event type.
+Event Type: pipe2
+      No short syscalls for this event type.
+  For long syscalls:
+      Average duration: 11288
+      List of event types that most likely happen:
+Event Type: close
+  For short syscalls:
+      Average duration: 1034
+      List of event types that most likely happen:
+         None
+         kmem_cache_free
+         kmem_kfree
+         sched_switch
+         kmem_mm_page_pcpu_drain
+         syscall_exit_recvmsg
+         kmem_mm_page_free_batched
+         rcu_utilization
+         timer_hrtimer_expire_entry
+         x86_exceptions_page_fault_user
+         syscall_exit_poll
+         sched_stat_runtime
+         sched_wakeup
+         irq_softirq_entry
+         irq_handler_exit
+         sched_waking
+         kmem_cache_alloc_node
+         timer_hrtimer_cancel
+         kmem_mm_page_free
+         skb_copy_datagram_iovec
+         kmem_cache_alloc
+         syscall_exit_ioctl
+         skb_consume
+  For long syscalls:
+      Average duration: 7256
+      List of event types that most likely happen:
+         None
+         kmem_cache_free
+         kmem_kfree
+         sched_switch
+         kmem_mm_page_pcpu_drain
+         syscall_exit_recvmsg
+         kmem_mm_page_free_batched
+         rcu_utilization
+         timer_hrtimer_expire_entry
+         x86_exceptions_page_fault_user
+         syscall_exit_poll
+         sched_stat_runtime
+         sched_wakeup
+         irq_softirq_entry
+         irq_handler_exit
+         sched_waking
+         kmem_cache_alloc_node
+         timer_hrtimer_cancel
+         kmem_mm_page_free
+         skb_copy_datagram_iovec
+         kmem_cache_alloc
+         syscall_exit_ioctl
+         skb_consume
+Event Type: rt_sigprocmask
+  For short syscalls:
+      Average duration: 1282
+      List of event types that most likely happen:
+         syscall_exit_writev
+      No long syscalls for this event type.
+Event Type: dup2
+  For short syscalls:
+      Average duration: 2437
+      List of event types that most likely happen:
+         None
+      No long syscalls for this event type.
+Event Type: futex
+  For short syscalls:
+      Average duration: 1337
+      List of event types that most likely happen:
+         None
+         sched_waking
+         rcu_utilization
+         sched_stat_runtime
+         kmem_kfree
+         sched_switch
+         syscall_exit_poll
+         sched_wakeup
+         syscall_exit_recvmsg
+         kmem_cache_free
+         syscall_exit_write
+         power_cpu_idle
+         timer_hrtimer_cancel
+         skb_copy_datagram_iovec
+         kmem_cache_alloc
+         kmem_kmalloc
+         skb_consume
+         kmem_kmalloc_node
+         timer_hrtimer_start
+         x86_irq_vectors_reschedule_entry
+         kmem_mm_page_alloc
+         syscall_exit_read
+         sched_migrate_task
+         kmem_cache_alloc_node
+         syscall_exit_sendmsg
+         writeback_dirty_inode
+         block_plug
+         block_bio_backmerge
+         x86_exceptions_page_fault_user
+         timer_hrtimer_init
+         syscall_exit_ioctl
+         writeback_wbc_writepage
+         syscall_exit_setitimer
+  For long syscalls:
+      Average duration: 18343
+      List of event types that most likely happen:
+         None
+         sched_waking
+         rcu_utilization
+         sched_stat_runtime
+         kmem_kfree
+         sched_switch
+         syscall_exit_poll
+         sched_wakeup
+         syscall_exit_recvmsg
+         kmem_cache_free
+         syscall_exit_write
+         power_cpu_idle
+         timer_hrtimer_cancel
+         skb_copy_datagram_iovec
+         kmem_cache_alloc
+         kmem_kmalloc
+         skb_consume
+         kmem_kmalloc_node
+         timer_hrtimer_start
+         x86_irq_vectors_reschedule_entry
+         kmem_mm_page_alloc
+         syscall_exit_read
+         sched_migrate_task
+         kmem_cache_alloc_node
+         syscall_exit_sendmsg
+         writeback_dirty_inode
+         block_plug
+         block_bio_backmerge
+         x86_exceptions_page_fault_user
+         timer_hrtimer_init
+         syscall_exit_ioctl
+         writeback_wbc_writepage
+         syscall_exit_setitimer
+Event Type: poll
+  For short syscalls:
+      Average duration: 2519
+      List of event types that most likely happen:
+         None
+         kmem_kfree
+         kmem_kmalloc
+         syscall_exit_write
+         sched_switch
+         rcu_utilization
+         kmem_cache_free
+         kmem_cache_alloc
+         sched_stat_runtime
+         kmem_cache_alloc_node
+         syscall_exit_recvmsg
+         syscall_exit_read
+         power_cpu_idle
+         syscall_exit_ioctl
+         skb_copy_datagram_iovec
+         sched_waking
+         kmem_mm_page_free
+         syscall_exit_futex
+         kmem_mm_page_alloc
+         irq_softirq_raise
+         timer_hrtimer_start
+         syscall_exit_epoll_wait
+         sched_wakeup
+         timer_hrtimer_init
+         kmem_mm_page_free_batched
+         timer_hrtimer_cancel
+         syscall_exit_writev
+         block_touch_buffer
+         syscall_exit_setitimer
+         sched_migrate_task
+         irq_softirq_entry
+         x86_exceptions_page_fault_user
+         kmem_mm_page_pcpu_drain
+         irq_handler_entry
+         irq_softirq_exit
+         kmem_kmalloc_node
+         workqueue_queue_work
+         x86_irq_vectors_reschedule_exit
+         skb_consume
+         syscall_exit_close
+         writeback_dirty_inode_start
+         timer_itimer_state
+         kmem_mm_page_alloc_zone_locked
+         syscall_exit_sync_file_range
+         irq_handler_exit
+         block_bio_backmerge
+         block_rq_complete
+         block_dirty_buffer
+         syscall_exit_sendmsg
+         sched_process_wait
+         writeback_dirty_inode
+         syscall_exit_munmap
+         writeback_wbc_writepage
+         workqueue_execute_start
+  For long syscalls:
+      Average duration: 872787
+      List of event types that most likely happen:
+         None
+         kmem_kfree
+         kmem_kmalloc
+         syscall_exit_write
+         sched_switch
+         rcu_utilization
+         kmem_cache_free
+         kmem_cache_alloc
+         sched_stat_runtime
+         kmem_cache_alloc_node
+         syscall_exit_recvmsg
+         syscall_exit_read
+         power_cpu_idle
+         syscall_exit_ioctl
+         skb_copy_datagram_iovec
+         sched_waking
+         kmem_mm_page_free
+         syscall_exit_futex
+         kmem_mm_page_alloc
+         irq_softirq_raise
+         timer_hrtimer_start
+         syscall_exit_epoll_wait
+         sched_wakeup
+         timer_hrtimer_init
+         kmem_mm_page_free_batched
+         timer_hrtimer_cancel
+         syscall_exit_writev
+         block_touch_buffer
+         syscall_exit_setitimer
+         sched_migrate_task
+         irq_softirq_entry
+         x86_exceptions_page_fault_user
+         kmem_mm_page_pcpu_drain
+         irq_handler_entry
+         irq_softirq_exit
+         kmem_kmalloc_node
+         workqueue_queue_work
+         x86_irq_vectors_reschedule_exit
+         skb_consume
+         syscall_exit_close
+         writeback_dirty_inode_start
+         timer_itimer_state
+         kmem_mm_page_alloc_zone_locked
+         syscall_exit_sync_file_range
+         irq_handler_exit
+         block_bio_backmerge
+         block_rq_complete
+         block_dirty_buffer
+         syscall_exit_sendmsg
+         sched_process_wait
+         writeback_dirty_inode
+         syscall_exit_munmap
+         writeback_wbc_writepage
+         workqueue_execute_start
+Event Type: recvfrom
+  For short syscalls:
+      Average duration: 2818
+      List of event types that most likely happen:
+         kmem_cache_alloc_node
+      No long syscalls for this event type.
+Event Type: writev
+  For short syscalls:
+      Average duration: 3125
+      List of event types that most likely happen:
+         kmem_cache_alloc_node
+         kmem_kfree
+         kmem_kmalloc_node
+         kmem_kmalloc
+         kmem_cache_free
+         sched_switch
+         rcu_utilization
+         syscall_exit_recvmsg
+         syscall_exit_poll
+         timer_hrtimer_cancel
+         power_cpu_idle
+         skb_copy_datagram_iovec
+         None
+         sched_wakeup
+         writeback_mark_inode_dirty
+         syscall_exit_ioctl
+         timer_hrtimer_start
+         block_rq_issue
+         kmem_cache_alloc
+         sched_waking
+         kmem_mm_page_free
+         timer_itimer_state
+         syscall_exit_setitimer
+         skb_consume
+  For long syscalls:
+      Average duration: 21752
+      List of event types that most likely happen:
+         kmem_cache_alloc_node
+         kmem_kfree
+         kmem_kmalloc_node
+         kmem_kmalloc
+         kmem_cache_free
+         sched_switch
+         rcu_utilization
+         syscall_exit_recvmsg
+         syscall_exit_poll
+         timer_hrtimer_cancel
+         power_cpu_idle
+         skb_copy_datagram_iovec
+         None
+         sched_wakeup
+         writeback_mark_inode_dirty
+         syscall_exit_ioctl
+         timer_hrtimer_start
+         block_rq_issue
+         kmem_cache_alloc
+         sched_waking
+         kmem_mm_page_free
+         timer_itimer_state
+         syscall_exit_setitimer
+         skb_consume
+Event Type: unlink
+      No short syscalls for this event type.
+  For long syscalls:
+      Average duration: 8488
+      List of event types that most likely happen:
+Event Type: getppid
+  For short syscalls:
+      Average duration: 1814
+      List of event types that most likely happen:
+         None
+      No long syscalls for this event type.
+Event Type: brk
+  For short syscalls:
+      Average duration: 1960
+      List of event types that most likely happen:
+         None
+         kmem_kfree
+  For long syscalls:
+      Average duration: 6748
+      List of event types that most likely happen:
+         None
+         kmem_kfree
+Event Type: prlimit64
+  For short syscalls:
+      Average duration: 2095
+      List of event types that most likely happen:
+         None
+      No long syscalls for this event type.
+Event Type: inotify_add_watch
+  For short syscalls:
+      Average duration: 2904
+      List of event types that most likely happen:
+         kmem_cache_alloc
+         kmem_cache_free
+  For long syscalls:
+      Average duration: 14730
+      List of event types that most likely happen:
+         kmem_cache_alloc
+         kmem_cache_free
+Event Type: read
+  For short syscalls:
+      Average duration: 2276
+      List of event types that most likely happen:
+         None
+         kmem_kfree
+         rcu_utilization
+         sched_stat_runtime
+         kmem_cache_free
+         sched_switch
+         power_cpu_idle
+         kmem_mm_page_free
+         kmem_mm_page_pcpu_drain
+         kmem_kmalloc_node
+         kmem_kmalloc
+         syscall_exit_write
+         sched_waking
+         skb_copy_datagram_iovec
+         kmem_cache_alloc_node
+         kmem_cache_alloc
+         syscall_exit_poll
+         timer_hrtimer_cancel
+         irq_handler_entry
+         syscall_exit_recvmsg
+         syscall_exit_ioctl
+         timer_hrtimer_start
+         skb_consume
+         writeback_dirty_inode_start
+         sched_wakeup
+         syscall_exit_setitimer
+         block_touch_buffer
+         writeback_mark_inode_dirty
+         workqueue_execute_start
+         syscall_exit_futex
+         syscall_exit_sendmsg
+         x86_exceptions_page_fault_user
+         workqueue_execute_end
+         timer_itimer_state
+         block_bio_remap
+         writeback_dirty_inode
+         timer_hrtimer_init
+         syscall_exit_epoll_wait
+         kmem_mm_page_alloc_zone_locked
+         writeback_wbc_writepage
+         timer_start
+         syscall_exit_mprotect
+         sched_migrate_task
+         syscall_exit_mmap
+         kmem_mm_page_free_batched
+         kmem_mm_page_alloc
+         block_plug
+         timer_init
+         scsi_dispatch_cmd_start
+         syscall_exit_close
+         syscall_exit_readlink
+         writeback_dirty_page
+         writeback_write_inode_start
+         syscall_exit_writev
+         workqueue_queue_work
+  For long syscalls:
+      Average duration: 13137
+      List of event types that most likely happen:
+         None
+         kmem_kfree
+         rcu_utilization
+         sched_stat_runtime
+         kmem_cache_free
+         sched_switch
+         power_cpu_idle
+         kmem_mm_page_free
+         kmem_mm_page_pcpu_drain
+         kmem_kmalloc_node
+         kmem_kmalloc
+         syscall_exit_write
+         sched_waking
+         skb_copy_datagram_iovec
+         kmem_cache_alloc_node
+         kmem_cache_alloc
+         syscall_exit_poll
+         timer_hrtimer_cancel
+         irq_handler_entry
+         syscall_exit_recvmsg
+         syscall_exit_ioctl
+         timer_hrtimer_start
+         skb_consume
+         writeback_dirty_inode_start
+         sched_wakeup
+         syscall_exit_setitimer
+         block_touch_buffer
+         writeback_mark_inode_dirty
+         workqueue_execute_start
+         syscall_exit_futex
+         syscall_exit_sendmsg
+         x86_exceptions_page_fault_user
+         workqueue_execute_end
+         timer_itimer_state
+         block_bio_remap
+         writeback_dirty_inode
+         timer_hrtimer_init
+         syscall_exit_epoll_wait
+         kmem_mm_page_alloc_zone_locked
+         writeback_wbc_writepage
+         timer_start
+         syscall_exit_mprotect
+         sched_migrate_task
+         syscall_exit_mmap
+         kmem_mm_page_free_batched
+         kmem_mm_page_alloc
+         block_plug
+         timer_init
+         scsi_dispatch_cmd_start
+         syscall_exit_close
+         syscall_exit_readlink
+         writeback_dirty_page
+         writeback_write_inode_start
+         syscall_exit_writev
+         workqueue_queue_work
+Event Type: sync_file_range
+  For short syscalls:
+      Average duration: 940
+      List of event types that most likely happen:
+         None
+         lttng_statedump_file_descriptor
+         lttng_statedump_process_pid_ns
+         lttng_statedump_process_ipc_ns
+         lttng_statedump_process_cgroup_ns
+         lttng_statedump_process_net_ns
+         lttng_statedump_process_uts_ns
+         lttng_statedump_process_user_ns
+         lttng_statedump_process_state
+         lttng_statedump_interrupt
+  For long syscalls:
+      Average duration: 60328
+      List of event types that most likely happen:
+         None
+         lttng_statedump_file_descriptor
+         lttng_statedump_process_pid_ns
+         lttng_statedump_process_ipc_ns
+         lttng_statedump_process_cgroup_ns
+         lttng_statedump_process_net_ns
+         lttng_statedump_process_uts_ns
+         lttng_statedump_process_user_ns
+         lttng_statedump_process_state
+         lttng_statedump_interrupt
+Event Type: newfstat
+  For short syscalls:
+      Average duration: 1589
+      List of event types that most likely happen:
+         None
+         kmem_kfree
+         rcu_utilization
+         kmem_cache_free
+         kmem_mm_page_free_batched
+         sched_switch
+         sched_waking
+         x86_exceptions_page_fault_user
+         irq_softirq_exit
+         power_cpu_idle
+         syscall_exit_write
+         kmem_mm_page_pcpu_drain
+         kmem_mm_page_free
+         x86_irq_vectors_reschedule_entry
+         syscall_exit_poll
+         sched_migrate_task
+         kmem_cache_alloc
+         napi_poll
+         syscall_exit_recvmsg
+         sched_wakeup
+         timer_expire_exit
+         timer_hrtimer_cancel
+         syscall_exit_close
+  For long syscalls:
+      Average duration: 6353
+      List of event types that most likely happen:
+         None
+         kmem_kfree
+         rcu_utilization
+         kmem_cache_free
+         kmem_mm_page_free_batched
+         sched_switch
+         sched_waking
+         x86_exceptions_page_fault_user
+         irq_softirq_exit
+         power_cpu_idle
+         syscall_exit_write
+         kmem_mm_page_pcpu_drain
+         kmem_mm_page_free
+         x86_irq_vectors_reschedule_entry
+         syscall_exit_poll
+         sched_migrate_task
+         kmem_cache_alloc
+         napi_poll
+         syscall_exit_recvmsg
+         sched_wakeup
+         timer_expire_exit
+         timer_hrtimer_cancel
+         syscall_exit_close
+Event Type: getdents64
+  For short syscalls:
+      Average duration: 2291
+      List of event types that most likely happen:
+         kmem_cache_free
+  For long syscalls:
+      Average duration: 43920
+      List of event types that most likely happen:
+         kmem_cache_free
+Event Type: inotify_rm_watch
+      No short syscalls for this event type.
+  For long syscalls:
+      Average duration: 31447
+      List of event types that most likely happen:
+Event Type: openat
+  For short syscalls:
+      Average duration: 4385
+      List of event types that most likely happen:
+         kmem_cache_alloc
+         kmem_cache_free
+         workqueue_execute_end
+  For long syscalls:
+      Average duration: 14541
+      List of event types that most likely happen:
+         kmem_cache_alloc
+         kmem_cache_free
+         workqueue_execute_end
+Event Type: wait4
+      No short syscalls for this event type.
+  For long syscalls:
+      Average duration: 13592
+      List of event types that most likely happen:
+Event Type: mprotect
+  For short syscalls:
+      Average duration: 2461
+      List of event types that most likely happen:
+         kmem_cache_free
+         kmem_cache_alloc
+         kmem_mm_page_alloc
+         kmem_kmalloc_node
+         kmem_kfree
+         kmem_mm_page_pcpu_drain
+         kmem_mm_page_alloc_zone_locked
+         kmem_mm_page_free_batched
+         syscall_exit_openat
+         x86_irq_vectors_call_function_single_exit
+         timer_hrtimer_expire_entry
+         irq_softirq_entry
+         workqueue_activate_work
+         x86_irq_vectors_call_function_single_entry
+         skb_copy_datagram_iovec
+         syscall_exit_ioctl
+         kmem_kmalloc
+         workqueue_queue_work
+  For long syscalls:
+      Average duration: 11799
+      List of event types that most likely happen:
+         kmem_cache_free
+         kmem_cache_alloc
+         kmem_mm_page_alloc
+         kmem_kmalloc_node
+         kmem_kfree
+         kmem_mm_page_pcpu_drain
+         kmem_mm_page_alloc_zone_locked
+         kmem_mm_page_free_batched
+         syscall_exit_openat
+         x86_irq_vectors_call_function_single_exit
+         timer_hrtimer_expire_entry
+         irq_softirq_entry
+         workqueue_activate_work
+         x86_irq_vectors_call_function_single_entry
+         skb_copy_datagram_iovec
+         syscall_exit_ioctl
+         kmem_kmalloc
+         workqueue_queue_work
+Event Type: set_tid_address
+  For short syscalls:
+      Average duration: 1249
+      List of event types that most likely happen:
+         None
+      No long syscalls for this event type.
+Event Type: kcmp
   For short syscalls:
       Average duration: 1956
       List of event types that most likely happen:
          None
+         kmem_cache_free
+         sched_switch
+         rcu_utilization
+         kmem_kfree
+         sched_stat_runtime
+         kmem_kmalloc
+         workqueue_activate_work
+         power_cpu_idle
+         irq_softirq_exit
+         sched_wakeup
+         workqueue_execute_start
+         sched_waking
+         syscall_exit_recvmsg
+         syscall_exit_poll
+         kmem_cache_alloc
          irq_softirq_raise
+         block_getrq
          kmem_mm_page_alloc
-      No long syscalls for this event type.
-Event Type: getppid
-  For short syscalls:
-      Average duration: 772
+         timer_hrtimer_start
+         syscall_exit_close
+         x86_exceptions_page_fault_user
+  For long syscalls:
+      Average duration: 9618
       List of event types that most likely happen:
          None
-         kmem_kmalloc
-         kmem_cache_alloc
+         kmem_cache_free
+         sched_switch
+         rcu_utilization
          kmem_kfree
+         sched_stat_runtime
+         kmem_kmalloc
+         workqueue_activate_work
+         power_cpu_idle
+         irq_softirq_exit
+         sched_wakeup
+         workqueue_execute_start
+         sched_waking
+         syscall_exit_recvmsg
+         syscall_exit_poll
+         kmem_cache_alloc
+         irq_softirq_raise
+         block_getrq
+         kmem_mm_page_alloc
+         timer_hrtimer_start
+         syscall_exit_close
+         x86_exceptions_page_fault_user
+Event Type: epoll_wait
+  For short syscalls:
+      Average duration: 2718
+      List of event types that most likely happen:
+         None
+         kmem_kfree
+         power_cpu_idle
+         skb_consume
+         kmem_cache_free
+         sched_switch
+         kmem_mm_page_pcpu_drain
+         syscall_exit_write
+         kmem_mm_page_alloc
+         rcu_utilization
+         syscall_exit_read
+         irq_handler_entry
+         syscall_exit_getpid
+         kmem_kmalloc
+         syscall_exit_ioctl
+         kmem_mm_page_free_batched
+         kmem_mm_page_free
          kmem_mm_page_alloc_zone_locked
-         kmem_mm_page_alloc
-         x86_exceptions_page_fault_user
-      No long syscalls for this event type.
-Event Type: inotify_add_watch
-  For short syscalls:
-      Average duration: 2510
-      List of event types that most likely happen:
-         kmem_cache_alloc
-         kmem_cache_free
-  For long syscalls:
-      Average duration: 11799
-      List of event types that most likely happen:
-         kmem_cache_alloc
-         kmem_cache_free
-Event Type: getsockopt
-  For short syscalls:
-      Average duration: 1339
-      List of event types that most likely happen:
-         None
-         kmem_kmalloc
-         x86_exceptions_page_fault_user
-         sched_wakeup
-         syscall_exit_recvmsg
-         kmem_kfree
-  For long syscalls:
-      Average duration: 8568
-      List of event types that most likely happen:
-         None
-         kmem_kmalloc
-         x86_exceptions_page_fault_user
-         sched_wakeup
-         syscall_exit_recvmsg
-         kmem_kfree
-Event Type: renameat
-      No short syscalls for this event type.
-  For long syscalls:
-      Average duration: 79661
-      List of event types that most likely happen:
-Event Type: signalfd4
-      No short syscalls for this event type.
-  For long syscalls:
-      Average duration: 8684
-      List of event types that most likely happen:
-Event Type: sched_yield
-  For short syscalls:
-      Average duration: 968
-      List of event types that most likely happen:
-         sched_stat_runtime
-         rcu_utilization
-         sched_switch
-         x86_exceptions_page_fault_user
-         None
-         kmem_cache_alloc
-         kmem_cache_free
-         syscall_exit_openat
-         kmem_mm_page_alloc
-         irq_handler_exit
-         syscall_exit_close
-         block_bio_remap
-         syscall_exit_getrandom
-         timer_hrtimer_expire_exit
-         x86_irq_vectors_local_timer_exit
-         syscall_exit_poll
-         workqueue_execute_start
-         irq_softirq_raise
-         x86_irq_vectors_reschedule_exit
-         syscall_exit_futex
-         sched_wakeup
-         sched_waking
-         syscall_exit_mmap
-         scsi_dispatch_cmd_start
-         timer_hrtimer_cancel
-         timer_expire_exit
-         timer_hrtimer_start
-  For long syscalls:
-      Average duration: 17578
-      List of event types that most likely happen:
-         sched_stat_runtime
-         rcu_utilization
-         sched_switch
-         x86_exceptions_page_fault_user
-         None
-         kmem_cache_alloc
-         kmem_cache_free
-         syscall_exit_openat
-         kmem_mm_page_alloc
-         irq_handler_exit
-         syscall_exit_close
-         block_bio_remap
-         syscall_exit_getrandom
-         timer_hrtimer_expire_exit
-         x86_irq_vectors_local_timer_exit
-         syscall_exit_poll
-         workqueue_execute_start
-         irq_softirq_raise
-         x86_irq_vectors_reschedule_exit
-         syscall_exit_futex
-         sched_wakeup
-         sched_waking
-         syscall_exit_mmap
-         scsi_dispatch_cmd_start
-         timer_hrtimer_cancel
-         timer_expire_exit
-         timer_hrtimer_start
-Event Type: dup3
-  For short syscalls:
-      Average duration: 829
-      List of event types that most likely happen:
-         None
-      No long syscalls for this event type.
-Event Type: munmap
-  For short syscalls:
-      Average duration: 2570
-      List of event types that most likely happen:
-         kmem_cache_free
-         rcu_utilization
          block_touch_buffer
-         sched_stat_runtime
-         kmem_cache_alloc
+         workqueue_execute_start
+         writeback_mark_inode_dirty
+         writeback_dirty_inode
+         sched_waking
+         syscall_exit_recvmsg
+         timer_hrtimer_init
+         scsi_dispatch_cmd_start
+         syscall_exit_poll
+         syscall_exit_newfstat
+         x86_exceptions_page_fault_user
+  For long syscalls:
+      Average duration: 1540434
+      List of event types that most likely happen:
+         None
+         kmem_kfree
+         power_cpu_idle
+         skb_consume
+         kmem_cache_free
+         sched_switch
+         kmem_mm_page_pcpu_drain
+         syscall_exit_write
+         kmem_mm_page_alloc
+         rcu_utilization
+         syscall_exit_read
+         irq_handler_entry
+         syscall_exit_getpid
+         kmem_kmalloc
+         syscall_exit_ioctl
          kmem_mm_page_free_batched
          kmem_mm_page_free
-         sched_waking
-         writeback_mark_inode_dirty
-         kmem_mm_page_alloc
-         x86_exceptions_page_fault_user
-         kmem_kmalloc_node
-         block_rq_complete
-         workqueue_queue_work
-         sched_wakeup
-         syscall_exit_sched_yield
-         syscall_exit_futex
-  For long syscalls:
-      Average duration: 20464
-      List of event types that most likely happen:
-         kmem_cache_free
-         rcu_utilization
+         kmem_mm_page_alloc_zone_locked
          block_touch_buffer
-         sched_stat_runtime
-         kmem_cache_alloc
-         kmem_mm_page_free_batched
-         kmem_mm_page_free
-         sched_waking
+         workqueue_execute_start
          writeback_mark_inode_dirty
-         kmem_mm_page_alloc
+         writeback_dirty_inode
+         sched_waking
+         syscall_exit_recvmsg
+         timer_hrtimer_init
+         scsi_dispatch_cmd_start
+         syscall_exit_poll
+         syscall_exit_newfstat
          x86_exceptions_page_fault_user
-         kmem_kmalloc_node
-         block_rq_complete
-         workqueue_queue_work
-         sched_wakeup
-         syscall_exit_sched_yield
-         syscall_exit_futex
-Event Type: unlink
+Event Type: madvise
   For short syscalls:
-      Average duration: 3869
+      Average duration: 2912
       List of event types that most likely happen:
-         kmem_cache_alloc
-         block_touch_buffer
-         kmem_cache_free
+         kmem_mm_page_free
   For long syscalls:
-      Average duration: 12991
+      Average duration: 27386
+      List of event types that most likely happen:
+         kmem_mm_page_free
+Event Type: getgid
+  For short syscalls:
+      Average duration: 903
+      List of event types that most likely happen:
+         None
+      No long syscalls for this event type.
+Event Type: fadvise64
+  For short syscalls:
+      Average duration: 3217
+      List of event types that most likely happen:
+         kmem_cache_free
+         kmem_mm_page_free_batched
+         lttng_statedump_file_descriptor
+         kmem_mm_page_free
+         lttng_statedump_process_uts_ns
+         lttng_statedump_process_ipc_ns
+         lttng_statedump_process_state
+         lttng_statedump_process_user_ns
+         lttng_statedump_process_cgroup_ns
+         lttng_statedump_process_net_ns
+         lttng_statedump_process_pid_ns
+         irq_handler_entry
+         lttng_statedump_interrupt
+  For long syscalls:
+      Average duration: 662200
+      List of event types that most likely happen:
+         kmem_cache_free
+         kmem_mm_page_free_batched
+         lttng_statedump_file_descriptor
+         kmem_mm_page_free
+         lttng_statedump_process_uts_ns
+         lttng_statedump_process_ipc_ns
+         lttng_statedump_process_state
+         lttng_statedump_process_user_ns
+         lttng_statedump_process_cgroup_ns
+         lttng_statedump_process_net_ns
+         lttng_statedump_process_pid_ns
+         irq_handler_entry
+         lttng_statedump_interrupt
+Event Type: sendmsg
+  For short syscalls:
+      Average duration: 3639
+      List of event types that most likely happen:
+         kmem_cache_alloc_node
+         kmem_kmalloc_node
+         kmem_kfree
+         irq_handler_exit
+         syscall_exit_poll
+  For long syscalls:
+      Average duration: 18401
+      List of event types that most likely happen:
+         kmem_cache_alloc_node
+         kmem_kmalloc_node
+         kmem_kfree
+         irq_handler_exit
+         syscall_exit_poll
+Event Type: newlstat
+  For short syscalls:
+      Average duration: 2959
       List of event types that most likely happen:
          kmem_cache_alloc
-         block_touch_buffer
          kmem_cache_free
-Event Type: link
+         timer_hrtimer_init
+         sched_process_fork
+         kmem_kmalloc
+         sched_stat_runtime
+  For long syscalls:
+      Average duration: 11064
+      List of event types that most likely happen:
+         kmem_cache_alloc
+         kmem_cache_free
+         timer_hrtimer_init
+         sched_process_fork
+         kmem_kmalloc
+         sched_stat_runtime
+Event Type: getegid
+  For short syscalls:
+      Average duration: 714
+      List of event types that most likely happen:
+         None
+      No long syscalls for this event type.
+Event Type: connect
       No short syscalls for this event type.
   For long syscalls:
-      Average duration: 10432
+      Average duration: 26387
       List of event types that most likely happen:
-Event Type: umask
+Event Type: getpid
   For short syscalls:
-      Average duration: 843
+      Average duration: 1323
       List of event types that most likely happen:
          None
-         kmem_cache_alloc
-         sched_switch
-         x86_exceptions_page_fault_user
-      No long syscalls for this event type.
-Event Type: unlinkat
-  For short syscalls:
-      Average duration: 2214
-      List of event types that most likely happen:
-         kmem_cache_alloc
-         kmem_kfree
-         kmem_kmalloc
-         kmem_cache_free
-  For long syscalls:
-      Average duration: 15128
-      List of event types that most likely happen:
-         kmem_cache_alloc
-         kmem_kfree
-         kmem_kmalloc
-         kmem_cache_free
-Event Type: sigaltstack
-  For short syscalls:
-      Average duration: 835
-      List of event types that most likely happen:
-         None
-         kmem_cache_alloc
-         syscall_exit_munmap
-  For long syscalls:
-      Average duration: 20170
-      List of event types that most likely happen:
-         None
-         kmem_cache_alloc
-         syscall_exit_munmap
-Event Type: epoll_pwait
-  For short syscalls:
-      Average duration: 1794
-      List of event types that most likely happen:
-         None
-         sched_stat_runtime
-         kmem_cache_alloc
-         power_cpu_idle
-         kmem_mm_page_pcpu_drain
-         kmem_mm_page_alloc
-         block_dirty_buffer
-         kmem_cache_free
-         timer_hrtimer_init
-         skb_copy_datagram_iovec
          rcu_utilization
-         kmem_cache_alloc_node
+         kmem_cache_free
+         kmem_kmalloc
          sched_switch
-  For long syscalls:
-      Average duration: 6911
-      List of event types that most likely happen:
-         None
+         kmem_kfree
+         irq_handler_entry
+         timer_hrtimer_cancel
          sched_stat_runtime
-         kmem_cache_alloc
+         timer_hrtimer_start
+         workqueue_execute_start
+         irq_softirq_raise
+         irq_softirq_entry
          power_cpu_idle
-         kmem_mm_page_pcpu_drain
+         block_touch_buffer
+         kmem_cache_alloc
+         syscall_exit_poll
+         workqueue_execute_end
+         workqueue_queue_work
+         syscall_exit_futex
+         syscall_exit_ioctl
+         irq_handler_exit
+         net_if_receive_skb
+         timer_init
          kmem_mm_page_alloc
-         block_dirty_buffer
-         kmem_cache_free
-         timer_hrtimer_init
-         skb_copy_datagram_iovec
+         writeback_dirty_inode
+         sched_waking
+         irq_softirq_exit
+         block_unplug
+         x86_exceptions_page_fault_user
+  For long syscalls:
+      Average duration: 5652
+      List of event types that most likely happen:
+         None
          rcu_utilization
+         kmem_cache_free
+         kmem_kmalloc
+         sched_switch
+         kmem_kfree
+         irq_handler_entry
+         timer_hrtimer_cancel
+         sched_stat_runtime
+         timer_hrtimer_start
+         workqueue_execute_start
+         irq_softirq_raise
+         irq_softirq_entry
+         power_cpu_idle
+         block_touch_buffer
+         kmem_cache_alloc
+         syscall_exit_poll
+         workqueue_execute_end
+         workqueue_queue_work
+         syscall_exit_futex
+         syscall_exit_ioctl
+         irq_handler_exit
+         net_if_receive_skb
+         timer_init
+         kmem_mm_page_alloc
+         writeback_dirty_inode
+         sched_waking
+         irq_softirq_exit
+         block_unplug
+         x86_exceptions_page_fault_user
+Event Type: mmap
+  For short syscalls:
+      Average duration: 2798
+      List of event types that most likely happen:
+         kmem_cache_alloc
+         kmem_cache_free
+         x86_exceptions_page_fault_user
+         None
+         kmem_mm_page_free_batched
          kmem_cache_alloc_node
-         sched_switch
-Event Type: kcmp
-  For short syscalls:
-      Average duration: 366
-      List of event types that most likely happen:
-         None
-         kmem_cache_alloc
-         x86_exceptions_page_fault_user
          kmem_mm_page_alloc
-         x86_exceptions_page_fault_kernel
-         kmem_cache_free
-         syscall_exit_openat
+         sched_switch
+         syscall_exit_mprotect
          kmem_kfree
-         syscall_exit_access
-         kmem_kmalloc
-         syscall_exit_newfstat
-         syscall_exit_mmap
+         sched_stat_runtime
+         syscall_exit_write
+         syscall_exit_writev
+         sched_wakeup
+         timer_hrtimer_init
+         power_cpu_idle
+         rcu_utilization
   For long syscalls:
-      Average duration: 76883
+      Average duration: 10204
       List of event types that most likely happen:
-         None
          kmem_cache_alloc
-         x86_exceptions_page_fault_user
-         kmem_mm_page_alloc
-         x86_exceptions_page_fault_kernel
          kmem_cache_free
-         syscall_exit_openat
+         x86_exceptions_page_fault_user
+         None
+         kmem_mm_page_free_batched
+         kmem_cache_alloc_node
+         kmem_mm_page_alloc
+         sched_switch
+         syscall_exit_mprotect
          kmem_kfree
-         syscall_exit_access
-         kmem_kmalloc
-         syscall_exit_newfstat
-         syscall_exit_mmap
-Event Type: timerfd_settime
-  For short syscalls:
-      Average duration: 2589
-      List of event types that most likely happen:
+         sched_stat_runtime
+         syscall_exit_write
+         syscall_exit_writev
+         sched_wakeup
          timer_hrtimer_init
-         timer_hrtimer_cancel
-         timer_hrtimer_start
-         sched_switch
+         power_cpu_idle
+         rcu_utilization
+Event Type: clone
+      No short syscalls for this event type.
   For long syscalls:
-      Average duration: 12510
+      Average duration: 412170
       List of event types that most likely happen:
-         timer_hrtimer_init
-         timer_hrtimer_cancel
-         timer_hrtimer_start
-         sched_switch
-Event Type: getrlimit
+Event Type: getuid
   For short syscalls:
-      Average duration: 1866
+      Average duration: 1533
       List of event types that most likely happen:
          None
+         timer_hrtimer_start
       No long syscalls for this event type.
+Event Type: write
+  For short syscalls:
+      Average duration: 2217
+      List of event types that most likely happen:
+         None
+         kmem_kfree
+         syscall_exit_poll
+         rcu_utilization
+         syscall_exit_recvmsg
+         kmem_cache_free
+         sched_stat_runtime
+         sched_switch
+         power_cpu_idle
+         kmem_cache_alloc
+         sched_wakeup
+         sched_waking
+         kmem_cache_alloc_node
+         kmem_mm_page_alloc
+         writeback_dirty_inode_start
+         kmem_mm_page_pcpu_drain
+         timer_hrtimer_cancel
+         block_dirty_buffer
+         skb_copy_datagram_iovec
+         kmem_kmalloc
+         kmem_kmalloc_node
+         kmem_mm_page_free
+         syscall_exit_writev
+         skb_consume
+         syscall_exit_epoll_wait
+         syscall_exit_futex
+         syscall_exit_read
+         block_touch_buffer
+         writeback_dirty_page
+         writeback_mark_inode_dirty
+         syscall_exit_sendmsg
+         sched_migrate_task
+         x86_exceptions_page_fault_user
+         syscall_exit_ioctl
+         writeback_dirty_inode
+         timer_itimer_state
+         irq_handler_exit
+         irq_handler_entry
+         irq_softirq_raise
+         syscall_exit_epoll_ctl
+         kmem_mm_page_alloc_zone_locked
+         timer_hrtimer_start
+         syscall_exit_setitimer
+         x86_irq_vectors_reschedule_exit
+         block_bio_backmerge
+         timer_hrtimer_init
+         workqueue_execute_start
+         syscall_exit_shmdt
+         x86_irq_vectors_local_timer_entry
+         kmem_mm_page_free_batched
+         x86_irq_vectors_reschedule_entry
+         block_getrq
+         timer_hrtimer_expire_exit
+         timer_expire_entry
+         timer_start
+  For long syscalls:
+      Average duration: 15904
+      List of event types that most likely happen:
+         None
+         kmem_kfree
+         syscall_exit_poll
+         rcu_utilization
+         syscall_exit_recvmsg
+         kmem_cache_free
+         sched_stat_runtime
+         sched_switch
+         power_cpu_idle
+         kmem_cache_alloc
+         sched_wakeup
+         sched_waking
+         kmem_cache_alloc_node
+         kmem_mm_page_alloc
+         writeback_dirty_inode_start
+         kmem_mm_page_pcpu_drain
+         timer_hrtimer_cancel
+         block_dirty_buffer
+         skb_copy_datagram_iovec
+         kmem_kmalloc
+         kmem_kmalloc_node
+         kmem_mm_page_free
+         syscall_exit_writev
+         skb_consume
+         syscall_exit_epoll_wait
+         syscall_exit_futex
+         syscall_exit_read
+         block_touch_buffer
+         writeback_dirty_page
+         writeback_mark_inode_dirty
+         syscall_exit_sendmsg
+         sched_migrate_task
+         x86_exceptions_page_fault_user
+         syscall_exit_ioctl
+         writeback_dirty_inode
+         timer_itimer_state
+         irq_handler_exit
+         irq_handler_entry
+         irq_softirq_raise
+         syscall_exit_epoll_ctl
+         kmem_mm_page_alloc_zone_locked
+         timer_hrtimer_start
+         syscall_exit_setitimer
+         x86_irq_vectors_reschedule_exit
+         block_bio_backmerge
+         timer_hrtimer_init
+         workqueue_execute_start
+         syscall_exit_shmdt
+         x86_irq_vectors_local_timer_entry
+         kmem_mm_page_free_batched
+         x86_irq_vectors_reschedule_entry
+         block_getrq
+         timer_hrtimer_expire_exit
+         timer_expire_entry
+         timer_start
+Event Type: getrusage
+      No short syscalls for this event type.
+  For long syscalls:
+      Average duration: 7016
+      List of event types that most likely happen:
+Event Type: prctl
+  For short syscalls:
+      Average duration: 3655
+      List of event types that most likely happen:
+         None
+  For long syscalls:
+      Average duration: 6252
+      List of event types that most likely happen:
+         None
 Event Type: geteuid
   For short syscalls:
-      Average duration: 699
+      Average duration: 1055
       List of event types that most likely happen:
          None
-         kmem_kmalloc
-         kmem_cache_alloc
-         kmem_kfree
-         kmem_mm_page_alloc
-         rcu_utilization
-         block_touch_buffer
-         kmem_cache_free
+         sched_waking
       No long syscalls for this event type.
-Event Type: socket
+Event Type: lseek
   For short syscalls:
-      Average duration: 3146
-      List of event types that most likely happen:
-         kmem_cache_alloc
-         kmem_kmalloc
-  For long syscalls:
-      Average duration: 15711
-      List of event types that most likely happen:
-         kmem_cache_alloc
-         kmem_kmalloc
-Event Type: pipe
-      No short syscalls for this event type.
-  For long syscalls:
-      Average duration: 7225
-      List of event types that most likely happen:
-Event Type: rt_sigprocmask
-  For short syscalls:
-      Average duration: 972
+      Average duration: 1739
       List of event types that most likely happen:
          None
-         kmem_kfree
-         kmem_cache_alloc
-         kmem_mm_page_alloc
-         kmem_cache_free
-         kmem_kmalloc
-         x86_exceptions_page_fault_user
-         block_rq_complete
-         kmem_mm_page_alloc_zone_locked
-         syscall_exit_epoll_wait
-         kmem_mm_page_free
-         block_unplug
-         sched_wakeup
-         syscall_exit_futex
-         syscall_exit_set_robust_list
-         sched_waking
-  For long syscalls:
-      Average duration: 7305
-      List of event types that most likely happen:
-         None
-         kmem_kfree
-         kmem_cache_alloc
-         kmem_mm_page_alloc
-         kmem_cache_free
-         kmem_kmalloc
-         x86_exceptions_page_fault_user
-         block_rq_complete
-         kmem_mm_page_alloc_zone_locked
-         syscall_exit_epoll_wait
-         kmem_mm_page_free
-         block_unplug
-         sched_wakeup
-         syscall_exit_futex
-         syscall_exit_set_robust_list
-         sched_waking
-Event Type: symlinkat
-      No short syscalls for this event type.
-  For long syscalls:
-      Average duration: 48540
-      List of event types that most likely happen:
-Event Type: waitid
-  For short syscalls:
-      Average duration: 3061
-      List of event types that most likely happen:
-         sched_process_wait
-         kmem_cache_free
-  For long syscalls:
-      Average duration: 9774
-      List of event types that most likely happen:
-         sched_process_wait
-         kmem_cache_free
-Event Type: eventfd2
-      No short syscalls for this event type.
-  For long syscalls:
-      Average duration: 8056
-      List of event types that most likely happen:
-Event Type: fstatfs
-  For short syscalls:
-      Average duration: 695
-      List of event types that most likely happen:
-         None
-         kmem_cache_free
-         writeback_mark_inode_dirty
-         kmem_mm_page_alloc
-         block_dirty_buffer
-         kmem_cache_alloc
-         kmem_kmalloc
-         irq_handler_exit
-         block_getrq
-         writeback_dirty_inode
-         kmem_kfree
-         kmem_mm_page_free
-         syscall_exit_recvmsg
-         writeback_dirty_inode_start
-         syscall_exit_ioctl
-         block_touch_buffer
-         syscall_exit_splice
-         sched_stat_runtime
-  For long syscalls:
-      Average duration: 10488
-      List of event types that most likely happen:
-         None
-         kmem_cache_free
-         writeback_mark_inode_dirty
-         kmem_mm_page_alloc
-         block_dirty_buffer
-         kmem_cache_alloc
-         kmem_kmalloc
-         irq_handler_exit
-         block_getrq
-         writeback_dirty_inode
-         kmem_kfree
-         kmem_mm_page_free
-         syscall_exit_recvmsg
-         writeback_dirty_inode_start
-         syscall_exit_ioctl
-         block_touch_buffer
-         syscall_exit_splice
-         sched_stat_runtime
-Event Type: recvmsg
-  For short syscalls:
-      Average duration: 1348
-      List of event types that most likely happen:
-         kmem_kfree
-         skb_copy_datagram_iovec
-         kmem_cache_free
-         skb_consume
-         kmem_cache_alloc
-         kmem_cache_alloc_node
-         kmem_kmalloc
-         None
-         rcu_utilization
-         kmem_kmalloc_node
-         syscall_exit_sendmsg
-         sched_switch
-         sched_stat_runtime
-         sched_wakeup
-         timer_hrtimer_cancel
-         sched_waking
-         kmem_mm_page_alloc
-         x86_exceptions_page_fault_user
-         timer_hrtimer_start
-         syscall_exit_epoll_wait
-         kmem_mm_page_free
-         timer_hrtimer_init
-         x86_irq_vectors_reschedule_exit
-         x86_irq_vectors_reschedule_entry
-         kmem_mm_page_free_batched
-         syscall_exit_openat
-         syscall_exit_newstat
-         syscall_exit_read
-         kmem_mm_page_alloc_zone_locked
-         block_touch_buffer
-         writeback_dirty_inode_start
-         syscall_exit_ppoll
-         syscall_exit_getrandom
-         block_bio_queue
-         block_rq_issue
-         irq_softirq_exit
-         syscall_exit_mmap
-         syscall_exit_access
-         syscall_exit_mprotect
-         syscall_exit_close
-         writeback_mark_inode_dirty
-         irq_softirq_raise
-         x86_irq_vectors_local_timer_entry
-         syscall_exit_newfstat
-         irq_softirq_entry
-         syscall_exit_poll
-         block_dirty_buffer
-         irq_handler_entry
-         syscall_exit_write
-         kmem_mm_page_pcpu_drain
-         sched_process_fork
-         timer_init
-         timer_hrtimer_expire_entry
-         syscall_exit_brk
-         syscall_exit_readlinkat
-         block_rq_complete
-         block_unplug
-         syscall_exit_setitimer
-         writeback_dirty_inode
-         irq_handler_exit
-         block_rq_insert
-         syscall_exit_writev
-         timer_itimer_state
-         power_cpu_idle
-         timer_cancel
-         syscall_exit_futex
-  For long syscalls:
-      Average duration: 16288
-      List of event types that most likely happen:
-         kmem_kfree
-         skb_copy_datagram_iovec
-         kmem_cache_free
-         skb_consume
-         kmem_cache_alloc
-         kmem_cache_alloc_node
-         kmem_kmalloc
-         None
-         rcu_utilization
-         kmem_kmalloc_node
-         syscall_exit_sendmsg
-         sched_switch
-         sched_stat_runtime
-         sched_wakeup
-         timer_hrtimer_cancel
-         sched_waking
-         kmem_mm_page_alloc
-         x86_exceptions_page_fault_user
-         timer_hrtimer_start
-         syscall_exit_epoll_wait
-         kmem_mm_page_free
-         timer_hrtimer_init
-         x86_irq_vectors_reschedule_exit
-         x86_irq_vectors_reschedule_entry
-         kmem_mm_page_free_batched
-         syscall_exit_openat
-         syscall_exit_newstat
-         syscall_exit_read
-         kmem_mm_page_alloc_zone_locked
-         block_touch_buffer
-         writeback_dirty_inode_start
-         syscall_exit_ppoll
-         syscall_exit_getrandom
-         block_bio_queue
-         block_rq_issue
-         irq_softirq_exit
-         syscall_exit_mmap
-         syscall_exit_access
-         syscall_exit_mprotect
-         syscall_exit_close
-         writeback_mark_inode_dirty
-         irq_softirq_raise
-         x86_irq_vectors_local_timer_entry
-         syscall_exit_newfstat
-         irq_softirq_entry
-         syscall_exit_poll
-         block_dirty_buffer
-         irq_handler_entry
-         syscall_exit_write
-         kmem_mm_page_pcpu_drain
-         sched_process_fork
-         timer_init
-         timer_hrtimer_expire_entry
-         syscall_exit_brk
-         syscall_exit_readlinkat
-         block_rq_complete
-         block_unplug
-         syscall_exit_setitimer
-         writeback_dirty_inode
-         irq_handler_exit
-         block_rq_insert
-         syscall_exit_writev
-         timer_itimer_state
-         power_cpu_idle
-         timer_cancel
-         syscall_exit_futex
-Event Type: accept4
-      No short syscalls for this event type.
-  For long syscalls:
-      Average duration: 13151
-      List of event types that most likely happen:
-Event Type: rename
-      No short syscalls for this event type.
-  For long syscalls:
-      Average duration: 252565
-      List of event types that most likely happen:
+      No long syscalls for this event type.
 Event Type: arch_prctl
   For short syscalls:
-      Average duration: 1601
+      Average duration: 2695
       List of event types that most likely happen:
-         None
-         kmem_kmalloc
-         kmem_cache_alloc
-         syscall_exit_poll
-         kmem_kfree
-         rcu_utilization
-         irq_softirq_raise
-  For long syscalls:
-      Average duration: 7590
-      List of event types that most likely happen:
-         None
-         kmem_kmalloc
-         kmem_cache_alloc
-         syscall_exit_poll
-         kmem_kfree
-         rcu_utilization
-         irq_softirq_raise
-Event Type: poll
-  For short syscalls:
-      Average duration: 1700
-      List of event types that most likely happen:
-         None
-         kmem_kfree
-         kmem_kmalloc
-         kmem_mm_page_alloc
-         kmem_cache_free
-         kmem_cache_alloc
-         rcu_utilization
          x86_exceptions_page_fault_user
-         sched_switch
-         sched_stat_runtime
-         sched_wakeup
-         sched_waking
-         power_cpu_idle
-         x86_irq_vectors_reschedule_entry
-         syscall_exit_read
-         irq_handler_entry
-         block_getrq
-         skb_consume
-         kmem_mm_page_free_batched
          kmem_mm_page_free
-         block_rq_issue
-         x86_irq_vectors_reschedule_exit
-         syscall_exit_recvmsg
-         syscall_exit_mmap
-         block_touch_buffer
-         kmem_kmalloc_node
-         workqueue_execute_end
-         block_bio_queue
-         block_rq_complete
-         block_dirty_buffer
-         kmem_mm_page_alloc_zone_locked
-         timer_hrtimer_cancel
-         timer_init
-         syscall_exit_sched_yield
-         writeback_mark_inode_dirty
-         syscall_exit_nanosleep
-         timer_hrtimer_expire_exit
-         syscall_exit_epoll_pwait
-         irq_softirq_entry
-         syscall_exit_newfstat
-  For long syscalls:
-      Average duration: 41740
-      List of event types that most likely happen:
-         None
-         kmem_kfree
-         kmem_kmalloc
-         kmem_mm_page_alloc
-         kmem_cache_free
-         kmem_cache_alloc
-         rcu_utilization
-         x86_exceptions_page_fault_user
-         sched_switch
-         sched_stat_runtime
-         sched_wakeup
-         sched_waking
-         power_cpu_idle
-         x86_irq_vectors_reschedule_entry
-         syscall_exit_read
-         irq_handler_entry
-         block_getrq
-         skb_consume
-         kmem_mm_page_free_batched
-         kmem_mm_page_free
-         block_rq_issue
-         x86_irq_vectors_reschedule_exit
-         syscall_exit_recvmsg
-         syscall_exit_mmap
-         block_touch_buffer
-         kmem_kmalloc_node
-         workqueue_execute_end
-         block_bio_queue
-         block_rq_complete
-         block_dirty_buffer
-         kmem_mm_page_alloc_zone_locked
-         timer_hrtimer_cancel
-         timer_init
-         syscall_exit_sched_yield
-         writeback_mark_inode_dirty
-         syscall_exit_nanosleep
-         timer_hrtimer_expire_exit
-         syscall_exit_epoll_pwait
-         irq_softirq_entry
-         syscall_exit_newfstat
-Event Type: setpriority
-  For short syscalls:
-      Average duration: 2286
-      List of event types that most likely happen:
-         None
       No long syscalls for this event type.
-Event Type: pread64
-  For short syscalls:
-      Average duration: 653
-      List of event types that most likely happen:
-         None
-         writeback_mark_inode_dirty
+Event Type: socket
+      No short syscalls for this event type.
   For long syscalls:
-      Average duration: 58227
+      Average duration: 13258
+      List of event types that most likely happen:
+Event Type: timerfd_settime
+  For short syscalls:
+      Average duration: 3742
+      List of event types that most likely happen:
+         timer_hrtimer_init
+         timer_hrtimer_start
+  For long syscalls:
+      Average duration: 13427
+      List of event types that most likely happen:
+         timer_hrtimer_init
+         timer_hrtimer_start
+Event Type: ioctl
+  For short syscalls:
+      Average duration: 1559
       List of event types that most likely happen:
          None
+         kmem_kfree
+         power_cpu_idle
+         lttng_statedump_file_descriptor
+         kmem_kmalloc
+         kmem_cache_alloc
+         rcu_utilization
+         irq_handler_entry
+         kmem_cache_free
+         x86_irq_vectors_call_function_entry
+         syscall_exit_recvmsg
+         sched_switch
+         kmem_mm_page_free
+         kmem_mm_page_pcpu_drain
+         irq_handler_exit
+         kmem_mm_page_alloc
+         irq_softirq_raise
+         irq_softirq_exit
+         lttng_statedump_process_cgroup_ns
+         lttng_statedump_process_pid_ns
+         lttng_statedump_process_user_ns
+         lttng_statedump_process_state
+         sched_stat_runtime
+         lttng_statedump_process_ipc_ns
+         syscall_exit_poll
+         timer_hrtimer_init
+         timer_hrtimer_start
+         irq_softirq_entry
+         kmem_mm_page_free_batched
+         x86_irq_vectors_call_function_exit
+         timer_hrtimer_cancel
+         skb_consume
+         x86_exceptions_page_fault_user
+         skb_copy_datagram_iovec
+         lttng_statedump_process_uts_ns
+         lttng_statedump_process_net_ns
          writeback_mark_inode_dirty
+         sched_wakeup
+         kmem_mm_page_alloc_zone_locked
+         kmem_cache_alloc_node
+         kmem_kmalloc_node
+         sched_waking
+         syscall_exit_writev
+         writeback_dirty_inode
+         workqueue_execute_end
+         syscall_exit_read
+         syscall_exit_write
+         syscall_exit_getpid
+         block_dirty_buffer
+         block_touch_buffer
+         workqueue_execute_start
+         lttng_statedump_interrupt
+         scsi_dispatch_cmd_done
+         workqueue_queue_work
+         x86_irq_vectors_local_timer_entry
+         syscall_exit_mprotect
+         workqueue_activate_work
+         writeback_dirty_inode_start
+         timer_hrtimer_expire_entry
+         sched_migrate_task
+         writeback_dirty_page
+         timer_hrtimer_expire_exit
+         syscall_exit_close
+         x86_irq_vectors_irq_work_entry
+         timer_itimer_state
+         timer_start
+         timer_cancel
+         syscall_exit_setitimer
+         timer_init
+         syscall_exit_munmap
+         syscall_exit_mmap
+         x86_irq_vectors_reschedule_exit
+         syscall_exit_kcmp
+         block_rq_complete
+         i2c_reply
+         block_unplug
+         scsi_dispatch_cmd_start
+         syscall_exit_newlstat
+         timer_expire_exit
+         syscall_exit_newfstat
+         block_bio_remap
+         block_plug
+         syscall_exit_brk
+         syscall_exit_openat
+  For long syscalls:
+      Average duration: 36575
+      List of event types that most likely happen:
+         None
+         kmem_kfree
+         power_cpu_idle
+         lttng_statedump_file_descriptor
+         kmem_kmalloc
+         kmem_cache_alloc
+         rcu_utilization
+         irq_handler_entry
+         kmem_cache_free
+         x86_irq_vectors_call_function_entry
+         syscall_exit_recvmsg
+         sched_switch
+         kmem_mm_page_free
+         kmem_mm_page_pcpu_drain
+         irq_handler_exit
+         kmem_mm_page_alloc
+         irq_softirq_raise
+         irq_softirq_exit
+         lttng_statedump_process_cgroup_ns
+         lttng_statedump_process_pid_ns
+         lttng_statedump_process_user_ns
+         lttng_statedump_process_state
+         sched_stat_runtime
+         lttng_statedump_process_ipc_ns
+         syscall_exit_poll
+         timer_hrtimer_init
+         timer_hrtimer_start
+         irq_softirq_entry
+         kmem_mm_page_free_batched
+         x86_irq_vectors_call_function_exit
+         timer_hrtimer_cancel
+         skb_consume
+         x86_exceptions_page_fault_user
+         skb_copy_datagram_iovec
+         lttng_statedump_process_uts_ns
+         lttng_statedump_process_net_ns
+         writeback_mark_inode_dirty
+         sched_wakeup
+         kmem_mm_page_alloc_zone_locked
+         kmem_cache_alloc_node
+         kmem_kmalloc_node
+         sched_waking
+         syscall_exit_writev
+         writeback_dirty_inode
+         workqueue_execute_end
+         syscall_exit_read
+         syscall_exit_write
+         syscall_exit_getpid
+         block_dirty_buffer
+         block_touch_buffer
+         workqueue_execute_start
+         lttng_statedump_interrupt
+         scsi_dispatch_cmd_done
+         workqueue_queue_work
+         x86_irq_vectors_local_timer_entry
+         syscall_exit_mprotect
+         workqueue_activate_work
+         writeback_dirty_inode_start
+         timer_hrtimer_expire_entry
+         sched_migrate_task
+         writeback_dirty_page
+         timer_hrtimer_expire_exit
+         syscall_exit_close
+         x86_irq_vectors_irq_work_entry
+         timer_itimer_state
+         timer_start
+         timer_cancel
+         syscall_exit_setitimer
+         timer_init
+         syscall_exit_munmap
+         syscall_exit_mmap
+         x86_irq_vectors_reschedule_exit
+         syscall_exit_kcmp
+         block_rq_complete
+         i2c_reply
+         block_unplug
+         scsi_dispatch_cmd_start
+         syscall_exit_newlstat
+         timer_expire_exit
+         syscall_exit_newfstat
+         block_bio_remap
+         block_plug
+         syscall_exit_brk
+         syscall_exit_openat
+Event Type: fstatfs
+  For short syscalls:
+      Average duration: 4123
+      List of event types that most likely happen:
+         None
+         block_bio_queue
+  For long syscalls:
+      Average duration: 5174
+      List of event types that most likely happen:
+         None
+         block_bio_queue
+Event Type: accept
+      No short syscalls for this event type.
+  For long syscalls:
+      Average duration: 14647
+      List of event types that most likely happen:
+Event Type: pwrite64
+      No short syscalls for this event type.
+  For long syscalls:
+      Average duration: 14073
+      List of event types that most likely happen:

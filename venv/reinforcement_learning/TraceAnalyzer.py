@@ -7,7 +7,7 @@ from tqdm import tqdm
 class TraceAnalyzer:
     def __init__(self, file_path):
         self.file_path = file_path
-        self.pattern = r'\[(.*?)\] \((.*?)\)(.*?) (.*?) (.*?): \{(.*)},\ {(.*)\}'
+        self.pattern = r'\[(.*?)\] \((.*?)\)(.*?) (.*?) (.*?): \{(.*)\},\ \{(.*)\},\ \{(.*)\}'
 
     def read_trace_file(self):
 
@@ -24,17 +24,16 @@ class TraceAnalyzer:
                     timestamp = match.group(1)
                     event_type = match.group(5)
                     cpu_id = match.group(6).replace("cpu_id = ", "")
-                    content = match.group(7)
+                    tid = match.group(7)
+                    content = match.group(8)
 
                     # Extracting tid and prio from content if available
-                    tid = re.search(r'tid\s*=\s*(\d+)', content)
                     prio = re.search(r'prio\s*=\s*(\d+)', content)
 
-                    tid = tid.group(1) if tid else last_tid
                     prio = prio.group(1) if prio else last_prio
 
-                    # Update last_tid and last_prio
-                    last_tid, last_prio = tid, prio
+                    # Update last_prio
+                    last_prio = prio
 
                     event = Event(timestamp, event_type, cpu_id, tid, prio, content)
                     events.append(event)

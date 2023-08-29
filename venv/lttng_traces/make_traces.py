@@ -15,8 +15,8 @@ def run(command):
 current_dir = os.path.dirname(os.path.abspath(__file__))
 
 # Define the path to the 'data' folder relative to the script's location
-data_dir = os.path.join(os.path.dirname(current_dir), 'data')
-
+data_dir = os.path.join(os.path.dirname(current_dir), 'data', 'my_session')
+output_dir = os.path.join(os.path.dirname(current_dir), 'data')
 trace_duration = 3
 trace_path = data_dir  # Set trace_path to the data directory
 
@@ -28,9 +28,9 @@ except ValueError:
 
 for i in range(number_traces):
     print(f"Starting trace {i + 1}...")
-    run(f"lttng add-context --kernel --channel=my-channel --type=tid")
     run(f"lttng create my_session --output={trace_path}")
     run("lttng enable-event -k -a")
+    run(f"lttng add-context -k -c channel0 -t tid")
     run("lttng start")
     time.sleep(trace_duration)
     run("lttng stop")
@@ -38,4 +38,4 @@ for i in range(number_traces):
     print(f"Trace {i + 1} completed. \n")
 
 print(f"All {number_traces} traces completed.")
-run(f"babeltrace2 {trace_path} > {os.path.join(data_dir, f'output.txt')}")
+run(f"babeltrace2 {trace_path} > {os.path.join(output_dir, f'output.txt')}")

@@ -45,8 +45,9 @@ class SyscallAnalyzer:
                     current_syscall.add_event(event.event_type)
         return self.syscalls
 
-    def print_syscalls(self):
-        for syscall in self.syscalls:
-            print(syscall)
-            for event in syscall.events:
-                print(event)
+    def print_syscalls(self, filename):
+        with open(filename, 'w') as f:
+            for syscall in self.syscalls:
+                f.write(f"Syscall type: {syscall}\n")
+                for event in syscall.events:
+                    f.write(f"    Event: {event}\n")

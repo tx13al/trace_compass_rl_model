@@ -19,6 +19,7 @@ def main():
     print(f"start analyzing syscalls:")
     system_call_analyzer = SyscallAnalyzer(trace_data)
     syscalls = system_call_analyzer.find_syscalls()
+    system_call_analyzer.print_syscalls('../data/syscalls.txt')
 
     # Create SyscallAggregator object
     print(f"start aggregating system calls:")
