@@ -210,6 +210,10 @@ This project utilizes Reinforcement Learning (RL) to analyze system traces, spec
   - **Event.py**: Event object. Represents events in the tracing data. 
   - **main.py**: The entry point of the application. 
   - **QTable.py**: QTable object. Represents the Q-table for the Q-Learning algorithm. 
+    - Q-value based on 
+      - epsilon=0.5
+      - alpha=0.1
+      - gamma=0.9
   - **RLModel.py**: The main RL model that holding the reward function, train the model and print a result as **RL_actions.txt**. 
     - **reward function**: 
     - get 3 points when the state is a long system call
