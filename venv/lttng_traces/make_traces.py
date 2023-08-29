@@ -1,6 +1,7 @@
 import subprocess
 import time
 import sys
+import os  # Import the os module
 
 
 def run(command):
@@ -10,12 +11,14 @@ def run(command):
         print(f"Error executing command: {stderr.decode().strip()}")
 
 
-if len(sys.argv) < 2:
-    print("Please provide the trace path as the command-line")
-    exit(1)
+# Get the directory where the script is located
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Define the path to the 'data' folder relative to the script's location
+data_dir = os.path.join(os.path.dirname(current_dir), 'data')
 
 trace_duration = 3
-trace_path = sys.argv[1]
+trace_path = data_dir  # Set trace_path to the data directory
 
 try:
     number_traces = int(input("Please input the number of traces:"))
@@ -25,6 +28,7 @@ except ValueError:
 
 for i in range(number_traces):
     print(f"Starting trace {i + 1}...")
+    run(f"lttng add-context --kernel --channel=my-channel --type=tid")
     run(f"lttng create my_session --output={trace_path}")
     run("lttng enable-event -k -a")
     run("lttng start")
@@ -32,5 +36,6 @@ for i in range(number_traces):
     run("lttng stop")
     run("lttng destroy")
     print(f"Trace {i + 1} completed. \n")
+
 print(f"All {number_traces} traces completed.")
-run(f"babeltrace2 {trace_path} > output{number_traces}.txt")
+run(f"babeltrace2 {trace_path} > {os.path.join(data_dir, f'output.txt')}")

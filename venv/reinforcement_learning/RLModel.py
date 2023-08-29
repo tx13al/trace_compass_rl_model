@@ -25,11 +25,9 @@ class RLModel:
         reward = 0
 
         if syscall_duration_type == "long":
-            # Placeholder logic for long syscalls
-            reward += 3  # This could be more complex based on your actual logic
+            reward += 3
         elif syscall_duration_type == "short":
-            # Placeholder logic for short syscalls
-            reward -= 5  # This could be more complex based on your actual logic
+            reward -= 5
 
         return reward
 
@@ -83,7 +81,7 @@ class RLModel:
                     avg_short_duration = sum(self.short_syscall_durations[event_type]) / len(
                         self.short_syscall_durations[event_type]) if self.short_syscall_durations[event_type] else 0
                     f.write(f"      Average duration: {round(avg_short_duration)}\n")
-                    f.write(f"      List of event types that most likely happen (sorted by model rewards):\n")
+                    f.write(f"      List of event types that most likely happen:\n")
                     for action, count in sorted_actions:
                         f.write(f"         {action}\n")
                 else:
@@ -97,7 +95,7 @@ class RLModel:
                     avg_long_duration = sum(self.long_syscall_durations[event_type]) / len(
                         self.long_syscall_durations[event_type]) if self.long_syscall_durations[event_type] else 0
                     f.write(f"      Average duration: {round(avg_long_duration)}\n")
-                    f.write(f"      List of event types that most likely happen (sorted by model rewards):\n")
+                    f.write(f"      List of event types that most likely happen:\n")
 
                     for action, count in sorted_actions:
                         f.write(f"         {action}\n")
