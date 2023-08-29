@@ -215,8 +215,6 @@ This project utilizes Reinforcement Learning (RL) to analyze traces, specificall
 Or run following on commend line:
        ```bash
        $ tar xzvf eclipse-committers-2023-03-R-linux-gtk-x86_64.tar.gz 
-       $ cd eclipse
-       $ ./eclipse
       ```
    3. **Install required dependencies:**
       Trace Compass uses source compatibility to Java 11. However, to run the Trace Compass RCP and to develop it, Java 17 is required. Here is how to install Java 17 on recent Ubuntu:
