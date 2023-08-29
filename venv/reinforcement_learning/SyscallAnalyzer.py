@@ -1,4 +1,3 @@
-import pandas as pd
 from Syscall import Syscall
 from Event import Event
 from tqdm import tqdm

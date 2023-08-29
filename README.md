@@ -178,8 +178,7 @@ This project utilizes Reinforcement Learning (RL) to analyze system traces, spec
 
 ### Requirements
 - Python 3.8+
-- pandas
-- tqdm
+- tqdm for showing the progress bar
 
 ### Usage
 - Execute the lttng tracing script first under folder ../lttng_traces:

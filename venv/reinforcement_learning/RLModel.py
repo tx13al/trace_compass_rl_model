@@ -1,8 +1,6 @@
 from Agent import Agent
 from State import State
-import numpy as np  # Make sure to import numpy
 from tqdm import tqdm
-import time
 from collections import defaultdict
 from collections import Counter
 
@@ -19,7 +17,6 @@ class RLModel:
         self.long_syscall_durations = defaultdict(list)
 
     def get_reward(self, state):
-        # Since state is an object, we use its attributes
         syscall_duration_type = state.duration_type
 
         reward = 0
