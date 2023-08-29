@@ -3,7 +3,7 @@
 ## Table of Contents
 
 - [Reinforcement Learning for System Calls Analysis](#reinforcement-learning-for-system-calls-analysis-1)
-- [LTTng and Trace Compass Setup](lttng-and-trace-compass-setup)
+- [LTTng and Trace Compass Setup](#lttng-and-trace-compass-setup)
 - [References](#references)
 
 
