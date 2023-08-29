@@ -3,7 +3,7 @@
 ## Table of Contents
 
 - [Reinforcement Learning for System Calls Analysis](#reinforcement-learning-for-system-calls-analysis-1)
-- [Environment Setup](#environment-setup)
+- [LTTng and Trace Compass Setup](lttng-and-trace-compass-setup)
 - [References](#references)
 
 
@@ -62,7 +62,7 @@ This project utilizes Reinforcement Learning (RL) to analyze traces, specificall
   - **SyscallEventCounter.py**: Counts system call event. Count how many times the events happen in the trace. Export data as **counter.txt**.
   - **TraceAnalyzer.py**: Analyzes traces by using **output.txt** from **make_traces.py**.
       
-## Environment Setup
+## LTTng and Trace Compass Setup
 
 ### Prerequisites
 
