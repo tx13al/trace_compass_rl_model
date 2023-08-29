@@ -17,12 +17,12 @@ This project utilizes Reinforcement Learning (RL) to analyze traces, specificall
 - tqdm for showing the progress bar
 
 ### Usage
-- Execute the lttng tracing script first under folder ../lttng_traces:
+- Execute the lttng tracing script first under folder **../lttng_traces**:
   ```bash
   python3 make_traces.py
   ```
-   Then you will have tracing data in ../data/my_session and an output as ..data/output.txt
-- Execute the main script to start the analysis:
+   The tracing data locates in **../data/my_session** and a readable output is in **../data/output.txt**.
+- Execute the main script to start the analysis under folder **../reinforcement_learning**:
     ```bash
   python3 main.py
   ```
