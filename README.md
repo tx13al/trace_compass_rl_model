@@ -10,7 +10,7 @@
 ## Reinforcement Learning for System Calls Analysis
 
 ### Introduction
-This project utilizes Reinforcement Learning (RL) to analyze traces, specifically focusing on system calls. The main goal is to understand the events happen between long system calls entry and exit, thus helping in system optimization.
+This project utilizes Reinforcement Learning (RL) to analyze traces, specifically focusing on system calls. The main goal is to understand the events happen between long system calls (system calls duration more than 5000 nanoseconds) entry and exit, thus helping in system optimization.
 
 ### Requirements
 - Python 3.8+
